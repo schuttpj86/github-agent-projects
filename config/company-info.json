@@ -1,0 +1,105 @@
+{
+  "company": {
+    "legal_name": "Power Grids of the Future LLC",
+    "dba": "Power Grids of the Future",
+    "tagline": "Advanced Electrical Grounding Solutions for Modern Infrastructure",
+    "founded": "2022",
+    "state": "California",
+    "license_number": "C-10 Electrical License #987654",
+    "address": {
+      "street": "1234 Innovation Drive, Suite 200",
+      "city": "San Francisco",
+      "state": "CA",
+      "zip": "94103"
+    },
+    "contact": {
+      "phone": "(555) 789-4560",
+      "email": "contact@powergridsfuture.com",
+      "website": "www.powergridsfuture.com"
+    },
+    "tax_id": "EIN: 12-3456789"
+  },
+  "owner": {
+    "name": "Principal Engineer",
+    "title": "Founder & Principal Electrical Engineer",
+    "credentials": "PE, LEED AP",
+    "experience_years": 15,
+    "specializations": [
+      "IEEE 80 Grounding System Design",
+      "Ground Potential Rise Analysis",
+      "Substation Earthing",
+      "Industrial Power Systems",
+      "Lightning Protection"
+    ],
+    "professional_affiliations": [
+      "IEEE Power & Energy Society",
+      "National Society of Professional Engineers",
+      "California Society of Professional Engineers"
+    ]
+  },
+  "capabilities": {
+    "services": [
+      "Ground Potential Rise (GPR) Calculations",
+      "Touch and Step Voltage Analysis",
+      "Grounding Grid Design per IEEE 80",
+      "Soil Resistivity Modeling",
+      "Lightning Protection System Design",
+      "Arc Flash Studies",
+      "Power System Grounding Audits",
+      "Expert Witness Services"
+    ],
+    "software_tools": [
+      "ETAP",
+      "SKM PowerTools",
+      "CDEGS (Current Distribution, Electromagnetic Fields, Grounding and Soil Structure Analysis)",
+      "AutoCAD Electrical",
+      "Python (custom calculation scripts)",
+      "MATLAB"
+    ],
+    "standards_compliance": [
+      "IEEE Std 80 - Guide for Safety in AC Substation Grounding",
+      "IEEE Std 81 - Guide for Measuring Earth Resistivity",
+      "IEEE Std 142 - Grounding of Industrial and Commercial Power Systems",
+      "NFPA 70 - National Electrical Code",
+      "IEC 61936-1 - Power Installations Exceeding 1kV AC",
+      "OSHA 1910.269 - Electric Power Generation, Transmission, and Distribution"
+    ]
+  },
+  "clients": {
+    "sectors": [
+      "Electric Utilities",
+      "Solar/Wind Renewable Energy",
+      "Industrial Manufacturing",
+      "Data Centers",
+      "Transportation Infrastructure",
+      "Commercial Real Estate",
+      "Government/Military Facilities"
+    ],
+    "notable_projects": [
+      "Regional Transit Authority - 23kV Substation Grounding Assessment (2025)",
+      "Valley Solar Farm - 50MW Ground Grid Design (2024)",
+      "Bay Area Data Center - Critical Infrastructure Grounding (2023)"
+    ]
+  },
+  "differentiators": [
+    "Rapid turnaround times through AI-augmented workflows",
+    "Transparent calculation methodology with full documentation",
+    "Python-based automation for accuracy and efficiency",
+    "Expertise in complex soil conditions and high-fault-current applications",
+    "Clear communication with non-technical stakeholders"
+  ],
+  "insurance": {
+    "general_liability": "$2,000,000 per occurrence",
+    "professional_liability": "$1,000,000 per claim",
+    "carrier": "Engineering Insurance Group"
+  },
+  "quality_management": {
+    "processes": [
+      "Independent QA review on all calculations",
+      "Documented calculation methodology per IEEE standards",
+      "Version control of all technical documents via Git",
+      "Peer review for projects >$50k",
+      "Client feedback surveys post-delivery"
+    ]
+  }
+}

@@ -1,0 +1,141 @@
+{
+  "engineers": [
+    {
+      "id": "ENG-001",
+      "name": "Alex Thompson",
+      "title": "Senior Electrical Engineer",
+      "credentials": "PE (Professional Engineer)",
+      "experience_years": 12,
+      "specializations": [
+        "IEEE 80 Grounding Design",
+        "Ground Potential Rise Analysis",
+        "Substation Design",
+        "High Voltage Systems"
+      ],
+      "software_proficiency": {
+        "ETAP": "Expert",
+        "CDEGS": "Advanced",
+        "AutoCAD": "Advanced",
+        "Python": "Intermediate",
+        "MATLAB": "Intermediate"
+      },
+      "task_preferences": [
+        "Lead calculation engineer",
+        "Complex GPR studies",
+        "Client-facing technical discussions",
+        "Design reviews"
+      ],
+      "availability": "Full-time",
+      "hourly_bill_rate": 175,
+      "typical_utilization": "80%",
+      "strengths": [
+        "Excellent problem-solving for unusual site conditions",
+        "Strong client communication skills",
+        "Deep knowledge of IEEE standards",
+        "Mentoring junior engineers"
+      ],
+      "certifications": [
+        "PE License (California #E-12345)",
+        "IEEE Senior Member",
+        "NFPA 70E Certified"
+      ]
+    },
+    {
+      "id": "ENG-002",
+      "name": "Jennifer Martinez",
+      "title": "Junior Electrical Engineer",
+      "credentials": "EIT (Engineer in Training)",
+      "experience_years": 3,
+      "specializations": [
+        "Technical Analysis",
+        "Python Programming for Engineering",
+        "Report Writing",
+        "QA/QC Processes"
+      ],
+      "software_proficiency": {
+        "Python": "Expert",
+        "MATLAB": "Advanced",
+        "AutoCAD": "Intermediate",
+        "ETAP": "Learning",
+        "MS Office": "Expert"
+      },
+      "task_preferences": [
+        "Calculation automation with Python",
+        "Data analysis and visualization",
+        "Technical report writing",
+        "Quality assurance checks"
+      ],
+      "availability": "Full-time",
+      "hourly_bill_rate": 125,
+      "typical_utilization": "90%",
+      "strengths": [
+        "Exceptional Python scripting abilities",
+        "Clear and concise technical writing",
+        "Detail-oriented QA mindset",
+        "Quick learner, adaptable"
+      ],
+      "certifications": [
+        "EIT (California)",
+        "Python for Data Science (Coursera)",
+        "Technical Writing Certificate"
+      ],
+      "development_goals": [
+        "Complete PE licensing requirements (2 more years)",
+        "Master ETAP software",
+        "Lead smaller projects independently by 2026"
+      ]
+    }
+  ],
+  "team_composition": {
+    "total_engineers": 2,
+    "total_capacity_hours_per_week": 80,
+    "typical_project_team": {
+      "small_project": {
+        "lead": "ENG-001",
+        "support": "ENG-002",
+        "hours": "40-60 total"
+      },
+      "medium_project": {
+        "lead": "ENG-001",
+        "analyst": "ENG-002",
+        "hours": "100-200 total"
+      },
+      "large_project": {
+        "lead": "ENG-001",
+        "support": "ENG-002",
+        "owner_oversight": "Required",
+        "hours": "250-400 total"
+      }
+    }
+  },
+  "skills_matrix": {
+    "grounding_design": {
+      "ENG-001": "Expert",
+      "ENG-002": "Competent"
+    },
+    "gpr_calculations": {
+      "ENG-001": "Expert",
+      "ENG-002": "Advanced"
+    },
+    "python_automation": {
+      "ENG-001": "Intermediate",
+      "ENG-002": "Expert"
+    },
+    "technical_writing": {
+      "ENG-001": "Advanced",
+      "ENG-002": "Expert"
+    },
+    "client_presentations": {
+      "ENG-001": "Expert",
+      "ENG-002": "Developing"
+    },
+    "cad_drafting": {
+      "ENG-001": "Advanced",
+      "ENG-002": "Intermediate"
+    },
+    "qa_review": {
+      "ENG-001": "Expert",
+      "ENG-002": "Advanced"
+    }
+  }
+}

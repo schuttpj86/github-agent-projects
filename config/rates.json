@@ -1,0 +1,121 @@
+{
+  "company_info": {
+    "name": "Power Grids of the Future",
+    "tagline": "Advanced Electrical Grounding Solutions",
+    "owner": "Principal Engineer",
+    "founded": "2022",
+    "phone": "(555) 789-4560",
+    "email": "contact@powergridsfuture.com",
+    "website": "www.powergridsfuture.com"
+  },
+  "bill_rates": {
+    "senior_engineer": {
+      "rate_per_hour": 175,
+      "description": "PE licensed, 10+ years experience",
+      "typical_tasks": ["Lead calculations", "Design review", "Client meetings", "PE stamp"]
+    },
+    "junior_engineer": {
+      "rate_per_hour": 125,
+      "description": "EIT, 2-5 years experience",
+      "typical_tasks": ["Analysis", "Modeling", "Report writing", "QA checks"]
+    },
+    "principal": {
+      "rate_per_hour": 225,
+      "description": "Owner, expert consultation",
+      "typical_tasks": ["Strategic oversight", "Complex problem solving", "Client relationship management"]
+    }
+  },
+  "cost_rates": {
+    "senior_engineer": {
+      "cost_per_hour": 85,
+      "includes": ["Salary", "Benefits", "Overhead allocation"]
+    },
+    "junior_engineer": {
+      "cost_per_hour": 55,
+      "includes": ["Salary", "Benefits", "Overhead allocation"]
+    },
+    "principal": {
+      "cost_per_hour": 120,
+      "includes": ["Owner time", "Business overhead"]
+    }
+  },
+  "project_multipliers": {
+    "complexity": {
+      "simple": {
+        "factor": 1.0,
+        "description": "Standard single-site, straightforward soil conditions"
+      },
+      "moderate": {
+        "factor": 1.15,
+        "description": "Multi-layer soil, medium fault currents"
+      },
+      "complex": {
+        "factor": 1.35,
+        "description": "Unusual site conditions, high fault currents, multiple design iterations"
+      },
+      "highly_complex": {
+        "factor": 1.6,
+        "description": "Critical infrastructure, extreme conditions, regulatory scrutiny"
+      }
+    },
+    "timeline": {
+      "rush": {
+        "factor": 1.25,
+        "description": "Delivery in <3 weeks"
+      },
+      "expedited": {
+        "factor": 1.15,
+        "description": "Delivery in 3-6 weeks"
+      },
+      "standard": {
+        "factor": 1.0,
+        "description": "Delivery in 6-12 weeks"
+      }
+    }
+  },
+  "overhead_and_profit": {
+    "overhead_rate": 0.15,
+    "description": "Software licenses, office, utilities, insurance",
+    "profit_margin": 0.20,
+    "description_profit": "Target profit margin on labor"
+  },
+  "contingency": {
+    "low_risk": 0.05,
+    "medium_risk": 0.10,
+    "high_risk": 0.15,
+    "description": "Additional buffer for scope changes and unknowns"
+  },
+  "typical_project_hours": {
+    "small_grounding_study": {
+      "senior_hours": 20,
+      "junior_hours": 15,
+      "total_range": "35-45 hours",
+      "budget_range": "$5,000 - $8,000"
+    },
+    "substation_earthing_design": {
+      "senior_hours": 60,
+      "junior_hours": 80,
+      "total_range": "140-180 hours",
+      "budget_range": "$20,000 - $30,000"
+    },
+    "large_industrial_complex": {
+      "senior_hours": 120,
+      "junior_hours": 160,
+      "total_range": "280-350 hours",
+      "budget_range": "$45,000 - $65,000"
+    },
+    "critical_infrastructure": {
+      "senior_hours": 200,
+      "junior_hours": 200,
+      "total_range": "400-500 hours",
+      "budget_range": "$75,000 - $120,000"
+    }
+  },
+  "payment_terms": {
+    "deposit": 0.30,
+    "milestone_1": 0.30,
+    "milestone_2": 0.25,
+    "final": 0.15,
+    "description": "30% upfront, 30% at preliminary design, 25% at draft report, 15% at final delivery"
+  }
+}

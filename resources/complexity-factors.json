@@ -1,0 +1,167 @@
+{
+  "complexity_assessment": {
+    "description": "Scoring system to determine project complexity multiplier",
+    "scoring": {
+      "simple": {
+        "score_range": "0-20",
+        "multiplier": 1.0,
+        "typical_characteristics": [
+          "Single building or small site",
+          "Uniform soil conditions",
+          "Standard fault current (<10 kA)",
+          "Well-defined scope",
+          "Standard timeline (8+ weeks)"
+        ]
+      },
+      "moderate": {
+        "score_range": "21-40",
+        "multiplier": 1.15,
+        "typical_characteristics": [
+          "Multiple buildings or medium site (1-5 acres)",
+          "Two-layer soil model",
+          "Moderate fault current (10-25 kA)",
+          "Some scope ambiguity",
+          "Moderately tight timeline (6-8 weeks)"
+        ]
+      },
+      "complex": {
+        "score_range": "41-65",
+        "multiplier": 1.35,
+        "typical_characteristics": [
+          "Large site or multiple locations",
+          "Multi-layer soil model or unusual conditions",
+          "High fault current (25-50 kA)",
+          "Regulatory requirements beyond standard",
+          "Tight timeline (3-6 weeks)",
+          "Coordination with multiple stakeholders"
+        ]
+      },
+      "highly_complex": {
+        "score_range": "66-100",
+        "multiplier": 1.6,
+        "typical_characteristics": [
+          "Critical infrastructure (utility substations, data centers)",
+          "Extreme soil conditions (rock, contaminated soil, etc.)",
+          "Very high fault current (>50 kA)",
+          "Safety-critical application",
+          "Rush timeline (<3 weeks)",
+          "Extensive regulatory scrutiny",
+          "Novel or research-level aspects"
+        ]
+      }
+    }
+  },
+  "scoring_factors": {
+    "site_size": {
+      "weight": 10,
+      "levels": {
+        "small": {"points": 2, "description": "<0.5 acres or single building"},
+        "medium": {"points": 5, "description": "0.5-5 acres or 2-5 buildings"},
+        "large": {"points": 8, "description": "5-20 acres or 6-15 buildings"},
+        "very_large": {"points": 10, "description": ">20 acres or 15+ buildings"}
+      }
+    },
+    "soil_conditions": {
+      "weight": 15,
+      "levels": {
+        "uniform": {"points": 2, "description": "Single layer, known resistivity"},
+        "two_layer": {"points": 8, "description": "Two-layer model, moderate variation"},
+        "multi_layer": {"points": 12, "description": "Three+ layers or highly variable"},
+        "extreme": {"points": 15, "description": "Rock, contaminated soil, water table issues"}
+      }
+    },
+    "fault_current": {
+      "weight": 15,
+      "levels": {
+        "low": {"points": 3, "description": "<10 kA"},
+        "moderate": {"points": 7, "description": "10-25 kA"},
+        "high": {"points": 12, "description": "25-50 kA"},
+        "extreme": {"points": 15, "description": ">50 kA"}
+      }
+    },
+    "voltage_level": {
+      "weight": 10,
+      "levels": {
+        "low_voltage": {"points": 2, "description": "<1 kV"},
+        "medium_voltage": {"points": 5, "description": "1-35 kV"},
+        "high_voltage": {"points": 8, "description": "35-230 kV"},
+        "extra_high_voltage": {"points": 10, "description": ">230 kV"}
+      }
+    },
+    "scope_clarity": {
+      "weight": 10,
+      "levels": {
+        "well_defined": {"points": 1, "description": "Complete specs, clear requirements"},
+        "mostly_clear": {"points": 4, "description": "Minor unknowns, reasonable assumptions possible"},
+        "ambiguous": {"points": 7, "description": "Significant unknowns, multiple design iterations expected"},
+        "exploratory": {"points": 10, "description": "Feasibility study, requirements discovery needed"}
+      }
+    },
+    "timeline_pressure": {
+      "weight": 10,
+      "levels": {
+        "relaxed": {"points": 1, "description": ">12 weeks"},
+        "standard": {"points": 3, "description": "6-12 weeks"},
+        "tight": {"points": 7, "description": "3-6 weeks"},
+        "rush": {"points": 10, "description": "<3 weeks"}
+      }
+    },
+    "regulatory_requirements": {
+      "weight": 15,
+      "levels": {
+        "standard": {"points": 3, "description": "IEEE 80 compliance only"},
+        "enhanced": {"points": 7, "description": "IEEE 80 + utility-specific requirements"},
+        "extensive": {"points": 12, "description": "Multiple agencies, public safety scrutiny"},
+        "critical": {"points": 15, "description": "DOD, nuclear, or critical infrastructure standards"}
+      }
+    },
+    "stakeholder_coordination": {
+      "weight": 10,
+      "levels": {
+        "single": {"points": 2, "description": "One client contact, straightforward communication"},
+        "moderate": {"points": 5, "description": "2-3 stakeholders, occasional coordination needed"},
+        "complex": {"points": 8, "description": "Multiple departments, frequent meetings required"},
+        "extensive": {"points": 10, "description": "Many parties, consensus-building, public input"}
+      }
+    },
+    "technical_novelty": {
+      "weight": 5,
+      "levels": {
+        "routine": {"points": 0, "description": "Standard application of known methods"},
+        "some_innovation": {"points": 2, "description": "Adaptation of standard methods to specific case"},
+        "novel_aspects": {"points": 4, "description": "New application or unusual design approach"},
+        "research_level": {"points": 5, "description": "Cutting-edge, literature review required"}
+      }
+    }
+  },
+  "example_assessments": {
+    "metro_power_substation": {
+      "site_size": 5,
+      "soil_conditions": 8,
+      "fault_current": 12,
+      "voltage_level": 8,
+      "scope_clarity": 4,
+      "timeline_pressure": 7,
+      "regulatory_requirements": 12,
+      "stakeholder_coordination": 5,
+      "technical_novelty": 2,
+      "total_score": 63,
+      "complexity_category": "complex",
+      "multiplier": 1.35
+    },
+    "industrial_park_grounding": {
+      "site_size": 8,
+      "soil_conditions": 5,
+      "fault_current": 7,
+      "voltage_level": 5,
+      "scope_clarity": 7,
+      "timeline_pressure": 3,
+      "regulatory_requirements": 3,
+      "stakeholder_coordination": 5,
+      "technical_novelty": 0,
+      "total_score": 43,
+      "complexity_category": "complex",
+      "multiplier": 1.35
+    }
+  }
+}

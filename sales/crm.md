@@ -44,6 +44,24 @@
 
 ---
 
+### LEAD-2025-119: Metro Power Authority (Springfield site)
+- **Status**: 🔥 Hot
+- **Contact**: Jane Doe, Senior Project Engineer
+- **Email**: jane.doe@metropower.example
+- **Project Type**: Substation Earthing Study (138/33 kV)
+- **Location**: Springfield, USA
+- **Estimated Budget**: $25,000 - $60,000 (TBD after budget calc)
+- **Timeline**: 10 weeks estimated
+- **Date Added**: 2025-11-17
+- **Last Contact**: 2025-11-17
+- **Next Action**: Create scope draft (done) → @sales-budget
+- **Priority**: HIGH
+- **Notes**: 
+  - Fault current provided: 25 kA
+  - Soil resistivity not provided; assume standard two-layer until client testing
+  - Owner review required before sending proposal
+
+
 ## Proposals Sent
 
 ### PROP-2025-023: Valley Solar Farm

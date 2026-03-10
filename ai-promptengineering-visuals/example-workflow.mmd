@@ -1,0 +1,16 @@
+graph TD
+    A[Lead Intake] --> B{Budget Approved?}
+    B -->|Yes| C[Create Proposal]
+    B -->|No| D[Follow Up]
+    C --> E[Client Review]
+    E -->|Accepted| F[Project Kickoff]
+    E -->|Rejected| G[Revise Proposal]
+    G --> E
+    F --> H[Technical Analysis]
+    H --> I[GPR Calculations]
+    I --> J[QA Review]
+    J -->|Pass| K[Generate Report]
+    J -->|Fail| I
+    K --> L[PE Stamp]
+    L --> M[Client Delivery]
+    M --> N[Project Closeout]

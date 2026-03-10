@@ -1,0 +1,20 @@
+UPLOAD EQUIPMENT SPECIFICATIONS HERE
+
+Required: EMC specifications, datasheets, and technical documentation for the equipment listed in "2-List-of-Equipment"
+
+Accepted formats:
+- PDF (preferred)
+- Word documents (.docx)
+- Manufacturer specification sheets
+
+What to include:
+- Manufacturer datasheets
+- Technical specifications (with EMC sections)
+- EMC compliance certificates
+- CE marking documentation
+- Test reports (if available)
+
+These documents will be used to complete the EMC check-list in accordance with relevant standards.
+
+File naming suggestion: [Brand]_[Model]_Datasheet.pdf
+Example: Ruggedcom_RS900NC_Datasheet.pdf

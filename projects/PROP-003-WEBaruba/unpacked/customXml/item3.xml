@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  
+  
+  <Tag name="DpPropTitle01"/>
+  
+  
+  <Tag name="DgCustomer01"/>
+  
+  
+  <Tag name="DgCustomerRef01"/>
+  
+  
+  <Tag name="DgDNVDocNo01"/>
+  
+  
+  <Tag name="DgDocDate01"/>
+  
+  
+  <Tag name="DgRevDate01"/>
+  
+  
+  <Tag name="DgCustomerAddress01"/>
+  
+  
+  <Tag name="DgContactPerson01"/>
+  
+  
+  <Tag name="DgDNVLegalEntity01">DNV Netherlands B.V.</Tag>
+  
+  
+  <Tag name="DgDnvOrgUnitLong01">Energy Systems</Tag>
+  
+  
+  <Tag name="DgDnvOfficePost01">Utrechtseweg 310-B50, 6812 AR Arnhem, The Netherlands</Tag>
+  
+  
+  <Tag name="DgDnvTelephone01">+31 6 xxxx xxxx</Tag>
+  
+  
+  <Tag name="DgDnvEnterpriseNo01">09006404</Tag>
+  
+  
+  <Tag name="DgPropValidityMonths01"/>
+  
+  
+  <Tag name="DgAuthorName01"/>
+  
+  
+  <Tag name="DgAuthorTitle01"/>
+  
+  
+  <Tag name="DgApprovedBy01"/>
+  
+  
+  <Tag name="DgApprovedByTitle01"/>
+  
+  
+  <Tag name="CurrencyCode"/>
+  
+  
+  <Tag name="FrameAgreementNumber"/>
+  
+  
+  <Tag name="DgLegalInformation01"/>
+  
+
+  <Tag name="eFormsAipLabel"/>
+</root>

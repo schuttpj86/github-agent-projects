@@ -87,9 +87,12 @@ github-agent/
 │
 ├── scripts/                           # 🐍 Python automation
 │   ├── budget_calculator.py           # Budget calculation engine
+│   ├── budget_engine.py               # 🆕 Modular budget calculator (any project)
 │   ├── gpr_calculator.py              # IEEE 80 calculations
 │   ├── qa_verification.py             # Independent verification
-│   └── resource_scheduler.py          # Task scheduling optimization
+│   ├── resource_scheduler.py          # Task scheduling optimization
+│   ├── quantify_budget.py             # DNV-specific budget quantifier
+│   └── BUDGET-ENGINE-README.md        # 📘 Budget engine documentation
 │
 ├── libraries/                         # 📚 Custom Python libraries
 │   └── ieee80_calculator.py           # Core grounding calculation library
@@ -211,6 +214,16 @@ lead_id: LEAD-2025-117
 4. `@sales-proposal` writes → Creates professional proposal
 5. Owner reviews and sends to client
 
+**New: Modular Budget Engine**
+```bash
+# Generate budgets for any project type
+python scripts/budget_engine.py --interactive --output output/project.xlsx
+
+# Or use JSON config
+python scripts/budget_engine.py --config config/my-project.json -o output/budget.xlsx
+```
+See [scripts/BUDGET-ENGINE-README.md](scripts/BUDGET-ENGINE-README.md) for details.
+
 ### Stage 2: Project Kickoff (Week 1)
 6. Client accepts → Owner dumps email to project folder
 7. `@pm-coordinator` reads → Creates project status file
@@ -247,6 +260,7 @@ pandas==2.1.0          # Data management
 matplotlib==3.8.0      # Visualization
 sympy==1.12            # Symbolic math
 uncertainties==3.1.7   # Error propagation
+openpyxl               # Excel generation (budget engine)
 ```
 
 ### Standards Compliance

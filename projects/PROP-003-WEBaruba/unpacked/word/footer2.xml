@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<w:ftr xmlns:wpc="http://schemas.microsoft.com/office/word/2010/wordprocessingCanvas" xmlns:cx="http://schemas.microsoft.com/office/drawing/2014/chartex" xmlns:cx1="http://schemas.microsoft.com/office/drawing/2015/9/8/chartex" xmlns:cx2="http://schemas.microsoft.com/office/drawing/2015/10/21/chartex" xmlns:cx3="http://schemas.microsoft.com/office/drawing/2016/5/9/chartex" xmlns:cx4="http://schemas.microsoft.com/office/drawing/2016/5/10/chartex" xmlns:cx5="http://schemas.microsoft.com/office/drawing/2016/5/11/chartex" xmlns:cx6="http://schemas.microsoft.com/office/drawing/2016/5/12/chartex" xmlns:cx7="http://schemas.microsoft.com/office/drawing/2016/5/13/chartex" xmlns:cx8="http://schemas.microsoft.com/office/drawing/2016/5/14/chartex" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:aink="http://schemas.microsoft.com/office/drawing/2016/ink" xmlns:am3d="http://schemas.microsoft.com/office/drawing/2017/model3d" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:oel="http://schemas.microsoft.com/office/2019/extlst" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships" xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:wp14="http://schemas.microsoft.com/office/word/2010/wordprocessingDrawing" xmlns:wp="http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing" xmlns:w10="urn:schemas-microsoft-com:office:word" xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main" xmlns:w14="http://schemas.microsoft.com/office/word/2010/wordml" xmlns:w15="http://schemas.microsoft.com/office/word/2012/wordml" xmlns:w16cex="http://schemas.microsoft.com/office/word/2018/wordml/cex" xmlns:w16cid="http://schemas.microsoft.com/office/word/2016/wordml/cid" xmlns:w16="http://schemas.microsoft.com/office/word/2018/wordml" xmlns:w16du="http://schemas.microsoft.com/office/word/2023/wordml/word16du" xmlns:w16sdtdh="http://schemas.microsoft.com/office/word/2020/wordml/sdtdatahash" xmlns:w16sdtfl="http://schemas.microsoft.com/office/word/2024/wordml/sdtformatlock" xmlns:w16se="http://schemas.microsoft.com/office/word/2015/wordml/symex" xmlns:wpg="http://schemas.microsoft.com/office/word/2010/wordprocessingGroup" xmlns:wpi="http://schemas.microsoft.com/office/word/2010/wordprocessingInk" xmlns:wne="http://schemas.microsoft.com/office/word/2006/wordml" xmlns:wps="http://schemas.microsoft.com/office/word/2010/wordprocessingShape" mc:Ignorable="w14 w15 w16se w16cid w16 w16cex w16sdtdh w16sdtfl w16du wp14">
+  <w:tbl>
+    <w:tblPr>
+      <w:tblW w:w="5000" w:type="pct"/>
+      <w:tblLayout w:type="fixed"/>
+      <w:tblCellMar>
+        <w:left w:w="0" w:type="dxa"/>
+        <w:right w:w="0" w:type="dxa"/>
+      </w:tblCellMar>
+      <w:tblLook w:val="04A0" w:firstRow="1" w:lastRow="0" w:firstColumn="1" w:lastColumn="0" w:noHBand="0" w:noVBand="1"/>
+    </w:tblPr>
+    <w:tblGrid>
+      <w:gridCol w:w="6310"/>
+      <w:gridCol w:w="227"/>
+      <w:gridCol w:w="3045"/>
+    </w:tblGrid>
+    <w:tr w:rsidR="00F37FE2" w:rsidRPr="003F3A84" w14:paraId="6B164F27" w14:textId="77777777" w:rsidTr="00814BAA">
+      <w:tc>
+        <w:tcPr>
+          <w:tcW w:w="6311" w:type="dxa"/>
+          <w:tcBorders>
+            <w:top w:val="single" w:sz="2" w:space="0" w:color="009FDA"/>
+          </w:tcBorders>
+          <w:vAlign w:val="bottom"/>
+        </w:tcPr>
+        <w:p w14:paraId="486C127D" w14:textId="77777777" w:rsidR="00F37FE2" w:rsidRPr="003F3A84" w:rsidRDefault="00000000" w:rsidP="00F37FE2">
+          <w:pPr>
+            <w:pStyle w:val="Footer"/>
+          </w:pPr>
+          <w:sdt>
+            <w:sdtPr>
+              <w:tag w:val="DgLegalInformation01"/>
+              <w:id w:val="590974587"/>
+              <w:placeholder>
+                <w:docPart w:val="C1F74C5BA1384819A19E18F2AE1E87AE"/>
+              </w:placeholder>
+              <w:showingPlcHdr/>
+              <w:dataBinding w:xpath="//Tag[@name='DgLegalInformation01']" w:storeItemID="{9B080735-027D-44B9-A4A0-910DD22B4D04}"/>
+              <w:text w:multiLine="1"/>
+            </w:sdtPr>
+            <w:sdtContent>
+              <w:r w:rsidR="00F37FE2" w:rsidRPr="00AB07EF">
+                <w:rPr>
+                  <w:rStyle w:val="PlaceholderText"/>
+                </w:rPr>
+                <w:t>[Legal information]</w:t>
+              </w:r>
+            </w:sdtContent>
+          </w:sdt>
+        </w:p>
+      </w:tc>
+      <w:tc>
+        <w:tcPr>
+          <w:tcW w:w="227" w:type="dxa"/>
+          <w:tcBorders>
+            <w:top w:val="single" w:sz="2" w:space="0" w:color="009FDA"/>
+          </w:tcBorders>
+        </w:tcPr>
+        <w:p w14:paraId="750E1BCD" w14:textId="77777777" w:rsidR="00F37FE2" w:rsidRPr="003F3A84" w:rsidRDefault="00F37FE2" w:rsidP="00814BAA">
+          <w:pPr>
+            <w:pStyle w:val="Footer"/>
+          </w:pPr>
+        </w:p>
+      </w:tc>
+      <w:tc>
+        <w:tcPr>
+          <w:tcW w:w="3045" w:type="dxa"/>
+          <w:tcBorders>
+            <w:top w:val="single" w:sz="2" w:space="0" w:color="009FDA"/>
+          </w:tcBorders>
+          <w:vAlign w:val="bottom"/>
+        </w:tcPr>
+        <w:p w14:paraId="394D71DF" w14:textId="77777777" w:rsidR="00F37FE2" w:rsidRPr="003F3A84" w:rsidRDefault="00F37FE2" w:rsidP="00814BAA">
+          <w:pPr>
+            <w:pStyle w:val="Footer"/>
+            <w:jc w:val="right"/>
+          </w:pPr>
+        </w:p>
+      </w:tc>
+    </w:tr>
+  </w:tbl>
+  <w:p w14:paraId="51E76E86" w14:textId="77777777" w:rsidR="00866BDC" w:rsidRDefault="00866BDC">
+    <w:pPr>
+      <w:pStyle w:val="Footer"/>
+      <w:rPr>
+        <w:sz w:val="2"/>
+      </w:rPr>
+    </w:pPr>
+  </w:p>
+</w:ftr>

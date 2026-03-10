@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Properties xmlns="http://schemas.openxmlformats.org/officeDocument/2006/custom-properties" xmlns:vt="http://schemas.openxmlformats.org/officeDocument/2006/docPropsVTypes">
+  <property fmtid="{D5CDD505-2E9C-101B-9397-08002B2CF9AE}" pid="2" name="TB build">
+    <vt:lpwstr>20210215 083633</vt:lpwstr>
+  </property>
+  <property fmtid="{D5CDD505-2E9C-101B-9397-08002B2CF9AE}" pid="3" name="TB name">
+    <vt:lpwstr>PRP 002</vt:lpwstr>
+  </property>
+  <property fmtid="{D5CDD505-2E9C-101B-9397-08002B2CF9AE}" pid="4" name="TB id">
+    <vt:lpwstr>8745</vt:lpwstr>
+  </property>
+  <property fmtid="{D5CDD505-2E9C-101B-9397-08002B2CF9AE}" pid="5" name="TB filename">
+    <vt:lpwstr>PRP002.dotx</vt:lpwstr>
+  </property>
+  <property fmtid="{D5CDD505-2E9C-101B-9397-08002B2CF9AE}" pid="6" name="ContentTypeId">
+    <vt:lpwstr>0x010100F66DBBF6EB28DA4FACCB66C623C49DBF</vt:lpwstr>
+  </property>
+  <property fmtid="{D5CDD505-2E9C-101B-9397-08002B2CF9AE}" pid="7" name="MSIP_Label_22fbb032-08bf-4f1e-af46-2528cd3f96ca_Enabled">
+    <vt:lpwstr>true</vt:lpwstr>
+  </property>
+  <property fmtid="{D5CDD505-2E9C-101B-9397-08002B2CF9AE}" pid="8" name="MSIP_Label_22fbb032-08bf-4f1e-af46-2528cd3f96ca_SetDate">
+    <vt:lpwstr>2021-04-13T07:31:04Z</vt:lpwstr>
+  </property>
+  <property fmtid="{D5CDD505-2E9C-101B-9397-08002B2CF9AE}" pid="9" name="MSIP_Label_22fbb032-08bf-4f1e-af46-2528cd3f96ca_Method">
+    <vt:lpwstr>Privileged</vt:lpwstr>
+  </property>
+  <property fmtid="{D5CDD505-2E9C-101B-9397-08002B2CF9AE}" pid="10" name="MSIP_Label_22fbb032-08bf-4f1e-af46-2528cd3f96ca_Name">
+    <vt:lpwstr>22fbb032-08bf-4f1e-af46-2528cd3f96ca</vt:lpwstr>
+  </property>
+  <property fmtid="{D5CDD505-2E9C-101B-9397-08002B2CF9AE}" pid="11" name="MSIP_Label_22fbb032-08bf-4f1e-af46-2528cd3f96ca_SiteId">
+    <vt:lpwstr>adf10e2b-b6e9-41d6-be2f-c12bb566019c</vt:lpwstr>
+  </property>
+  <property fmtid="{D5CDD505-2E9C-101B-9397-08002B2CF9AE}" pid="12" name="MSIP_Label_22fbb032-08bf-4f1e-af46-2528cd3f96ca_ActionId">
+    <vt:lpwstr>f2194232-854a-4cdd-a1ca-e00034a6e754</vt:lpwstr>
+  </property>
+  <property fmtid="{D5CDD505-2E9C-101B-9397-08002B2CF9AE}" pid="13" name="MSIP_Label_22fbb032-08bf-4f1e-af46-2528cd3f96ca_ContentBits">
+    <vt:lpwstr>0</vt:lpwstr>
+  </property>
+  <property fmtid="{D5CDD505-2E9C-101B-9397-08002B2CF9AE}" pid="14" name="docLang">
+    <vt:lpwstr>en</vt:lpwstr>
+  </property>
+</Properties>

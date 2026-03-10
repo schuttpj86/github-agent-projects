@@ -1,0 +1,17 @@
+UPLOAD BUILDING DRAWINGS HERE
+
+Required: Floor plans, elevations, and equipment layout drawings for Branch Houses (Takhuisjes 4 and 5)
+
+Accepted formats:
+- CAD files (.dwg, .dxf)
+- PDF drawings
+- Image files (.png, .jpg) if necessary
+
+What to include:
+- Room layouts with dimensions (for both Takhuisjes)
+- Equipment placement locations
+- Control equipment locations
+- Protection relay locations
+- Elevation views
+
+Only include drawings related to Project DP2-4 modifications.

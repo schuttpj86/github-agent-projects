@@ -1,0 +1,17 @@
+UPLOAD BUILDING DRAWINGS HERE
+
+Required: Floor plans, elevations, and equipment layout drawings for Transformer Cells
+
+Accepted formats:
+- CAD files (.dwg, .dxf)
+- PDF drawings
+- Image files (.png, .jpg) if necessary
+
+What to include:
+- Cell layouts with dimensions
+- Equipment placement locations
+- Transformer positioning
+- Clearance drawings
+- Elevation views
+
+Only include drawings related to Project DP2-4 modifications.

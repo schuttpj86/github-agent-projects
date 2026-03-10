@@ -1,0 +1,15 @@
+UPLOAD EQUIPMENT LIST HERE
+
+Required: List of NEW equipment being introduced in the Central Services Building (CDG) under Project DP2-4
+
+Preferred format: Excel (.xlsx) or CSV
+
+Required columns:
+- Equipment Name (e.g., "Industrial Switch", "UPS System")
+- Brand/Manufacturer (e.g., "Ruggedcom", "Siemens")
+- Model Number (e.g., "RS900NC")
+- Location/Room (e.g., "CDG Room 101")
+- Quantity
+
+Only include NEW equipment introduced under DP2-4.
+Do NOT include existing equipment unless being replaced/modified.

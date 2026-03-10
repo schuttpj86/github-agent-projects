@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<w:settings xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships" xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w10="urn:schemas-microsoft-com:office:word" xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main" xmlns:w14="http://schemas.microsoft.com/office/word/2010/wordml" xmlns:w15="http://schemas.microsoft.com/office/word/2012/wordml" xmlns:w16cex="http://schemas.microsoft.com/office/word/2018/wordml/cex" xmlns:w16cid="http://schemas.microsoft.com/office/word/2016/wordml/cid" xmlns:w16="http://schemas.microsoft.com/office/word/2018/wordml" xmlns:w16du="http://schemas.microsoft.com/office/word/2023/wordml/word16du" xmlns:w16sdtdh="http://schemas.microsoft.com/office/word/2020/wordml/sdtdatahash" xmlns:w16sdtfl="http://schemas.microsoft.com/office/word/2024/wordml/sdtformatlock" xmlns:w16se="http://schemas.microsoft.com/office/word/2015/wordml/symex" xmlns:sl="http://schemas.openxmlformats.org/schemaLibrary/2006/main" mc:Ignorable="w14 w15 w16se w16cid w16 w16cex w16sdtdh w16sdtfl w16du">
+  <w:zoom w:percent="100"/>
+  <w:proofState w:spelling="clean" w:grammar="clean"/>
+  <w:stylePaneFormatFilter w:val="1024" w:allStyles="0" w:customStyles="0" w:latentStyles="1" w:stylesInUse="0" w:headingStyles="1" w:numberingStyles="0" w:tableStyles="0" w:directFormattingOnRuns="0" w:directFormattingOnParagraphs="0" w:directFormattingOnNumbering="0" w:directFormattingOnTables="0" w:clearFormatting="1" w:top3HeadingStyles="0" w:visibleStyles="0" w:alternateStyleNames="0"/>
+  <w:stylePaneSortMethod w:val="0000"/>
+  <w:defaultTabStop w:val="720"/>
+  <w:hyphenationZone w:val="425"/>
+  <w:characterSpacingControl w:val="doNotCompress"/>
+  <w:hdrShapeDefaults>
+    <o:shapedefaults v:ext="edit" spidmax="2050"/>
+  </w:hdrShapeDefaults>
+  <w:footnotePr>
+    <w:footnote w:id="-1"/>
+    <w:footnote w:id="0"/>
+    <w:footnote w:id="1"/>
+  </w:footnotePr>
+  <w:endnotePr>
+    <w:endnote w:id="-1"/>
+    <w:endnote w:id="0"/>
+    <w:endnote w:id="1"/>
+  </w:endnotePr>
+  <w:compat>
+    <w:applyBreakingRules/>
+    <w:useFELayout/>
+    <w:compatSetting w:name="compatibilityMode" w:uri="http://schemas.microsoft.com/office/word" w:val="15"/>
+    <w:compatSetting w:name="overrideTableStyleFontSizeAndJustification" w:uri="http://schemas.microsoft.com/office/word" w:val="1"/>
+    <w:compatSetting w:name="enableOpenTypeFeatures" w:uri="http://schemas.microsoft.com/office/word" w:val="1"/>
+    <w:compatSetting w:name="doNotFlipMirrorIndents" w:uri="http://schemas.microsoft.com/office/word" w:val="1"/>
+    <w:compatSetting w:name="differentiateMultirowTableHeaders" w:uri="http://schemas.microsoft.com/office/word" w:val="1"/>
+    <w:compatSetting w:name="useWord2013TrackBottomHyphenation" w:uri="http://schemas.microsoft.com/office/word" w:val="0"/>
+  </w:compat>
+  <w:docVars>
+    <w:docVar w:name="__Grammarly_42____i" w:val="H4sIAAAAAAAEAKtWckksSQxILCpxzi/NK1GyMqwFAAEhoTITAAAA"/>
+    <w:docVar w:name="__Grammarly_42___1" w:val="H4sIAAAAAAAEAKtWcslP9kxRslIyNDY0NTI0MDO0NDQxNjMyNzNQ0lEKTi0uzszPAykwqgUAOuO7FSwAAAA="/>
+    <w:docVar w:name="DFS_FileId" w:val="PRP002.dotx"/>
+    <w:docVar w:name="DFS_FormId" w:val="1764"/>
+    <w:docVar w:name="DFS_FormNo" w:val="PRP 002"/>
+    <w:docVar w:name="DFS_FormversionNo" w:val="39"/>
+    <w:docVar w:name="DFS_Issue" w:val="2021-03"/>
+    <w:docVar w:name="DNVeFormDoc_guid" w:val="9db573774c224aa28d181d496690fbeb"/>
+    <w:docVar w:name="eForms Core NewDocument" w:val="2021-02-24T10:41:30Z"/>
+    <w:docVar w:name="eForms_xdoc_doc_config" w:val="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;DNVeFormsCore version=&quot;1.0&quot;&gt;&lt;doc_config client_app=&quot;&quot;&gt;&lt;setting name=&quot;form_config&quot;&gt;&lt;form form_id=&quot;1764&quot; formversion_no=&quot;38&quot; code=&quot;PRP 002&quot; name=&quot;Proposal&quot; issue=&quot;2020-10&quot; formgroup_id=&quot;0&quot; distribution_bits=&quot;15&quot; FU=&quot;1&quot; SS=&quot;1&quot; SL=&quot;1&quot; ST=&quot;1&quot; filename=&quot;PRP002.dotx&quot; type=&quot;Word&quot; datafolder=&quot;PRP 002&quot; form_id_field=&quot;&quot; formflow_filename=&quot;&quot; standalone=&quot;y&quot;&gt;_x000d__x000a_  &lt;menuitems&gt;_x000d__x000a_    &lt;menuitem caption=&quot;Print Preview&quot;&gt;_x000d__x000a_      &lt;click method=&quot;PrintPreview&quot; /&gt;_x000d__x000a_    &lt;/menuitem&gt;_x000d__x000a_    &lt;menuitem caption=&quot;Update all Fields (incl. TOC)&quot;&gt;_x000d__x000a_      &lt;click method=&quot;UpdateAllFields&quot; /&gt;_x000d__x000a_    &lt;/menuitem&gt;_x000d__x000a_    &lt;menuitem caption=&quot;Add Reference to list&quot;&gt;_x000d__x000a_      &lt;click method=&quot;InsertRefInRefTable&quot; /&gt;_x000d__x000a_    &lt;/menuitem&gt;_x000d__x000a_    &lt;menuitem caption=&quot;Appendices...&quot;&gt;_x000d__x000a_      &lt;click method=&quot;EditAppendices&quot; /&gt;_x000d__x000a_    &lt;/menuitem&gt;_x000d__x000a_    &lt;menuitem caption=&quot;Equation with numbering&quot; onaction=&quot;mUI.UI_InsertEquationWithNum&quot; param=&quot;&quot; /&gt;_x000d__x000a_    &lt;menuitem caption=&quot;Insert table&quot;&gt;_x000d__x000a_      &lt;click method=&quot;InsertTable&quot; /&gt;_x000d__x000a_    &lt;/menuitem&gt;_x000d__x000a_    &lt;menuitem caption=&quot;Insert table caption&quot;&gt;_x000d__x000a_      &lt;click method=&quot;InsertTableCaption&quot; /&gt;_x000d__x000a_    &lt;/menuitem&gt;_x000d__x000a_    &lt;menuitem caption=&quot;Insert figure caption&quot;&gt;_x000d__x000a_      &lt;click method=&quot;InsertFigureCaption&quot; /&gt;_x000d__x000a_    &lt;/menuitem&gt;_x000d__x000a_  &lt;/menuitems&gt;_x000d__x000a_&lt;/form&gt;&lt;/setting&gt;&lt;/doc_config&gt;&lt;/DNVeFormsCore&gt;"/>
+    <w:docVar w:name="eFormsDataStoreItemId" w:val="{9B080735-027D-44B9-A4A0-910DD22B4D04}"/>
+    <w:docVar w:name="eFormsFormConfig" w:val="&lt;form form_id=&quot;1764&quot; formversion_no=&quot;38&quot; code=&quot;PRP 002&quot; name=&quot;Proposal&quot; issue=&quot;2020-10&quot; formgroup_id=&quot;0&quot; distribution_bits=&quot;15&quot; FU=&quot;1&quot; SS=&quot;1&quot; SL=&quot;1&quot; ST=&quot;1&quot; filename=&quot;PRP002.dotx&quot; type=&quot;Word&quot; datafolder=&quot;PRP 002&quot; form_id_field=&quot;&quot; formflow_filename=&quot;&quot; standalone=&quot;y&quot;&gt;_x000d__x000a_  &lt;menuitems&gt;_x000d__x000a_    &lt;menuitem caption=&quot;Print Preview&quot;&gt;_x000d__x000a_      &lt;click method=&quot;PrintPreview&quot; /&gt;_x000d__x000a_    &lt;/menuitem&gt;_x000d__x000a_    &lt;menuitem caption=&quot;Update all Fields (incl. TOC)&quot;&gt;_x000d__x000a_      &lt;click method=&quot;UpdateAllFields&quot; /&gt;_x000d__x000a_    &lt;/menuitem&gt;_x000d__x000a_    &lt;menuitem caption=&quot;Add Reference to list&quot;&gt;_x000d__x000a_      &lt;click method=&quot;InsertRefInRefTable&quot; /&gt;_x000d__x000a_    &lt;/menuitem&gt;_x000d__x000a_    &lt;menuitem caption=&quot;Appendices...&quot;&gt;_x000d__x000a_      &lt;click method=&quot;EditAppendices&quot; /&gt;_x000d__x000a_    &lt;/menuitem&gt;_x000d__x000a_    &lt;menuitem caption=&quot;Equation with numbering&quot; onaction=&quot;mUI.UI_InsertEquationWithNum&quot; param=&quot;&quot; /&gt;_x000d__x000a_    &lt;menuitem caption=&quot;Insert table&quot;&gt;_x000d__x000a_      &lt;click method=&quot;InsertTable&quot; /&gt;_x000d__x000a_    &lt;/menuitem&gt;_x000d__x000a_    &lt;menuitem caption=&quot;Insert table caption&quot;&gt;_x000d__x000a_      &lt;click method=&quot;InsertTableCaption&quot; /&gt;_x000d__x000a_    &lt;/menuitem&gt;_x000d__x000a_    &lt;menuitem caption=&quot;Insert figure caption&quot;&gt;_x000d__x000a_      &lt;click method=&quot;InsertFigureCaption&quot; /&gt;_x000d__x000a_    &lt;/menuitem&gt;_x000d__x000a_  &lt;/menuitems&gt;_x000d__x000a_&lt;/form&gt;"/>
+    <w:docVar w:name="TB build" w:val="20210215 083633"/>
+    <w:docVar w:name="TB build utc" w:val="2021-02-15T07:36:45"/>
+    <w:docVar w:name="TB filename" w:val="PRP002.dotx"/>
+    <w:docVar w:name="TB id" w:val="8745"/>
+    <w:docVar w:name="TB name" w:val="PRP 002"/>
+    <w:docVar w:name="TMPeF_datafolder" w:val="PRP 002"/>
+    <w:docVar w:name="XCD450QKD" w:val="5b7f3b3256194c5bad24f60c2ccf65cf"/>
+  </w:docVars>
+  <w:rsids>
+    <w:rsidRoot w:val="00610ED0"/>
+    <w:rsid w:val="00006E4C"/>
+    <w:rsid w:val="00016B25"/>
+    <w:rsid w:val="00032C73"/>
+    <w:rsid w:val="00034CE0"/>
+    <w:rsid w:val="00041857"/>
+    <w:rsid w:val="00090037"/>
+    <w:rsid w:val="00091162"/>
+    <w:rsid w:val="000951E5"/>
+    <w:rsid w:val="00095249"/>
+    <w:rsid w:val="0009597B"/>
+    <w:rsid w:val="00095A1E"/>
+    <w:rsid w:val="000A2CC8"/>
+    <w:rsid w:val="000B0C60"/>
+    <w:rsid w:val="000D3806"/>
+    <w:rsid w:val="000D6878"/>
+    <w:rsid w:val="00124879"/>
+    <w:rsid w:val="00126795"/>
+    <w:rsid w:val="00127695"/>
+    <w:rsid w:val="00130D5D"/>
+    <w:rsid w:val="00160139"/>
+    <w:rsid w:val="001649AF"/>
+    <w:rsid w:val="0019085E"/>
+    <w:rsid w:val="00192691"/>
+    <w:rsid w:val="001A1A3B"/>
+    <w:rsid w:val="001A7995"/>
+    <w:rsid w:val="001B1586"/>
+    <w:rsid w:val="001B17A7"/>
+    <w:rsid w:val="001C5172"/>
+    <w:rsid w:val="00221210"/>
+    <w:rsid w:val="00224D37"/>
+    <w:rsid w:val="00232FE4"/>
+    <w:rsid w:val="00241AFF"/>
+    <w:rsid w:val="00267DA1"/>
+    <w:rsid w:val="00293C0A"/>
+    <w:rsid w:val="002A20DF"/>
+    <w:rsid w:val="002D322F"/>
+    <w:rsid w:val="002E26C3"/>
+    <w:rsid w:val="002E5953"/>
+    <w:rsid w:val="003039CF"/>
+    <w:rsid w:val="003266A7"/>
+    <w:rsid w:val="00361289"/>
+    <w:rsid w:val="00363A0E"/>
+    <w:rsid w:val="0037336B"/>
+    <w:rsid w:val="00382240"/>
+    <w:rsid w:val="00392933"/>
+    <w:rsid w:val="003A6556"/>
+    <w:rsid w:val="003B0808"/>
+    <w:rsid w:val="003D4E3C"/>
+    <w:rsid w:val="003E576F"/>
+    <w:rsid w:val="003E5E27"/>
+    <w:rsid w:val="003F537F"/>
+    <w:rsid w:val="0042477D"/>
+    <w:rsid w:val="0042744D"/>
+    <w:rsid w:val="004302F4"/>
+    <w:rsid w:val="00450DCA"/>
+    <w:rsid w:val="00452A2F"/>
+    <w:rsid w:val="00460761"/>
+    <w:rsid w:val="00482DDD"/>
+    <w:rsid w:val="0048457D"/>
+    <w:rsid w:val="00497914"/>
+    <w:rsid w:val="004A26B1"/>
+    <w:rsid w:val="004A4075"/>
+    <w:rsid w:val="004A449B"/>
+    <w:rsid w:val="004B085F"/>
+    <w:rsid w:val="004B0B62"/>
+    <w:rsid w:val="004C4BD2"/>
+    <w:rsid w:val="004C51DA"/>
+    <w:rsid w:val="004C583B"/>
+    <w:rsid w:val="004D0779"/>
+    <w:rsid w:val="004D616E"/>
+    <w:rsid w:val="005222EA"/>
+    <w:rsid w:val="00531BFA"/>
+    <w:rsid w:val="00540A26"/>
+    <w:rsid w:val="0058729D"/>
+    <w:rsid w:val="005950B4"/>
+    <w:rsid w:val="005A4CE4"/>
+    <w:rsid w:val="005B2798"/>
+    <w:rsid w:val="005B394A"/>
+    <w:rsid w:val="005C337D"/>
+    <w:rsid w:val="005C4162"/>
+    <w:rsid w:val="005E7806"/>
+    <w:rsid w:val="005F5D0F"/>
+    <w:rsid w:val="00610ED0"/>
+    <w:rsid w:val="006250E1"/>
+    <w:rsid w:val="00640984"/>
+    <w:rsid w:val="00645D74"/>
+    <w:rsid w:val="00647105"/>
+    <w:rsid w:val="006643F0"/>
+    <w:rsid w:val="00671FC0"/>
+    <w:rsid w:val="00677E13"/>
+    <w:rsid w:val="00686459"/>
+    <w:rsid w:val="00690D3F"/>
+    <w:rsid w:val="00695DD2"/>
+    <w:rsid w:val="006B2773"/>
+    <w:rsid w:val="006B6761"/>
+    <w:rsid w:val="006C2CAB"/>
+    <w:rsid w:val="006D298E"/>
+    <w:rsid w:val="006F0BEE"/>
+    <w:rsid w:val="006F37AC"/>
+    <w:rsid w:val="006F37FC"/>
+    <w:rsid w:val="007004AA"/>
+    <w:rsid w:val="007014DE"/>
+    <w:rsid w:val="00710191"/>
+    <w:rsid w:val="00735EC2"/>
+    <w:rsid w:val="00754532"/>
+    <w:rsid w:val="007611A1"/>
+    <w:rsid w:val="007632FC"/>
+    <w:rsid w:val="00782302"/>
+    <w:rsid w:val="007824B5"/>
+    <w:rsid w:val="007A694F"/>
+    <w:rsid w:val="00802221"/>
+    <w:rsid w:val="00814BAA"/>
+    <w:rsid w:val="008449C6"/>
+    <w:rsid w:val="00850F1C"/>
+    <w:rsid w:val="008575B3"/>
+    <w:rsid w:val="00866BDC"/>
+    <w:rsid w:val="00870E13"/>
+    <w:rsid w:val="008A2200"/>
+    <w:rsid w:val="008C08EC"/>
+    <w:rsid w:val="008C24CB"/>
+    <w:rsid w:val="008E020F"/>
+    <w:rsid w:val="008E0DAA"/>
+    <w:rsid w:val="00914782"/>
+    <w:rsid w:val="00917B3B"/>
+    <w:rsid w:val="00927240"/>
+    <w:rsid w:val="009446BE"/>
+    <w:rsid w:val="00952E0E"/>
+    <w:rsid w:val="00986693"/>
+    <w:rsid w:val="009A07BF"/>
+    <w:rsid w:val="009B3258"/>
+    <w:rsid w:val="009B3529"/>
+    <w:rsid w:val="009B54E9"/>
+    <w:rsid w:val="009F6D9A"/>
+    <w:rsid w:val="00A013B6"/>
+    <w:rsid w:val="00A100B8"/>
+    <w:rsid w:val="00A2701C"/>
+    <w:rsid w:val="00A36365"/>
+    <w:rsid w:val="00A372C7"/>
+    <w:rsid w:val="00A628C9"/>
+    <w:rsid w:val="00A676AE"/>
+    <w:rsid w:val="00A850C2"/>
+    <w:rsid w:val="00A965EB"/>
+    <w:rsid w:val="00AA31BF"/>
+    <w:rsid w:val="00AA3436"/>
+    <w:rsid w:val="00AC18CE"/>
+    <w:rsid w:val="00AC457E"/>
+    <w:rsid w:val="00AC62D5"/>
+    <w:rsid w:val="00AE3C75"/>
+    <w:rsid w:val="00AF4864"/>
+    <w:rsid w:val="00AF729E"/>
+    <w:rsid w:val="00B1098B"/>
+    <w:rsid w:val="00B3511E"/>
+    <w:rsid w:val="00B62CB9"/>
+    <w:rsid w:val="00B7321B"/>
+    <w:rsid w:val="00B75301"/>
+    <w:rsid w:val="00BB250B"/>
+    <w:rsid w:val="00BC7F80"/>
+    <w:rsid w:val="00BF2E65"/>
+    <w:rsid w:val="00BF2F89"/>
+    <w:rsid w:val="00C04400"/>
+    <w:rsid w:val="00C251A2"/>
+    <w:rsid w:val="00C31C2A"/>
+    <w:rsid w:val="00C33ADE"/>
+    <w:rsid w:val="00C7615F"/>
+    <w:rsid w:val="00C77E31"/>
+    <w:rsid w:val="00C85460"/>
+    <w:rsid w:val="00CA0FD6"/>
+    <w:rsid w:val="00CA2B60"/>
+    <w:rsid w:val="00CB00C3"/>
+    <w:rsid w:val="00CD6D2A"/>
+    <w:rsid w:val="00CE57B1"/>
+    <w:rsid w:val="00CF4484"/>
+    <w:rsid w:val="00D00097"/>
+    <w:rsid w:val="00D00F78"/>
+    <w:rsid w:val="00D01841"/>
+    <w:rsid w:val="00D027A5"/>
+    <w:rsid w:val="00D34817"/>
+    <w:rsid w:val="00D42B20"/>
+    <w:rsid w:val="00D617C0"/>
+    <w:rsid w:val="00D70AEC"/>
+    <w:rsid w:val="00D70BA4"/>
+    <w:rsid w:val="00D830FC"/>
+    <w:rsid w:val="00D83E7F"/>
+    <w:rsid w:val="00D97D62"/>
+    <w:rsid w:val="00DA238A"/>
+    <w:rsid w:val="00DA3616"/>
+    <w:rsid w:val="00DB50C5"/>
+    <w:rsid w:val="00DD1D83"/>
+    <w:rsid w:val="00DD2E4E"/>
+    <w:rsid w:val="00E112C5"/>
+    <w:rsid w:val="00E43312"/>
+    <w:rsid w:val="00EA3B42"/>
+    <w:rsid w:val="00EB410E"/>
+    <w:rsid w:val="00EB53C4"/>
+    <w:rsid w:val="00EB5B94"/>
+    <w:rsid w:val="00EB70CF"/>
+    <w:rsid w:val="00ED7874"/>
+    <w:rsid w:val="00F1463F"/>
+    <w:rsid w:val="00F37FE2"/>
+    <w:rsid w:val="00F46979"/>
+    <w:rsid w:val="00F5109B"/>
+    <w:rsid w:val="00F566DA"/>
+    <w:rsid w:val="00F75AA1"/>
+    <w:rsid w:val="00F767A3"/>
+    <w:rsid w:val="00F90A33"/>
+    <w:rsid w:val="00FC1BE2"/>
+    <w:rsid w:val="00FC77F7"/>
+  </w:rsids>
+  <m:mathPr>
+    <m:mathFont m:val="Cambria Math"/>
+    <m:brkBin m:val="before"/>
+    <m:brkBinSub m:val="--"/>
+    <m:smallFrac m:val="0"/>
+    <m:dispDef/>
+    <m:lMargin m:val="0"/>
+    <m:rMargin m:val="0"/>
+    <m:defJc m:val="centerGroup"/>
+    <m:wrapIndent m:val="1440"/>
+    <m:intLim m:val="subSup"/>
+    <m:naryLim m:val="undOvr"/>
+  </m:mathPr>
+  <w:themeFontLang w:val="en-US" w:eastAsia="zh-CN" w:bidi="ar-SA"/>
+  <w:clrSchemeMapping w:bg1="light1" w:t1="dark1" w:bg2="light2" w:t2="dark2" w:accent1="accent1" w:accent2="accent2" w:accent3="accent3" w:accent4="accent4" w:accent5="accent5" w:accent6="accent6" w:hyperlink="hyperlink" w:followedHyperlink="followedHyperlink"/>
+  <w:doNotIncludeSubdocsInStats/>
+  <w:shapeDefaults>
+    <o:shapedefaults v:ext="edit" spidmax="2050"/>
+    <o:shapelayout v:ext="edit">
+      <o:idmap v:ext="edit" data="2"/>
+    </o:shapelayout>
+  </w:shapeDefaults>
+  <w:decimalSymbol w:val=","/>
+  <w:listSeparator w:val=";"/>
+  <w14:docId w14:val="28C92D1D"/>
+  <w15:docId w15:val="{8A5CE561-1574-41FB-87AB-117FAB5CA8F9}"/>
+</w:settings>

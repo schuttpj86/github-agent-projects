@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ds:datastoreItem xmlns:ds="http://schemas.openxmlformats.org/officeDocument/2006/customXml" ds:itemID="{7FAF4096-51D1-465A-821D-78A95B0C6F46}">
+  <ds:schemaRefs>
+    <ds:schemaRef ds:uri="http://schemas.microsoft.com/office/2006/metadata/properties"/>
+    <ds:schemaRef ds:uri="http://schemas.microsoft.com/office/infopath/2007/PartnerControls"/>
+    <ds:schemaRef ds:uri="a42a9483-72bf-471e-98a1-306c9f709294"/>
+  </ds:schemaRefs>
+</ds:datastoreItem>

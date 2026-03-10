@@ -1,0 +1,356 @@
+{
+  "brand": {
+    "name": "DNV",
+    "hero_colors": ["white", "dark_blue"],
+    "logo_colors": ["sky_blue", "land_green", "sea_blue", "dark_blue"]
+  },
+  "primary_palette": {
+    "sky_blue": {
+      "name": "Sky Blue",
+      "pantone": "291 C/U",
+      "cmyk": {
+        "c": 40,
+        "m": 0,
+        "y": 0,
+        "k": 0
+      },
+      "rgb": {
+        "r": 153,
+        "g": 217,
+        "b": 240
+      },
+      "hex": "#99d9f0",
+      "usage": "Block or background color (e.g., fact boxes) where text and tables need good legibility",
+      "materials": {
+        "3m_opaque": "100-453",
+        "3m_translucent": "3630-317",
+        "ncs_index": "S 0530-R90B"
+      }
+    },
+    "land_green": {
+      "name": "Land Green",
+      "pantone": "362 C/U",
+      "cmyk": {
+        "c": 65,
+        "m": 0,
+        "y": 95,
+        "k": 0
+      },
+      "rgb": {
+        "r": 63,
+        "g": 156,
+        "b": 53
+      },
+      "hex": "#3f9c35",
+      "usage": "Use sparingly, mainly for information graphics",
+      "materials": {
+        "3m_opaque": "100-2420",
+        "3m_translucent": "3630-106 (applied double)",
+        "ncs_index": "S 1075-G20Y"
+      }
+    },
+    "sea_blue": {
+      "name": "Sea Blue",
+      "pantone": "661 C/U",
+      "cmyk": {
+        "c": 100,
+        "m": 70,
+        "y": 0,
+        "k": 0
+      },
+      "rgb": {
+        "r": 0,
+        "g": 53,
+        "b": 145
+      },
+      "hex": "#003591",
+      "usage": "Subheading typography",
+      "materials": {
+        "3m_opaque": "100-2417",
+        "3m_translucent": "3630-157",
+        "ncs_index": "S 3560-R80B"
+      }
+    },
+    "dark_blue": {
+      "name": "Dark Blue",
+      "pantone": "2768 C/U",
+      "cmyk": {
+        "c": 100,
+        "m": 90,
+        "y": 0,
+        "k": 60
+      },
+      "rgb": {
+        "r": 15,
+        "g": 32,
+        "b": 75
+      },
+      "hex": "#0f204b",
+      "usage": "Titles and heading typography; adds contrast to break up white space; can fill whole pages for variation",
+      "materials": {
+        "3m_opaque": "100-2416",
+        "3m_translucent": "3630-87",
+        "ncs_index": "S 7020-R80B"
+      }
+    },
+    "cyan": {
+      "name": "Cyan",
+      "pantone": "Process cyan C/U",
+      "cmyk": {
+        "c": 100,
+        "m": 0,
+        "y": 0,
+        "k": 0
+      },
+      "rgb": {
+        "r": 0,
+        "g": 159,
+        "b": 218
+      },
+      "hex": "#009fda",
+      "usage": "Use sparingly, mainly for information graphics; NOT for backgrounds (insufficient contrast)",
+      "materials": {
+        "3m_opaque": "100-123",
+        "ncs_index": "S 1565-B"
+      }
+    },
+    "white": {
+      "name": "White",
+      "cmyk": {
+        "c": 0,
+        "m": 0,
+        "y": 0,
+        "k": 0
+      },
+      "rgb": {
+        "r": 255,
+        "g": 255,
+        "b": 255
+      },
+      "hex": "#ffffff",
+      "usage": "Background colour to create sense of space; use generously as frame for other colours"
+    },
+    "black": {
+      "name": "Black",
+      "cmyk": {
+        "c": 0,
+        "m": 0,
+        "y": 0,
+        "k": 100
+      },
+      "rgb": {
+        "r": 0,
+        "g": 0,
+        "b": 0
+      },
+      "hex": "#000000",
+      "usage": "Body copy text"
+    }
+  },
+  "secondary_palette": {
+    "digi_green": {
+      "name": "Digi Green",
+      "cmyk": {
+        "c": 21,
+        "m": 0,
+        "y": 22,
+        "k": 0
+      },
+      "rgb": {
+        "r": 145,
+        "g": 255,
+        "b": 180
+      },
+      "hex": "#91ffb4"
+    },
+    "eucalyptus": {
+      "name": "Eucalyptus",
+      "cmyk": {
+        "c": 70,
+        "m": 0,
+        "y": 35,
+        "k": 0
+      },
+      "rgb": {
+        "r": 21,
+        "g": 194,
+        "b": 187
+      },
+      "hex": "#15c2bb"
+    },
+    "lavender": {
+      "name": "Lavender",
+      "cmyk": {
+        "c": 35,
+        "m": 35,
+        "y": 0,
+        "k": 0
+      },
+      "rgb": {
+        "r": 161,
+        "g": 170,
+        "b": 230
+      },
+      "hex": "#a1aae6"
+    },
+    "pine_forest": {
+      "name": "Pine Forest",
+      "cmyk": {
+        "c": 85,
+        "m": 50,
+        "y": 40,
+        "k": 16
+      },
+      "rgb": {
+        "r": 43,
+        "g": 97,
+        "b": 115
+      },
+      "hex": "#2b6173"
+    },
+    "energy_red": {
+      "name": "Energy Red",
+      "cmyk": {
+        "c": 0,
+        "m": 95,
+        "y": 85,
+        "k": 0
+      },
+      "rgb": {
+        "r": 235,
+        "g": 42,
+        "b": 52
+      },
+      "hex": "#eb2a34"
+    },
+    "sunset": {
+      "name": "Sunset",
+      "cmyk": {
+        "c": 0,
+        "m": 63,
+        "y": 128,
+        "k": 102
+      },
+      "rgb": {
+        "r": 255,
+        "g": 128,
+        "b": 102
+      },
+      "hex": "#ff8066"
+    },
+    "sunrise": {
+      "name": "Sunrise",
+      "cmyk": {
+        "c": 0,
+        "m": 30,
+        "y": 71,
+        "k": 0
+      },
+      "rgb": {
+        "r": 255,
+        "g": 181,
+        "b": 92
+      },
+      "hex": "#ffb55c"
+    },
+    "sunflower": {
+      "name": "Sunflower",
+      "cmyk": {
+        "c": 0,
+        "m": 0,
+        "y": 65,
+        "k": 3
+      },
+      "rgb": {
+        "r": 255,
+        "g": 243,
+        "b": 119
+      },
+      "hex": "#fff377"
+    },
+    "earth": {
+      "name": "Earth",
+      "cmyk": {
+        "c": 5,
+        "m": 10,
+        "y": 15,
+        "k": 0
+      },
+      "rgb": {
+        "r": 242,
+        "g": 230,
+        "b": 213
+      },
+      "hex": "#f2e6d5"
+    },
+    "sandstone": {
+      "name": "Sandstone",
+      "cmyk": {
+        "c": 20,
+        "m": 15,
+        "y": 15,
+        "k": 0
+      },
+      "rgb": {
+        "r": 204,
+        "g": 203,
+        "b": 201
+      },
+      "hex": "#cccbc9"
+    },
+    "warm_grey": {
+      "name": "Warm Grey",
+      "cmyk": {
+        "c": 42,
+        "m": 39,
+        "y": 44,
+        "k": 5
+      },
+      "rgb": {
+        "r": 152,
+        "g": 143,
+        "b": 134
+      },
+      "hex": "#988f86"
+    },
+    "terracotta": {
+      "name": "Terracotta",
+      "cmyk": {
+        "c": 25,
+        "m": 65,
+        "y": 100,
+        "k": 10
+      },
+      "rgb": {
+        "r": 181,
+        "g": 103,
+        "b": 0
+      },
+      "hex": "#b56700"
+    }
+  },
+  "usage_guidelines": {
+    "document_design": {
+      "background": "white",
+      "titles_headings": "dark_blue",
+      "subheadings": "sea_blue",
+      "body_text": "black",
+      "fact_boxes_background": "sky_blue"
+    },
+    "information_graphics": {
+      "order": [
+        "Use primary colors first",
+        "Follow with solid secondary colors",
+        "Finally use tints of secondary colors",
+        "Ensure sufficient contrast between adjacent colors"
+      ]
+    },
+    "principles": [
+      "Be generous with white space",
+      "White and Dark Blue are hero colors",
+      "Use Sky Blue (not Cyan) for backgrounds requiring text legibility",
+      "Use Land Green and Cyan sparingly in information graphics only",
+      "Dark Blue can fill whole pages for variation in multi-page documents"
+    ]
+  }
+}

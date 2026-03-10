@@ -1,0 +1,887 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Excalidraw PNG & Mermaid Converter</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #0f204b 0%, #003591 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        header {
+            background: white;
+            border-radius: 12px;
+            padding: 30px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #0f204b;
+            margin-bottom: 10px;
+            font-size: 32px;
+        }
+
+        .subtitle {
+            color: #666;
+            font-size: 14px;
+        }
+
+        .tabs {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        .tab {
+            padding: 12px 24px;
+            background: white;
+            border: none;
+            border-radius: 8px 8px 0 0;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            color: #666;
+            transition: all 0.3s;
+        }
+
+        .tab.active {
+            background: white;
+            color: #0f204b;
+            box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .tab:hover:not(.active) {
+            background: rgba(255, 255, 255, 0.9);
+        }
+
+        .panel {
+            background: white;
+            border-radius: 12px;
+            padding: 40px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            display: none;
+        }
+
+        .panel.active {
+            display: block;
+        }
+
+        .drop-zone {
+            border: 3px dashed #ccc;
+            border-radius: 12px;
+            padding: 60px 40px;
+            text-align: center;
+            margin-bottom: 30px;
+            transition: all 0.3s;
+            cursor: pointer;
+        }
+
+        .drop-zone:hover,
+        .drop-zone.dragover {
+            border-color: #667eea;
+            background: #f8f9ff;
+        }
+
+        .drop-zone.active {
+            border-color: #10b981;
+            background: #ecfdf5;
+        }
+
+        .drop-icon {
+            font-size: 48px;
+            margin-bottom: 15px;
+        }
+
+        .drop-text {
+            font-size: 18px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .drop-subtext {
+            font-size: 14px;
+            color: #666;
+        }
+
+        .preview-container {
+            margin: 30px 0;
+            padding: 20px;
+            background: #f9fafb;
+            border-radius: 8px;
+            display: none;
+        }
+
+        .preview-container.active {
+            display: block;
+        }
+
+        #canvas {
+            max-width: 100%;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background: white;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .options {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin: 20px 0;
+        }
+
+        .option-group {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .option-group label {
+            font-size: 14px;
+            font-weight: 600;
+            color: #333;
+        }
+
+        select, input[type="number"], input[type="color"] {
+            padding: 10px;
+            border: 2px solid #e0e0e0;
+            border-radius: 6px;
+            font-size: 14px;
+            transition: border-color 0.3s;
+        }
+
+        select:focus, input:focus {
+            outline: none;
+            border-color: #667eea;
+        }
+
+        .buttons {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        button {
+            padding: 12px 24px;
+            border: none;
+            border-radius: 6px;
+            font-size: 14px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .btn-primary {
+            background: #667eea;
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background: #5568d3;
+            transform: translateY(-1px);
+            box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+        }
+
+        .btn-success {
+            background: #10b981;
+            color: white;
+        }
+
+        .btn-success:hover {
+            background: #059669;
+        }
+
+        .btn-secondary {
+            background: #f0f0f0;
+            color: #333;
+        }
+
+        .btn-secondary:hover {
+            background: #e0e0e0;
+        }
+
+        .status {
+            margin-top: 20px;
+            padding: 15px;
+            border-radius: 6px;
+            display: none;
+        }
+
+        .status.success {
+            background: #d1fae5;
+            color: #065f46;
+            border: 1px solid #10b981;
+            display: block;
+        }
+
+        .status.error {
+            background: #fee2e2;
+            color: #991b1b;
+            border: 1px solid #ef4444;
+            display: block;
+        }
+
+        .status.info {
+            background: #dbeafe;
+            color: #1e40af;
+            border: 1px solid #3b82f6;
+            display: block;
+        }
+
+        .mermaid-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            margin-bottom: 20px;
+        }
+
+        textarea {
+            width: 100%;
+            min-height: 400px;
+            padding: 15px;
+            border: 2px solid #e0e0e0;
+            border-radius: 8px;
+            font-family: 'Courier New', monospace;
+            font-size: 14px;
+            resize: vertical;
+        }
+
+        textarea:focus {
+            outline: none;
+            border-color: #667eea;
+        }
+
+        .examples {
+            margin-top: 20px;
+            padding: 15px;
+            background: #f9fafb;
+            border-radius: 6px;
+        }
+
+        .examples h3 {
+            color: #444;
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+
+        .examples button {
+            margin: 5px 5px 5px 0;
+            padding: 6px 12px;
+            font-size: 12px;
+        }
+
+        @media (max-width: 768px) {
+            .mermaid-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .options {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🎨 Excalidraw PNG Export & Mermaid Converter</h1>
+            <p class="subtitle">Export Excalidraw diagrams to PNG or convert Mermaid to Excalidraw</p>
+            <div id="libraryStatus" style="margin-top: 10px; padding: 10px; background: #dbeafe; color: #1e40af; border-radius: 6px; display: none;">
+                ⏳ Loading Excalidraw libraries...
+            </div>
+        </header>
+
+        <div class="tabs">
+            <button class="tab active" onclick="switchTab('png-export')">📸 PNG Export</button>
+            <button class="tab" onclick="switchTab('mermaid')">🔄 Mermaid Converter</button>
+        </div>
+
+        <!-- PNG Export Panel -->
+        <div id="png-export-panel" class="panel active">
+            <div class="drop-zone" id="dropZone">
+                <div class="drop-icon">📁</div>
+                <div class="drop-text">Drop .excalidraw file here</div>
+                <div class="drop-subtext">or click to browse</div>
+                <input type="file" id="fileInput" accept=".excalidraw" style="display: none;">
+            </div>
+
+            <div class="options">
+                <div class="option-group">
+                    <label for="scale">Scale</label>
+                    <select id="scale">
+                        <option value="1">1x (Original)</option>
+                        <option value="2" selected>2x (High Quality)</option>
+                        <option value="3">3x (Print)</option>
+                        <option value="4">4x (Extra High)</option>
+                    </select>
+                </div>
+
+                <div class="option-group">
+                    <label for="bgColor">Background Color</label>
+                    <input type="color" id="bgColor" value="#ffffff">
+                </div>
+
+                <div class="option-group">
+                    <label for="format">Format</label>
+                    <select id="format">
+                        <option value="png">PNG</option>
+                        <option value="svg">SVG</option>
+                    </select>
+                </div>
+
+                <div class="option-group">
+                    <label for="padding">Padding (px)</label>
+                    <input type="number" id="padding" value="20" min="0" max="100">
+                </div>
+            </div>
+
+            <div class="preview-container" id="previewContainer">
+                <h3 style="margin-bottom: 15px; color: #333;">Preview</h3>
+                <canvas id="canvas"></canvas>
+            </div>
+
+            <div class="buttons">
+                <button class="btn-primary" onclick="exportPNG()" id="exportBtn" disabled>
+                    💾 Download PNG
+                </button>
+                <button class="btn-secondary" onclick="clearExport()">
+                    🗑️ Clear
+                </button>
+            </div>
+
+            <div id="statusPNG" class="status"></div>
+        </div>
+
+        <!-- Mermaid Converter Panel -->
+        <div id="mermaid-panel" class="panel">
+            <div class="mermaid-grid">
+                <div>
+                    <h2 style="margin-bottom: 10px; color: #333; font-size: 18px;">📝 Mermaid Input</h2>
+                    <textarea id="mermaidInput" placeholder="graph TD&#10;    A[Start] --> B{Decision}&#10;    B -->|Yes| C[End]&#10;    B -->|No| D[Loop]&#10;    D --> A"></textarea>
+                </div>
+
+                <div>
+                    <h2 style="margin-bottom: 10px; color: #333; font-size: 18px;">🎨 Excalidraw Output (JSON)</h2>
+                    <textarea id="excalidrawOutput" readonly placeholder="Excalidraw JSON will appear here..."></textarea>
+                </div>
+            </div>
+
+            <div class="buttons">
+                <button class="btn-primary" onclick="convertMermaid()">
+                    ✨ Convert to Excalidraw
+                </button>
+                <button class="btn-success" onclick="downloadExcalidraw()">
+                    💾 Download .excalidraw
+                </button>
+                <button class="btn-success" onclick="convertAndExport()">
+                    🖼️ Convert & Export PNG
+                </button>
+                <button class="btn-secondary" onclick="copyJSON()">
+                    📋 Copy JSON
+                </button>
+                <button class="btn-secondary" onclick="clearMermaid()">
+                    🗑️ Clear
+                </button>
+            </div>
+
+            <div id="statusMermaid" class="status"></div>
+
+            <div class="examples">
+                <h3>📚 Quick Examples:</h3>
+                <button class="btn-secondary" onclick="loadMermaidExample('flowchart')">Flowchart</button>
+                <button class="btn-secondary" onclick="loadMermaidExample('sequence')">Sequence</button>
+                <button class="btn-secondary" onclick="loadMermaidExample('class')">Class</button>
+                <button class="btn-secondary" onclick="loadMermaidExample('gantt')">Gantt</button>
+                <button class="btn-secondary" onclick="loadMermaidExample('pie')">Pie Chart</button>
+            </div>
+        </div>
+    </div>
+
+    <script type="module">
+        // Import Excalidraw utilities - trying multiple CDN sources for reliability
+        let exportToCanvas, exportToSvg, parseMermaidToExcalidraw;
+        
+        try {
+            // Try importing from unpkg with specific version
+            const excalidrawModule = await import('https://unpkg.com/@excalidraw/excalidraw@0.17.6?module');
+            exportToCanvas = excalidrawModule.exportToCanvas;
+            exportToSvg = excalidrawModule.exportToSvg;
+            
+            const mermaidModule = await import('https://unpkg.com/@excalidraw/mermaid-to-excalidraw@1.0.3/dist/index.js');
+            parseMermaidToExcalidraw = mermaidModule.parseMermaidToExcalidraw;
+            
+            // Make functions globally available
+            window.exportToCanvas = exportToCanvas;
+            window.exportToSvg = exportToSvg;
+            window.parseMermaidToExcalidraw = parseMermaidToExcalidraw;
+            
+            // Signal that libraries are loaded
+            window.excalidrawLibrariesLoaded = true;
+            window.dispatchEvent(new Event('excalidrawReady'));
+            
+            console.log('✅ Excalidraw libraries loaded successfully');
+        } catch (error) {
+            console.error('❌ Failed to load libraries:', error);
+            console.log('Trying alternative CDN...');
+            
+            // Fallback: Try jsdelivr CDN
+            try {
+                const excalidrawModule = await import('https://cdn.jsdelivr.net/npm/@excalidraw/excalidraw@0.17.6/+esm');
+                exportToCanvas = excalidrawModule.exportToCanvas;
+                exportToSvg = excalidrawModule.exportToSvg;
+                
+                const mermaidModule = await import('https://cdn.jsdelivr.net/npm/@excalidraw/mermaid-to-excalidraw@1/+esm');
+                parseMermaidToExcalidraw = mermaidModule.parseMermaidToExcalidraw;
+                
+                window.exportToCanvas = exportToCanvas;
+                window.exportToSvg = exportToSvg;
+                window.parseMermaidToExcalidraw = parseMermaidToExcalidraw;
+                
+                window.excalidrawLibrariesLoaded = true;
+                window.dispatchEvent(new Event('excalidrawReady'));
+                
+                console.log('✅ Excalidraw libraries loaded from fallback CDN');
+            } catch (fallbackError) {
+                console.error('❌ Failed to load from fallback CDN:', fallbackError);
+                window.dispatchEvent(new Event('excalidrawLoadFailed'));
+            }
+        }
+    </script>
+    
+    <script>
+        // Wait for libraries to load
+        let librariesReady = false;
+        
+        // Show loading indicator
+        document.addEventListener('DOMContentLoaded', () => {
+            document.getElementById('libraryStatus').style.display = 'block';
+        });
+        
+        window.addEventListener('excalidrawReady', () => {
+            librariesReady = true;
+            console.log('✅ Excalidraw ready event fired');
+            
+            // Hide loading indicator and show success
+            const statusEl = document.getElementById('libraryStatus');
+            statusEl.textContent = '✅ Libraries loaded successfully!';
+            statusEl.style.background = '#d1fae5';
+            statusEl.style.color = '#065f46';
+            
+            // Hide after 3 seconds
+            setTimeout(() => {
+                statusEl.style.display = 'none';
+            }, 3000);
+            
+            // Initialize on load
+            loadMermaidExample('flowchart');
+        });
+        
+        window.addEventListener('excalidrawLoadFailed', () => {
+            const statusEl = document.getElementById('libraryStatus');
+            statusEl.textContent = '❌ Failed to load libraries from CDN. Please check your internet connection and refresh the page.';
+            statusEl.style.background = '#fee2e2';
+            statusEl.style.color = '#991b1b';
+        });
+        
+        // Fallback: Check if libraries are already loaded
+        setTimeout(() => {
+            if (window.excalidrawLibrariesLoaded && !librariesReady) {
+                librariesReady = true;
+                
+                const statusEl = document.getElementById('libraryStatus');
+                statusEl.textContent = '✅ Libraries loaded successfully!';
+                statusEl.style.background = '#d1fae5';
+                statusEl.style.color = '#065f46';
+                setTimeout(() => {
+                    statusEl.style.display = 'none';
+                }, 3000);
+                
+                loadMermaidExample('flowchart');
+            } else if (!window.excalidrawLibrariesLoaded) {
+                const statusEl = document.getElementById('libraryStatus');
+                statusEl.textContent = '⚠️ Libraries taking longer than expected to load. Try refreshing the page or check browser console for errors.';
+                statusEl.style.background = '#fef3c7';
+                statusEl.style.color = '#92400e';
+            }
+        }, 5000);
+    </script>
+
+    <script>
+        let currentExcalidrawData = null;
+
+        // Tab switching
+        function switchTab(tabName) {
+            document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+            document.querySelectorAll('.panel').forEach(p => p.classList.remove('active'));
+            
+            event.target.classList.add('active');
+            document.getElementById(tabName + '-panel').classList.add('active');
+        }
+
+        // PNG Export functionality
+        const dropZone = document.getElementById('dropZone');
+        const fileInput = document.getElementById('fileInput');
+
+        dropZone.addEventListener('click', () => fileInput.click());
+        dropZone.addEventListener('dragover', (e) => {
+            e.preventDefault();
+            dropZone.classList.add('dragover');
+        });
+        dropZone.addEventListener('dragleave', () => {
+            dropZone.classList.remove('dragover');
+        });
+        dropZone.addEventListener('drop', (e) => {
+            e.preventDefault();
+            dropZone.classList.remove('dragover');
+            handleFile(e.dataTransfer.files[0]);
+        });
+        fileInput.addEventListener('change', (e) => {
+            handleFile(e.target.files[0]);
+        });
+
+        async function handleFile(file) {
+            if (!file || !file.name.endsWith('.excalidraw')) {
+                showStatus('statusPNG', 'Please select a valid .excalidraw file.', 'error');
+                return;
+            }
+
+            if (!window.exportToCanvas) {
+                showStatus('statusPNG', '⏳ Loading libraries... Please wait a moment and try again.', 'info');
+                return;
+            }
+
+            try {
+                const text = await file.text();
+                currentExcalidrawData = JSON.parse(text);
+                
+                dropZone.classList.add('active');
+                document.getElementById('exportBtn').disabled = false;
+                document.getElementById('previewContainer').classList.add('active');
+                
+                await renderPreview();
+                showStatus('statusPNG', `✅ Loaded: ${file.name} (${currentExcalidrawData.elements.length} elements)`, 'success');
+            } catch (error) {
+                showStatus('statusPNG', `❌ Error loading file: ${error.message}`, 'error');
+                console.error('File loading error:', error);
+            }
+        }
+
+        async function renderPreview() {
+            if (!window.exportToCanvas) {
+                showStatus('statusPNG', '⏳ Libraries still loading... Please wait.', 'info');
+                return;
+            }
+
+            const canvas = document.getElementById('canvas');
+            const scale = parseFloat(document.getElementById('scale').value);
+            const bgColor = document.getElementById('bgColor').value;
+
+            try {
+                const canvasElement = await window.exportToCanvas({
+                    elements: currentExcalidrawData.elements,
+                    files: currentExcalidrawData.files || {},
+                    appState: {
+                        viewBackgroundColor: bgColor,
+                        exportScale: scale,
+                        exportPadding: parseInt(document.getElementById('padding').value),
+                    },
+                });
+
+                const ctx = canvas.getContext('2d');
+                canvas.width = canvasElement.width;
+                canvas.height = canvasElement.height;
+                ctx.drawImage(canvasElement, 0, 0);
+            } catch (error) {
+                showStatus('statusPNG', `❌ Preview error: ${error.message}`, 'error');
+                console.error('Preview error:', error);
+            }
+        }
+
+        async function exportPNG() {
+            if (!currentExcalidrawData) {
+                showStatus('statusPNG', 'Please load a file first.', 'error');
+                return;
+            }
+
+            if (!window.exportToCanvas || !window.exportToSvg) {
+                showStatus('statusPNG', '⏳ Libraries still loading... Please wait and try again.', 'info');
+                return;
+            }
+
+            const format = document.getElementById('format').value;
+            const scale = parseFloat(document.getElementById('scale').value);
+            const bgColor = document.getElementById('bgColor').value;
+            const padding = parseInt(document.getElementById('padding').value);
+
+            try {
+                if (format === 'png') {
+                    const canvasElement = await window.exportToCanvas({
+                        elements: currentExcalidrawData.elements,
+                        files: currentExcalidrawData.files || {},
+                        appState: {
+                            viewBackgroundColor: bgColor,
+                            exportScale: scale,
+                            exportPadding: padding,
+                        },
+                    });
+    console.error('Export error details:', error);
+                console.error('Error stack:', error.stack);
+            
+                    canvasElement.toBlob((blob) => {
+                        const url = URL.createObjectURL(blob);
+                        const a = document.createElement('a');
+                        a.href = url;
+                        a.download = 'diagram.png';
+                        a.click();
+                        URL.revokeObjectURL(url);
+                        showStatus('statusPNG', '✅ PNG downloaded successfully!', 'success');
+                    });
+                } else {
+                    const svg = await window.exportToSvg({
+                        elements: currentExcalidrawData.elements,
+                        files: currentExcalidrawData.files || {},
+                        appState: {
+                            viewBackgroundColor: bgColor,
+                            exportPadding: padding,
+                        },
+                    });
+
+                    const svgString = new XMLSerializer().serializeToString(svg);
+                    const blob = new Blob([svgString], { type: 'image/svg+xml' });
+                    const url = URL.createObjectURL(blob);
+                    const a = document.createElement('a');
+                    a.href = url;
+                    a.download = 'diagram.svg';
+                    a.click();
+                    URL.revokeObjectURL(url);
+                    showStatus('statusPNG', '✅ SVG downloaded successfully!', 'success');
+                }
+            } catch (error) {
+                showStatus('statusPNG', `❌ Export error: ${error.message}`, 'error');
+            }
+        }
+
+        function clearExport() {
+            currentExcalidrawData = null;
+            fileInput.value = '';
+            dropZone.classList.remove('active');
+            document.getElementById('exportBtn').disabled = true;
+            document.getElementById('previewContainer').classList.remove('active');
+            document.getElementById('statusPNG').style.display = 'none';
+        }
+
+        // Update preview when options change
+        document.getElementById('scale').addEventListener('change', renderPreview);
+        document.getElementById('bgColor').addEventListener('change', renderPreview);
+        document.getElementById('padding').addEventListener('change', renderPreview);
+
+        // Mermaid converter functionality
+        const mermaidExamples = {
+            flowchart: `graph TD
+    A[Lead Intake] --> B{Budget Approved?}
+    B -->|Yes| C[Create Proposal]
+    B -->|No| D[Follow Up]
+    C --> E[Client Review]
+    E -->|Accepted| F[Project Kickoff]
+    E -->|Rejected| G[Revise Proposal]
+    G --> E`,
+            
+            sequence: `sequenceDiagram
+    participant Client
+    participant Sales
+    participant Engineer
+    
+    Client->>Sales: Request Quote
+    Sales->>Engineer: Calculate Budget
+    Engineer-->>Sales: Budget Estimate
+    Sales->>Client: Send Proposal`,
+            
+            class: `classDiagram
+    class Project {
+        +String id
+        +String client
+        +calculateBudget()
+        +generateReport()
+    }
+    class Engineer {
+        +String name
+        +assignTask()
+    }
+    Project "1" --> "*" Engineer`,
+            
+            gantt: `gantt
+    title Project Timeline
+    section Planning
+    Lead Intake: 2024-01-01, 7d
+    Budget Calc: 2024-01-08, 3d
+    section Execution
+    Field Work: 2024-01-11, 14d
+    Analysis: 2024-01-25, 10d`,
+            
+            pie: `pie title "Budget Distribution"
+    "Engineering" : 42.5
+    "Field Work" : 25.0
+    "QA Review" : 10.5
+    "Reporting" : 15.0
+    "Admin" : 7.0`
+        };
+
+        function loadMermaidExample(type) {
+            document.getElementById('mermaidInput').value = mermaidExamples[type];
+            showStatus('statusMermaid', 'Example loaded! Click "Convert" to see the result.', 'info');
+        }
+
+        async function convertMermaid() {
+            const mermaidText = document.getElementById('mermaidInput').value.trim();
+            
+            if (!mermaidText) {
+                showStatus('statusMermaid', 'Please enter Mermaid diagram text.', 'error');
+                return;
+            }
+
+            if (!window.parseMermaidToExcalidraw) {
+                showStatus('statusMermaid', '⏳ Libraries still loading... Please wait and try again.', 'info');
+                return;
+            }
+
+            try {
+                const { elements, files } = await window.parseMermaidToExcalidraw(mermaidText, {
+                    fontSize: 16,
+                });
+
+                const excalidrawData = {
+                    type: 'excalidraw',
+                    version: 2,
+                    source: 'https://excalidraw.com',
+                    elements: elements,
+                    appState: {
+                        viewBackgroundColor: '#ffffff',
+                        gridSize: 20,
+                    },
+                    files: files || {},
+                };
+
+                currentExcalidrawData = excalidrawData;
+                document.getElementById('excalidrawOutput').value = JSON.stringify(excalidrawData, null, 2);
+                showStatus('statusMermaid', `✅ Converted! Generated ${elements.length} elements.`, 'success');
+                console.error('Mermaid conversion error:', error);
+                console.error('Error stack:', error.stack);
+                console.error('Mermaid input was:', mermaidText);
+            } catch (error) {
+                showStatus('statusMermaid', `❌ Error: ${error.message}`, 'error');
+            }
+        }
+
+        function downloadExcalidraw() {
+            const output = document.getElementById('excalidrawOutput').value;
+            if (!output) {
+                showStatus('statusMermaid', 'Please convert a diagram first.', 'error');
+                return;
+            }
+
+            const blob = new Blob([output], { type: 'application/json' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = 'diagram.excalidraw';
+            a.click();
+            URL.revokeObjectURL(url);
+            showStatus('statusMermaid', '📥 Downloaded diagram.excalidraw', 'success');
+        }
+
+        async function convertAndExport() {
+            if (!window.parseMermaidToExcalidraw || !window.exportToCanvas) {
+                showStatus('statusMermaid', '⏳ Libraries still loading... Please wait and try again.', 'info');
+                return;
+            }
+
+            await convertMermaid();
+            
+            if (currentExcalidrawData) {
+                // Wait a bit for the conversion to complete
+                setTimeout(async () => {
+                    try {
+                        const canvasElement = await window.exportToCanvas({
+                            elements: currentExcalidrawData.elements,
+                            files: currentExcalidrawData.files || {},
+                            appState: {
+                                viewBackgroundColor: '#ffffff',
+                                exportScale: 2,
+                                exportPadding: 20,
+                            },
+                        });
+
+                        canvasElement.toBlob((blob) => {
+                            const url = URL.createObjectURL(blob);
+                            const a = document.createElement('a');
+                            a.href = url;
+                            a.download = 'diagram.png';
+                            a.click();
+                            URL.revokeObjectURL(url);
+                            showStatus('statusMermaid', '✅ Converted and exported to PNG!', 'success');
+                        });
+                    } catch (error) {
+                        showStatus('statusMermaid', `❌ Export error: ${error.message}`, 'error');
+                        console.error('Export error:', error);
+                    }
+                }, 500);
+            }
+        }
+
+        function copyJSON() {
+            const output = document.getElementById('excalidrawOutput').value;
+            if (!output) {
+                showStatus('statusMermaid', 'Nothing to copy.', 'error');
+                return;
+            }
+
+            navigator.clipboard.writeText(output).then(() => {
+                showStatus('statusMermaid', '📋 Copied to clipboard!', 'success');
+            });
+        }
+
+        function clearMermaid() {
+            document.getElementById('mermaidInput').value = '';
+            document.getElementById('excalidrawOutput').value = '';
+            document.getElementById('statusMermaid').style.display = 'none';
+        }
+
+        function showStatus(elementId, message, type) {
+            const statusEl = document.getElementById(elementId);
+            statusEl.textContent = message;
+            statusEl.className = `status ${type}`;
+        }
+
+        // Make functions global
+        window.switchTab = switchTab;
+        window.exportPNG = exportPNG;
+        window.clearExport = clearExport;
+        window.loadMermaidExample = loadMermaidExample;
+        window.convertMermaid = convertMermaid;
+        window.downloadExcalidraw = downloadExcalidraw;
+        window.convertAndExport = convertAndExport;
+        window.copyJSON = copyJSON;
+        window.clearMermaid = clearMermaid;
+    </script>
+</body>
+</html>

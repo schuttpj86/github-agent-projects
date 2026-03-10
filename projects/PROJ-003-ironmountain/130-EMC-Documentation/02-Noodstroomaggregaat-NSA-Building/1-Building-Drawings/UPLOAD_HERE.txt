@@ -1,0 +1,17 @@
+UPLOAD BUILDING DRAWINGS HERE
+
+Required: Floor plans, elevations, and equipment layout drawings for the Noodstroomaggregaat (NSA) Building
+
+Accepted formats:
+- CAD files (.dwg, .dxf)
+- PDF drawings
+- Image files (.png, .jpg) if necessary
+
+What to include:
+- Generator room layout with dimensions
+- Equipment placement locations
+- Control panel locations
+- Equipment enclosure locations
+- Elevation views
+
+Only include drawings related to Project DP2-4 modifications.

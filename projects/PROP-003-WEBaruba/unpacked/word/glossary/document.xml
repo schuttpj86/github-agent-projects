@@ -1,0 +1,1613 @@
+<?xml version="1.0" encoding="utf-8"?>
+<w:glossaryDocument xmlns:wpc="http://schemas.microsoft.com/office/word/2010/wordprocessingCanvas" xmlns:cx="http://schemas.microsoft.com/office/drawing/2014/chartex" xmlns:cx1="http://schemas.microsoft.com/office/drawing/2015/9/8/chartex" xmlns:cx2="http://schemas.microsoft.com/office/drawing/2015/10/21/chartex" xmlns:cx3="http://schemas.microsoft.com/office/drawing/2016/5/9/chartex" xmlns:cx4="http://schemas.microsoft.com/office/drawing/2016/5/10/chartex" xmlns:cx5="http://schemas.microsoft.com/office/drawing/2016/5/11/chartex" xmlns:cx6="http://schemas.microsoft.com/office/drawing/2016/5/12/chartex" xmlns:cx7="http://schemas.microsoft.com/office/drawing/2016/5/13/chartex" xmlns:cx8="http://schemas.microsoft.com/office/drawing/2016/5/14/chartex" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:aink="http://schemas.microsoft.com/office/drawing/2016/ink" xmlns:am3d="http://schemas.microsoft.com/office/drawing/2017/model3d" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:oel="http://schemas.microsoft.com/office/2019/extlst" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships" xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:wp14="http://schemas.microsoft.com/office/word/2010/wordprocessingDrawing" xmlns:wp="http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing" xmlns:w10="urn:schemas-microsoft-com:office:word" xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main" xmlns:w14="http://schemas.microsoft.com/office/word/2010/wordml" xmlns:w15="http://schemas.microsoft.com/office/word/2012/wordml" xmlns:w16cex="http://schemas.microsoft.com/office/word/2018/wordml/cex" xmlns:w16cid="http://schemas.microsoft.com/office/word/2016/wordml/cid" xmlns:w16="http://schemas.microsoft.com/office/word/2018/wordml" xmlns:w16du="http://schemas.microsoft.com/office/word/2023/wordml/word16du" xmlns:w16sdtdh="http://schemas.microsoft.com/office/word/2020/wordml/sdtdatahash" xmlns:w16sdtfl="http://schemas.microsoft.com/office/word/2024/wordml/sdtformatlock" xmlns:w16se="http://schemas.microsoft.com/office/word/2015/wordml/symex" xmlns:wpg="http://schemas.microsoft.com/office/word/2010/wordprocessingGroup" xmlns:wpi="http://schemas.microsoft.com/office/word/2010/wordprocessingInk" xmlns:wne="http://schemas.microsoft.com/office/word/2006/wordml" xmlns:wps="http://schemas.microsoft.com/office/word/2010/wordprocessingShape" mc:Ignorable="w14 w15 w16se w16cid w16 w16cex w16sdtdh w16sdtfl w16du wp14">
+  <w:docParts>
+    <w:docPart>
+      <w:docPartPr>
+        <w:name w:val="22821658342B43CAB51A3EC8BFB5E945"/>
+        <w:category>
+          <w:name w:val="General"/>
+          <w:gallery w:val="placeholder"/>
+        </w:category>
+        <w:types>
+          <w:type w:val="bbPlcHdr"/>
+        </w:types>
+        <w:behaviors>
+          <w:behavior w:val="content"/>
+        </w:behaviors>
+        <w:guid w:val="{1D6F7745-E7B7-4781-9F7E-C94890724D47}"/>
+      </w:docPartPr>
+      <w:docPartBody>
+        <w:p w:rsidR="00AE2ABF" w:rsidRDefault="00AE2ABF">
+          <w:pPr>
+            <w:pStyle w:val="22821658342B43CAB51A3EC8BFB5E945"/>
+          </w:pPr>
+          <w:r w:rsidRPr="00744B7F">
+            <w:rPr>
+              <w:rStyle w:val="PlaceholderText"/>
+            </w:rPr>
+            <w:t>Click or tap here to enter text.</w:t>
+          </w:r>
+        </w:p>
+      </w:docPartBody>
+    </w:docPart>
+    <w:docPart>
+      <w:docPartPr>
+        <w:name w:val="C362823881DF4A5DA4E8F99227EB6603"/>
+        <w:category>
+          <w:name w:val="General"/>
+          <w:gallery w:val="placeholder"/>
+        </w:category>
+        <w:types>
+          <w:type w:val="bbPlcHdr"/>
+        </w:types>
+        <w:behaviors>
+          <w:behavior w:val="content"/>
+        </w:behaviors>
+        <w:guid w:val="{5DFC54E1-29CD-4824-B1B7-3D00AD58B304}"/>
+      </w:docPartPr>
+      <w:docPartBody>
+        <w:p w:rsidR="00AE2ABF" w:rsidRDefault="00AE2ABF">
+          <w:pPr>
+            <w:pStyle w:val="C362823881DF4A5DA4E8F99227EB6603"/>
+          </w:pPr>
+          <w:r w:rsidRPr="00F37FE2">
+            <w:rPr>
+              <w:rStyle w:val="PlaceholderText"/>
+            </w:rPr>
+            <w:t>[Proposal title]</w:t>
+          </w:r>
+        </w:p>
+      </w:docPartBody>
+    </w:docPart>
+    <w:docPart>
+      <w:docPartPr>
+        <w:name w:val="6DB14821FC2A446CBC0E4520B11292B8"/>
+        <w:category>
+          <w:name w:val="General"/>
+          <w:gallery w:val="placeholder"/>
+        </w:category>
+        <w:types>
+          <w:type w:val="bbPlcHdr"/>
+        </w:types>
+        <w:behaviors>
+          <w:behavior w:val="content"/>
+        </w:behaviors>
+        <w:guid w:val="{0D051B7F-46EF-49B9-9196-87BF63AE9284}"/>
+      </w:docPartPr>
+      <w:docPartBody>
+        <w:p w:rsidR="00AE2ABF" w:rsidRDefault="00AE2ABF">
+          <w:pPr>
+            <w:pStyle w:val="6DB14821FC2A446CBC0E4520B11292B8"/>
+          </w:pPr>
+          <w:r w:rsidRPr="00F37FE2">
+            <w:rPr>
+              <w:rStyle w:val="PlaceholderText"/>
+            </w:rPr>
+            <w:t>[Customer name]</w:t>
+          </w:r>
+        </w:p>
+      </w:docPartBody>
+    </w:docPart>
+    <w:docPart>
+      <w:docPartPr>
+        <w:name w:val="6C7FBE46BE8D4727A6DCD9FC6363581D"/>
+        <w:category>
+          <w:name w:val="General"/>
+          <w:gallery w:val="placeholder"/>
+        </w:category>
+        <w:types>
+          <w:type w:val="bbPlcHdr"/>
+        </w:types>
+        <w:behaviors>
+          <w:behavior w:val="content"/>
+        </w:behaviors>
+        <w:guid w:val="{2E967238-5619-4F9C-98F2-AD4CDA3A91DB}"/>
+      </w:docPartPr>
+      <w:docPartBody>
+        <w:p w:rsidR="00AE2ABF" w:rsidRDefault="00AE2ABF">
+          <w:pPr>
+            <w:pStyle w:val="6C7FBE46BE8D4727A6DCD9FC6363581D"/>
+          </w:pPr>
+          <w:r w:rsidRPr="00F37FE2">
+            <w:rPr>
+              <w:rStyle w:val="PlaceholderText"/>
+            </w:rPr>
+            <w:t>[Customer reference]</w:t>
+          </w:r>
+        </w:p>
+      </w:docPartBody>
+    </w:docPart>
+    <w:docPart>
+      <w:docPartPr>
+        <w:name w:val="1160656768DE49BD9E945C3B8A47EC84"/>
+        <w:category>
+          <w:name w:val="General"/>
+          <w:gallery w:val="placeholder"/>
+        </w:category>
+        <w:types>
+          <w:type w:val="bbPlcHdr"/>
+        </w:types>
+        <w:behaviors>
+          <w:behavior w:val="content"/>
+        </w:behaviors>
+        <w:guid w:val="{BE8E60C2-C751-4AE8-84C0-C987097D9471}"/>
+      </w:docPartPr>
+      <w:docPartBody>
+        <w:p w:rsidR="00AE2ABF" w:rsidRDefault="00AE2ABF">
+          <w:pPr>
+            <w:pStyle w:val="1160656768DE49BD9E945C3B8A47EC84"/>
+          </w:pPr>
+          <w:r w:rsidRPr="00F37FE2">
+            <w:rPr>
+              <w:rStyle w:val="PlaceholderText"/>
+            </w:rPr>
+            <w:t>[DNV doc No.]</w:t>
+          </w:r>
+        </w:p>
+      </w:docPartBody>
+    </w:docPart>
+    <w:docPart>
+      <w:docPartPr>
+        <w:name w:val="40E675DDBF784FFD9972B6F04EC09205"/>
+        <w:category>
+          <w:name w:val="General"/>
+          <w:gallery w:val="placeholder"/>
+        </w:category>
+        <w:types>
+          <w:type w:val="bbPlcHdr"/>
+        </w:types>
+        <w:behaviors>
+          <w:behavior w:val="content"/>
+        </w:behaviors>
+        <w:guid w:val="{719CB9D3-709F-4EBF-945A-F3F8AF351620}"/>
+      </w:docPartPr>
+      <w:docPartBody>
+        <w:p w:rsidR="00AE2ABF" w:rsidRDefault="00AE2ABF">
+          <w:pPr>
+            <w:pStyle w:val="40E675DDBF784FFD9972B6F04EC09205"/>
+          </w:pPr>
+          <w:r w:rsidRPr="00F37FE2">
+            <w:rPr>
+              <w:rStyle w:val="PlaceholderText"/>
+            </w:rPr>
+            <w:t>[Date of issue]</w:t>
+          </w:r>
+        </w:p>
+      </w:docPartBody>
+    </w:docPart>
+    <w:docPart>
+      <w:docPartPr>
+        <w:name w:val="2F93AC38A5444E27A09FB06E7BA88494"/>
+        <w:category>
+          <w:name w:val="General"/>
+          <w:gallery w:val="placeholder"/>
+        </w:category>
+        <w:types>
+          <w:type w:val="bbPlcHdr"/>
+        </w:types>
+        <w:behaviors>
+          <w:behavior w:val="content"/>
+        </w:behaviors>
+        <w:guid w:val="{1F17ED8E-7BA2-4CB4-93BE-747C19FFDFF8}"/>
+      </w:docPartPr>
+      <w:docPartBody>
+        <w:p w:rsidR="00AE2ABF" w:rsidRDefault="00AE2ABF">
+          <w:pPr>
+            <w:pStyle w:val="2F93AC38A5444E27A09FB06E7BA88494"/>
+          </w:pPr>
+          <w:r w:rsidRPr="00F37FE2">
+            <w:rPr>
+              <w:rStyle w:val="PlaceholderText"/>
+            </w:rPr>
+            <w:t>[Date of last revision]</w:t>
+          </w:r>
+        </w:p>
+      </w:docPartBody>
+    </w:docPart>
+    <w:docPart>
+      <w:docPartPr>
+        <w:name w:val="C79C4798FCDE45EE9D70E87C096C236A"/>
+        <w:category>
+          <w:name w:val="General"/>
+          <w:gallery w:val="placeholder"/>
+        </w:category>
+        <w:types>
+          <w:type w:val="bbPlcHdr"/>
+        </w:types>
+        <w:behaviors>
+          <w:behavior w:val="content"/>
+        </w:behaviors>
+        <w:guid w:val="{59700AC7-5A8C-49AE-9C7F-2CC215676C58}"/>
+      </w:docPartPr>
+      <w:docPartBody>
+        <w:p w:rsidR="00AE2ABF" w:rsidRDefault="00AE2ABF">
+          <w:pPr>
+            <w:pStyle w:val="C79C4798FCDE45EE9D70E87C096C236A"/>
+          </w:pPr>
+          <w:r w:rsidRPr="00C7640E">
+            <w:rPr>
+              <w:rStyle w:val="PlaceholderText"/>
+            </w:rPr>
+            <w:t>Click here to enter text.</w:t>
+          </w:r>
+        </w:p>
+      </w:docPartBody>
+    </w:docPart>
+    <w:docPart>
+      <w:docPartPr>
+        <w:name w:val="825F6F3F1EE3478AB704E1A852F6166B"/>
+        <w:category>
+          <w:name w:val="General"/>
+          <w:gallery w:val="placeholder"/>
+        </w:category>
+        <w:types>
+          <w:type w:val="bbPlcHdr"/>
+        </w:types>
+        <w:behaviors>
+          <w:behavior w:val="content"/>
+        </w:behaviors>
+        <w:guid w:val="{5861EC98-76B6-407E-8F75-6543037DE97F}"/>
+      </w:docPartPr>
+      <w:docPartBody>
+        <w:p w:rsidR="00AE2ABF" w:rsidRDefault="00AE2ABF">
+          <w:pPr>
+            <w:pStyle w:val="825F6F3F1EE3478AB704E1A852F6166B"/>
+          </w:pPr>
+          <w:r w:rsidRPr="004A3BEE">
+            <w:rPr>
+              <w:rStyle w:val="PlaceholderText"/>
+            </w:rPr>
+            <w:t>Click or tap here to enter text.</w:t>
+          </w:r>
+        </w:p>
+      </w:docPartBody>
+    </w:docPart>
+    <w:docPart>
+      <w:docPartPr>
+        <w:name w:val="188CDC9F916747AB8562A7D79B4DD691"/>
+        <w:category>
+          <w:name w:val="General"/>
+          <w:gallery w:val="placeholder"/>
+        </w:category>
+        <w:types>
+          <w:type w:val="bbPlcHdr"/>
+        </w:types>
+        <w:behaviors>
+          <w:behavior w:val="content"/>
+        </w:behaviors>
+        <w:guid w:val="{7E3CCC68-C26D-447C-9D15-7AAD746C7CE3}"/>
+      </w:docPartPr>
+      <w:docPartBody>
+        <w:p w:rsidR="00AE2ABF" w:rsidRDefault="00AE2ABF">
+          <w:pPr>
+            <w:pStyle w:val="188CDC9F916747AB8562A7D79B4DD691"/>
+          </w:pPr>
+          <w:r w:rsidRPr="00F37FE2">
+            <w:rPr>
+              <w:rStyle w:val="PlaceholderText"/>
+            </w:rPr>
+            <w:t>[Customer Name]</w:t>
+          </w:r>
+        </w:p>
+      </w:docPartBody>
+    </w:docPart>
+    <w:docPart>
+      <w:docPartPr>
+        <w:name w:val="399A62FFF7F144E3BB16AFCC24A59B3C"/>
+        <w:category>
+          <w:name w:val="General"/>
+          <w:gallery w:val="placeholder"/>
+        </w:category>
+        <w:types>
+          <w:type w:val="bbPlcHdr"/>
+        </w:types>
+        <w:behaviors>
+          <w:behavior w:val="content"/>
+        </w:behaviors>
+        <w:guid w:val="{A1C8989C-7BF4-4B3C-A4C2-2E9980ADA6DD}"/>
+      </w:docPartPr>
+      <w:docPartBody>
+        <w:p w:rsidR="00AE2ABF" w:rsidRDefault="00AE2ABF">
+          <w:pPr>
+            <w:pStyle w:val="399A62FFF7F144E3BB16AFCC24A59B3C"/>
+          </w:pPr>
+          <w:r w:rsidRPr="00F37FE2">
+            <w:rPr>
+              <w:rStyle w:val="PlaceholderText"/>
+            </w:rPr>
+            <w:t>[Customer Address]</w:t>
+          </w:r>
+        </w:p>
+      </w:docPartBody>
+    </w:docPart>
+    <w:docPart>
+      <w:docPartPr>
+        <w:name w:val="D9546B4866A8435D8D68E9D380E6A5FB"/>
+        <w:category>
+          <w:name w:val="General"/>
+          <w:gallery w:val="placeholder"/>
+        </w:category>
+        <w:types>
+          <w:type w:val="bbPlcHdr"/>
+        </w:types>
+        <w:behaviors>
+          <w:behavior w:val="content"/>
+        </w:behaviors>
+        <w:guid w:val="{4C2DA3E8-5C56-4FBB-8327-3920C0B8C9A2}"/>
+      </w:docPartPr>
+      <w:docPartBody>
+        <w:p w:rsidR="00AE2ABF" w:rsidRDefault="00AE2ABF">
+          <w:pPr>
+            <w:pStyle w:val="D9546B4866A8435D8D68E9D380E6A5FB"/>
+          </w:pPr>
+          <w:r w:rsidRPr="004A3BEE">
+            <w:rPr>
+              <w:rStyle w:val="PlaceholderText"/>
+            </w:rPr>
+            <w:t>Click or tap here to enter text.</w:t>
+          </w:r>
+        </w:p>
+      </w:docPartBody>
+    </w:docPart>
+    <w:docPart>
+      <w:docPartPr>
+        <w:name w:val="DCF740CA526745D1BFE0F5CD4243DE10"/>
+        <w:category>
+          <w:name w:val="General"/>
+          <w:gallery w:val="placeholder"/>
+        </w:category>
+        <w:types>
+          <w:type w:val="bbPlcHdr"/>
+        </w:types>
+        <w:behaviors>
+          <w:behavior w:val="content"/>
+        </w:behaviors>
+        <w:guid w:val="{7029EBD8-1ACE-439C-A374-751B9F017B52}"/>
+      </w:docPartPr>
+      <w:docPartBody>
+        <w:p w:rsidR="00AE2ABF" w:rsidRDefault="00AE2ABF">
+          <w:pPr>
+            <w:pStyle w:val="DCF740CA526745D1BFE0F5CD4243DE10"/>
+          </w:pPr>
+          <w:r w:rsidRPr="00F37FE2">
+            <w:rPr>
+              <w:rStyle w:val="PlaceholderText"/>
+            </w:rPr>
+            <w:t>[Customer Reference]</w:t>
+          </w:r>
+        </w:p>
+      </w:docPartBody>
+    </w:docPart>
+    <w:docPart>
+      <w:docPartPr>
+        <w:name w:val="041BA8A8F6A84C3FAE5BDF2A447535E8"/>
+        <w:category>
+          <w:name w:val="General"/>
+          <w:gallery w:val="placeholder"/>
+        </w:category>
+        <w:types>
+          <w:type w:val="bbPlcHdr"/>
+        </w:types>
+        <w:behaviors>
+          <w:behavior w:val="content"/>
+        </w:behaviors>
+        <w:guid w:val="{213CD308-6F6F-4BED-997B-505028BA2E75}"/>
+      </w:docPartPr>
+      <w:docPartBody>
+        <w:p w:rsidR="00AE2ABF" w:rsidRDefault="00AE2ABF">
+          <w:pPr>
+            <w:pStyle w:val="041BA8A8F6A84C3FAE5BDF2A447535E8"/>
+          </w:pPr>
+          <w:r w:rsidRPr="00F37FE2">
+            <w:rPr>
+              <w:rStyle w:val="PlaceholderText"/>
+            </w:rPr>
+            <w:t>[Contact Person]</w:t>
+          </w:r>
+        </w:p>
+      </w:docPartBody>
+    </w:docPart>
+    <w:docPart>
+      <w:docPartPr>
+        <w:name w:val="44100C11FF134DA68CDCEB8A928DE375"/>
+        <w:category>
+          <w:name w:val="General"/>
+          <w:gallery w:val="placeholder"/>
+        </w:category>
+        <w:types>
+          <w:type w:val="bbPlcHdr"/>
+        </w:types>
+        <w:behaviors>
+          <w:behavior w:val="content"/>
+        </w:behaviors>
+        <w:guid w:val="{2F2FD62D-AB99-461F-B46F-D17D16DADCE0}"/>
+      </w:docPartPr>
+      <w:docPartBody>
+        <w:p w:rsidR="00AE2ABF" w:rsidRDefault="00AE2ABF">
+          <w:pPr>
+            <w:pStyle w:val="44100C11FF134DA68CDCEB8A928DE375"/>
+          </w:pPr>
+          <w:r w:rsidRPr="00F37FE2">
+            <w:rPr>
+              <w:rStyle w:val="PlaceholderText"/>
+            </w:rPr>
+            <w:t>[DNV Legal Entity]</w:t>
+          </w:r>
+        </w:p>
+      </w:docPartBody>
+    </w:docPart>
+    <w:docPart>
+      <w:docPartPr>
+        <w:name w:val="49639E0B93BD44EA970452FD41A5301F"/>
+        <w:category>
+          <w:name w:val="General"/>
+          <w:gallery w:val="placeholder"/>
+        </w:category>
+        <w:types>
+          <w:type w:val="bbPlcHdr"/>
+        </w:types>
+        <w:behaviors>
+          <w:behavior w:val="content"/>
+        </w:behaviors>
+        <w:guid w:val="{71EA300C-0AEA-4A2E-8E0A-0F6B960194CE}"/>
+      </w:docPartPr>
+      <w:docPartBody>
+        <w:p w:rsidR="00AE2ABF" w:rsidRDefault="00AE2ABF">
+          <w:pPr>
+            <w:pStyle w:val="49639E0B93BD44EA970452FD41A5301F"/>
+          </w:pPr>
+          <w:r w:rsidRPr="00F37FE2">
+            <w:rPr>
+              <w:rStyle w:val="PlaceholderText"/>
+            </w:rPr>
+            <w:t>[DNV Organisation Unit]</w:t>
+          </w:r>
+        </w:p>
+      </w:docPartBody>
+    </w:docPart>
+    <w:docPart>
+      <w:docPartPr>
+        <w:name w:val="A2ABFF93C3E24D38AB134DD81DC1ABE1"/>
+        <w:category>
+          <w:name w:val="General"/>
+          <w:gallery w:val="placeholder"/>
+        </w:category>
+        <w:types>
+          <w:type w:val="bbPlcHdr"/>
+        </w:types>
+        <w:behaviors>
+          <w:behavior w:val="content"/>
+        </w:behaviors>
+        <w:guid w:val="{EB2B6623-83FB-4A23-94BC-3BD785BFC425}"/>
+      </w:docPartPr>
+      <w:docPartBody>
+        <w:p w:rsidR="00AE2ABF" w:rsidRDefault="00AE2ABF">
+          <w:pPr>
+            <w:pStyle w:val="A2ABFF93C3E24D38AB134DD81DC1ABE1"/>
+          </w:pPr>
+          <w:r w:rsidRPr="00F37FE2">
+            <w:rPr>
+              <w:rStyle w:val="PlaceholderText"/>
+            </w:rPr>
+            <w:t>[DNV Address]</w:t>
+          </w:r>
+        </w:p>
+      </w:docPartBody>
+    </w:docPart>
+    <w:docPart>
+      <w:docPartPr>
+        <w:name w:val="6C90FEB576074D74BC95C25BEB9ED1B3"/>
+        <w:category>
+          <w:name w:val="General"/>
+          <w:gallery w:val="placeholder"/>
+        </w:category>
+        <w:types>
+          <w:type w:val="bbPlcHdr"/>
+        </w:types>
+        <w:behaviors>
+          <w:behavior w:val="content"/>
+        </w:behaviors>
+        <w:guid w:val="{E3C5E20C-D707-482F-AFEC-68642420F592}"/>
+      </w:docPartPr>
+      <w:docPartBody>
+        <w:p w:rsidR="00AE2ABF" w:rsidRDefault="00AE2ABF">
+          <w:pPr>
+            <w:pStyle w:val="6C90FEB576074D74BC95C25BEB9ED1B3"/>
+          </w:pPr>
+          <w:r w:rsidRPr="00F37FE2">
+            <w:rPr>
+              <w:rStyle w:val="PlaceholderText"/>
+            </w:rPr>
+            <w:t>[DNV Telephone]</w:t>
+          </w:r>
+        </w:p>
+      </w:docPartBody>
+    </w:docPart>
+    <w:docPart>
+      <w:docPartPr>
+        <w:name w:val="89B01DDCECE943478A7974780691BB3C"/>
+        <w:category>
+          <w:name w:val="General"/>
+          <w:gallery w:val="placeholder"/>
+        </w:category>
+        <w:types>
+          <w:type w:val="bbPlcHdr"/>
+        </w:types>
+        <w:behaviors>
+          <w:behavior w:val="content"/>
+        </w:behaviors>
+        <w:guid w:val="{EFEB5007-9029-49C7-B605-D976EE586B8F}"/>
+      </w:docPartPr>
+      <w:docPartBody>
+        <w:p w:rsidR="00AE2ABF" w:rsidRDefault="00AE2ABF">
+          <w:pPr>
+            <w:pStyle w:val="89B01DDCECE943478A7974780691BB3C"/>
+          </w:pPr>
+          <w:r w:rsidRPr="004A3BEE">
+            <w:rPr>
+              <w:rStyle w:val="PlaceholderText"/>
+            </w:rPr>
+            <w:t>Click or tap here to enter text.</w:t>
+          </w:r>
+        </w:p>
+      </w:docPartBody>
+    </w:docPart>
+    <w:docPart>
+      <w:docPartPr>
+        <w:name w:val="1D2F5E1714D54997B67D14FB4C01DDAB"/>
+        <w:category>
+          <w:name w:val="General"/>
+          <w:gallery w:val="placeholder"/>
+        </w:category>
+        <w:types>
+          <w:type w:val="bbPlcHdr"/>
+        </w:types>
+        <w:behaviors>
+          <w:behavior w:val="content"/>
+        </w:behaviors>
+        <w:guid w:val="{66BDF27C-406E-42DC-B59C-746D2238D52E}"/>
+      </w:docPartPr>
+      <w:docPartBody>
+        <w:p w:rsidR="00AE2ABF" w:rsidRDefault="00AE2ABF">
+          <w:pPr>
+            <w:pStyle w:val="1D2F5E1714D54997B67D14FB4C01DDAB"/>
+          </w:pPr>
+          <w:r w:rsidRPr="00F37FE2">
+            <w:rPr>
+              <w:rStyle w:val="PlaceholderText"/>
+            </w:rPr>
+            <w:t>[Proposal Title]</w:t>
+          </w:r>
+        </w:p>
+      </w:docPartBody>
+    </w:docPart>
+    <w:docPart>
+      <w:docPartPr>
+        <w:name w:val="292607AEA5FC421DB1D2B5AF6B584875"/>
+        <w:category>
+          <w:name w:val="General"/>
+          <w:gallery w:val="placeholder"/>
+        </w:category>
+        <w:types>
+          <w:type w:val="bbPlcHdr"/>
+        </w:types>
+        <w:behaviors>
+          <w:behavior w:val="content"/>
+        </w:behaviors>
+        <w:guid w:val="{15D50CDB-92DC-4721-8F44-D18C652614F3}"/>
+      </w:docPartPr>
+      <w:docPartBody>
+        <w:p w:rsidR="00AE2ABF" w:rsidRDefault="00AE2ABF">
+          <w:pPr>
+            <w:pStyle w:val="292607AEA5FC421DB1D2B5AF6B584875"/>
+          </w:pPr>
+          <w:r w:rsidRPr="004A3BEE">
+            <w:rPr>
+              <w:rStyle w:val="PlaceholderText"/>
+            </w:rPr>
+            <w:t>Click or tap here to enter text.</w:t>
+          </w:r>
+        </w:p>
+      </w:docPartBody>
+    </w:docPart>
+    <w:docPart>
+      <w:docPartPr>
+        <w:name w:val="0A2547F4CE8C4565A8226DF35486D7EB"/>
+        <w:category>
+          <w:name w:val="General"/>
+          <w:gallery w:val="placeholder"/>
+        </w:category>
+        <w:types>
+          <w:type w:val="bbPlcHdr"/>
+        </w:types>
+        <w:behaviors>
+          <w:behavior w:val="content"/>
+        </w:behaviors>
+        <w:guid w:val="{7B39D04F-A175-4068-8C09-E4364594AD5A}"/>
+      </w:docPartPr>
+      <w:docPartBody>
+        <w:p w:rsidR="00AE2ABF" w:rsidRDefault="00AE2ABF">
+          <w:pPr>
+            <w:pStyle w:val="0A2547F4CE8C4565A8226DF35486D7EB"/>
+          </w:pPr>
+          <w:r w:rsidRPr="00F37FE2">
+            <w:rPr>
+              <w:rStyle w:val="PlaceholderText"/>
+            </w:rPr>
+            <w:t>[Date of issue]</w:t>
+          </w:r>
+        </w:p>
+      </w:docPartBody>
+    </w:docPart>
+    <w:docPart>
+      <w:docPartPr>
+        <w:name w:val="3F72134302734618B0185B0ECBF05E4C"/>
+        <w:category>
+          <w:name w:val="General"/>
+          <w:gallery w:val="placeholder"/>
+        </w:category>
+        <w:types>
+          <w:type w:val="bbPlcHdr"/>
+        </w:types>
+        <w:behaviors>
+          <w:behavior w:val="content"/>
+        </w:behaviors>
+        <w:guid w:val="{4EE4961D-453C-40E4-BCE9-88C13B6A5DA2}"/>
+      </w:docPartPr>
+      <w:docPartBody>
+        <w:p w:rsidR="00AE2ABF" w:rsidRDefault="00AE2ABF">
+          <w:pPr>
+            <w:pStyle w:val="3F72134302734618B0185B0ECBF05E4C"/>
+          </w:pPr>
+          <w:r w:rsidRPr="00F37FE2">
+            <w:rPr>
+              <w:rStyle w:val="PlaceholderText"/>
+            </w:rPr>
+            <w:t>[Date of last revision]</w:t>
+          </w:r>
+        </w:p>
+      </w:docPartBody>
+    </w:docPart>
+    <w:docPart>
+      <w:docPartPr>
+        <w:name w:val="7539AF3FEDBF47728AF475DEA14BC75E"/>
+        <w:category>
+          <w:name w:val="General"/>
+          <w:gallery w:val="placeholder"/>
+        </w:category>
+        <w:types>
+          <w:type w:val="bbPlcHdr"/>
+        </w:types>
+        <w:behaviors>
+          <w:behavior w:val="content"/>
+        </w:behaviors>
+        <w:guid w:val="{1C6750DB-25F0-45AF-B1D5-92AA7B7DFA8C}"/>
+      </w:docPartPr>
+      <w:docPartBody>
+        <w:p w:rsidR="00AE2ABF" w:rsidRDefault="00AE2ABF">
+          <w:pPr>
+            <w:pStyle w:val="7539AF3FEDBF47728AF475DEA14BC75E"/>
+          </w:pPr>
+          <w:r w:rsidRPr="00F37FE2">
+            <w:rPr>
+              <w:lang w:val="en-GB"/>
+            </w:rPr>
+            <w:t>3</w:t>
+          </w:r>
+        </w:p>
+      </w:docPartBody>
+    </w:docPart>
+    <w:docPart>
+      <w:docPartPr>
+        <w:name w:val="7DA9407FDD254CDA84126A0186C73F1F"/>
+        <w:category>
+          <w:name w:val="General"/>
+          <w:gallery w:val="placeholder"/>
+        </w:category>
+        <w:types>
+          <w:type w:val="bbPlcHdr"/>
+        </w:types>
+        <w:behaviors>
+          <w:behavior w:val="content"/>
+        </w:behaviors>
+        <w:guid w:val="{22885777-2AF2-46CC-B8C8-0C2430C8D840}"/>
+      </w:docPartPr>
+      <w:docPartBody>
+        <w:p w:rsidR="00AE2ABF" w:rsidRDefault="00AE2ABF">
+          <w:pPr>
+            <w:pStyle w:val="7DA9407FDD254CDA84126A0186C73F1F"/>
+          </w:pPr>
+          <w:r w:rsidRPr="00F37FE2">
+            <w:rPr>
+              <w:rStyle w:val="PlaceholderText"/>
+            </w:rPr>
+            <w:t>[DNV Legal Entity]</w:t>
+          </w:r>
+        </w:p>
+      </w:docPartBody>
+    </w:docPart>
+    <w:docPart>
+      <w:docPartPr>
+        <w:name w:val="AE2027D9A58B42B28ABD3947CB120B6F"/>
+        <w:category>
+          <w:name w:val="General"/>
+          <w:gallery w:val="placeholder"/>
+        </w:category>
+        <w:types>
+          <w:type w:val="bbPlcHdr"/>
+        </w:types>
+        <w:behaviors>
+          <w:behavior w:val="content"/>
+        </w:behaviors>
+        <w:guid w:val="{39E07161-3C01-457E-861D-0D87B7960846}"/>
+      </w:docPartPr>
+      <w:docPartBody>
+        <w:p w:rsidR="00AE2ABF" w:rsidRDefault="00AE2ABF">
+          <w:pPr>
+            <w:pStyle w:val="AE2027D9A58B42B28ABD3947CB120B6F"/>
+          </w:pPr>
+          <w:r w:rsidRPr="00F37FE2">
+            <w:rPr>
+              <w:rStyle w:val="PlaceholderText"/>
+            </w:rPr>
+            <w:t>[Name]</w:t>
+          </w:r>
+        </w:p>
+      </w:docPartBody>
+    </w:docPart>
+    <w:docPart>
+      <w:docPartPr>
+        <w:name w:val="3912B1ED6AB7473CB2F28EAFBEBC99D1"/>
+        <w:category>
+          <w:name w:val="General"/>
+          <w:gallery w:val="placeholder"/>
+        </w:category>
+        <w:types>
+          <w:type w:val="bbPlcHdr"/>
+        </w:types>
+        <w:behaviors>
+          <w:behavior w:val="content"/>
+        </w:behaviors>
+        <w:guid w:val="{73705E01-7AE7-4824-BC0A-1A420F4956C9}"/>
+      </w:docPartPr>
+      <w:docPartBody>
+        <w:p w:rsidR="00AE2ABF" w:rsidRDefault="00AE2ABF">
+          <w:pPr>
+            <w:pStyle w:val="3912B1ED6AB7473CB2F28EAFBEBC99D1"/>
+          </w:pPr>
+          <w:r w:rsidRPr="00F37FE2">
+            <w:rPr>
+              <w:rStyle w:val="PlaceholderText"/>
+            </w:rPr>
+            <w:t>[Name]</w:t>
+          </w:r>
+        </w:p>
+      </w:docPartBody>
+    </w:docPart>
+    <w:docPart>
+      <w:docPartPr>
+        <w:name w:val="31B60DE38E904DEA96DE65ADB40957ED"/>
+        <w:category>
+          <w:name w:val="General"/>
+          <w:gallery w:val="placeholder"/>
+        </w:category>
+        <w:types>
+          <w:type w:val="bbPlcHdr"/>
+        </w:types>
+        <w:behaviors>
+          <w:behavior w:val="content"/>
+        </w:behaviors>
+        <w:guid w:val="{B674273E-BBF7-4A76-9E77-769E0A387EC4}"/>
+      </w:docPartPr>
+      <w:docPartBody>
+        <w:p w:rsidR="00AE2ABF" w:rsidRDefault="00AE2ABF">
+          <w:pPr>
+            <w:pStyle w:val="31B60DE38E904DEA96DE65ADB40957ED"/>
+          </w:pPr>
+          <w:r w:rsidRPr="003D6CE0">
+            <w:rPr>
+              <w:rStyle w:val="PlaceholderText"/>
+            </w:rPr>
+            <w:t>Click here to enter text.</w:t>
+          </w:r>
+        </w:p>
+      </w:docPartBody>
+    </w:docPart>
+    <w:docPart>
+      <w:docPartPr>
+        <w:name w:val="F96B0671BD9547DFB0FE48ABA4EF6148"/>
+        <w:category>
+          <w:name w:val="General"/>
+          <w:gallery w:val="placeholder"/>
+        </w:category>
+        <w:types>
+          <w:type w:val="bbPlcHdr"/>
+        </w:types>
+        <w:behaviors>
+          <w:behavior w:val="content"/>
+        </w:behaviors>
+        <w:guid w:val="{92D21823-6431-442C-842B-6550C7834333}"/>
+      </w:docPartPr>
+      <w:docPartBody>
+        <w:p w:rsidR="00AE2ABF" w:rsidRDefault="00AE2ABF">
+          <w:pPr>
+            <w:pStyle w:val="F96B0671BD9547DFB0FE48ABA4EF6148"/>
+          </w:pPr>
+          <w:r w:rsidRPr="003D6CE0">
+            <w:rPr>
+              <w:rStyle w:val="PlaceholderText"/>
+            </w:rPr>
+            <w:t>Click here to enter text.</w:t>
+          </w:r>
+        </w:p>
+      </w:docPartBody>
+    </w:docPart>
+    <w:docPart>
+      <w:docPartPr>
+        <w:name w:val="828DDAD25B144969BE94029BA4DD56CE"/>
+        <w:category>
+          <w:name w:val="General"/>
+          <w:gallery w:val="placeholder"/>
+        </w:category>
+        <w:types>
+          <w:type w:val="bbPlcHdr"/>
+        </w:types>
+        <w:behaviors>
+          <w:behavior w:val="content"/>
+        </w:behaviors>
+        <w:guid w:val="{589DA85E-C3A5-4A0B-A963-24C90B3B248A}"/>
+      </w:docPartPr>
+      <w:docPartBody>
+        <w:p w:rsidR="00AE2ABF" w:rsidRDefault="00AE2ABF">
+          <w:pPr>
+            <w:pStyle w:val="828DDAD25B144969BE94029BA4DD56CE"/>
+          </w:pPr>
+          <w:r w:rsidRPr="003D6CE0">
+            <w:rPr>
+              <w:rStyle w:val="PlaceholderText"/>
+            </w:rPr>
+            <w:t>Click here to enter text.</w:t>
+          </w:r>
+        </w:p>
+      </w:docPartBody>
+    </w:docPart>
+    <w:docPart>
+      <w:docPartPr>
+        <w:name w:val="9533D1B2D1574FB4AAA3E538F454A480"/>
+        <w:category>
+          <w:name w:val="General"/>
+          <w:gallery w:val="placeholder"/>
+        </w:category>
+        <w:types>
+          <w:type w:val="bbPlcHdr"/>
+        </w:types>
+        <w:behaviors>
+          <w:behavior w:val="content"/>
+        </w:behaviors>
+        <w:guid w:val="{C3397F8E-65CF-4E0A-9ECF-F7FA7D7C2E47}"/>
+      </w:docPartPr>
+      <w:docPartBody>
+        <w:p w:rsidR="00AE2ABF" w:rsidRDefault="00AE2ABF">
+          <w:pPr>
+            <w:pStyle w:val="9533D1B2D1574FB4AAA3E538F454A480"/>
+          </w:pPr>
+          <w:r w:rsidRPr="003D6CE0">
+            <w:rPr>
+              <w:rStyle w:val="PlaceholderText"/>
+            </w:rPr>
+            <w:t>Click here to enter text.</w:t>
+          </w:r>
+        </w:p>
+      </w:docPartBody>
+    </w:docPart>
+    <w:docPart>
+      <w:docPartPr>
+        <w:name w:val="EEA1ED1E95CF4576A362B2E50724A083"/>
+        <w:category>
+          <w:name w:val="General"/>
+          <w:gallery w:val="placeholder"/>
+        </w:category>
+        <w:types>
+          <w:type w:val="bbPlcHdr"/>
+        </w:types>
+        <w:behaviors>
+          <w:behavior w:val="content"/>
+        </w:behaviors>
+        <w:guid w:val="{A605A8D5-2D51-479F-A101-4666578E80D2}"/>
+      </w:docPartPr>
+      <w:docPartBody>
+        <w:p w:rsidR="00AE2ABF" w:rsidRDefault="00AE2ABF">
+          <w:pPr>
+            <w:pStyle w:val="EEA1ED1E95CF4576A362B2E50724A083"/>
+          </w:pPr>
+          <w:r w:rsidRPr="003D6CE0">
+            <w:rPr>
+              <w:rStyle w:val="PlaceholderText"/>
+            </w:rPr>
+            <w:t>Click here to enter text.</w:t>
+          </w:r>
+        </w:p>
+      </w:docPartBody>
+    </w:docPart>
+    <w:docPart>
+      <w:docPartPr>
+        <w:name w:val="B27F66C0C5404532B0C3BC96C9730719"/>
+        <w:category>
+          <w:name w:val="General"/>
+          <w:gallery w:val="placeholder"/>
+        </w:category>
+        <w:types>
+          <w:type w:val="bbPlcHdr"/>
+        </w:types>
+        <w:behaviors>
+          <w:behavior w:val="content"/>
+        </w:behaviors>
+        <w:guid w:val="{B12CE596-233A-4E45-9F9B-57F78E7C0CFF}"/>
+      </w:docPartPr>
+      <w:docPartBody>
+        <w:p w:rsidR="00AE2ABF" w:rsidRDefault="00AE2ABF">
+          <w:pPr>
+            <w:pStyle w:val="B27F66C0C5404532B0C3BC96C9730719"/>
+          </w:pPr>
+          <w:r w:rsidRPr="003D6CE0">
+            <w:rPr>
+              <w:rStyle w:val="PlaceholderText"/>
+            </w:rPr>
+            <w:t>Click here to enter text.</w:t>
+          </w:r>
+        </w:p>
+      </w:docPartBody>
+    </w:docPart>
+    <w:docPart>
+      <w:docPartPr>
+        <w:name w:val="EDACEA79EC04416495D1EAF6EE557A5E"/>
+        <w:category>
+          <w:name w:val="General"/>
+          <w:gallery w:val="placeholder"/>
+        </w:category>
+        <w:types>
+          <w:type w:val="bbPlcHdr"/>
+        </w:types>
+        <w:behaviors>
+          <w:behavior w:val="content"/>
+        </w:behaviors>
+        <w:guid w:val="{303431FF-32C6-4CD8-9C11-05719A64084A}"/>
+      </w:docPartPr>
+      <w:docPartBody>
+        <w:p w:rsidR="00AE2ABF" w:rsidRDefault="00AE2ABF">
+          <w:pPr>
+            <w:pStyle w:val="EDACEA79EC04416495D1EAF6EE557A5E"/>
+          </w:pPr>
+          <w:r w:rsidRPr="003D6CE0">
+            <w:rPr>
+              <w:rStyle w:val="PlaceholderText"/>
+            </w:rPr>
+            <w:t>Click here to enter text.</w:t>
+          </w:r>
+        </w:p>
+      </w:docPartBody>
+    </w:docPart>
+    <w:docPart>
+      <w:docPartPr>
+        <w:name w:val="2CD9F1DF548F434F9A94B4ADF0F6A81C"/>
+        <w:category>
+          <w:name w:val="General"/>
+          <w:gallery w:val="placeholder"/>
+        </w:category>
+        <w:types>
+          <w:type w:val="bbPlcHdr"/>
+        </w:types>
+        <w:behaviors>
+          <w:behavior w:val="content"/>
+        </w:behaviors>
+        <w:guid w:val="{1DFE4038-D5DB-4D9D-A091-FCE031859D30}"/>
+      </w:docPartPr>
+      <w:docPartBody>
+        <w:p w:rsidR="00AE2ABF" w:rsidRDefault="00AE2ABF">
+          <w:pPr>
+            <w:pStyle w:val="2CD9F1DF548F434F9A94B4ADF0F6A81C"/>
+          </w:pPr>
+          <w:r w:rsidRPr="003D6CE0">
+            <w:rPr>
+              <w:rStyle w:val="PlaceholderText"/>
+            </w:rPr>
+            <w:t>Click here to enter text.</w:t>
+          </w:r>
+        </w:p>
+      </w:docPartBody>
+    </w:docPart>
+    <w:docPart>
+      <w:docPartPr>
+        <w:name w:val="1F61B410AC604BDF85B242CED41CA6E0"/>
+        <w:category>
+          <w:name w:val="General"/>
+          <w:gallery w:val="placeholder"/>
+        </w:category>
+        <w:types>
+          <w:type w:val="bbPlcHdr"/>
+        </w:types>
+        <w:behaviors>
+          <w:behavior w:val="content"/>
+        </w:behaviors>
+        <w:guid w:val="{D4B91578-515E-403C-9524-55DEDC457D6E}"/>
+      </w:docPartPr>
+      <w:docPartBody>
+        <w:p w:rsidR="00AE2ABF" w:rsidRDefault="00AE2ABF">
+          <w:pPr>
+            <w:pStyle w:val="1F61B410AC604BDF85B242CED41CA6E0"/>
+          </w:pPr>
+          <w:r w:rsidRPr="003D6CE0">
+            <w:rPr>
+              <w:rStyle w:val="PlaceholderText"/>
+            </w:rPr>
+            <w:t>Click here to enter text.</w:t>
+          </w:r>
+        </w:p>
+      </w:docPartBody>
+    </w:docPart>
+    <w:docPart>
+      <w:docPartPr>
+        <w:name w:val="FE5DE82AC55743BD8B853FDA3AA17026"/>
+        <w:category>
+          <w:name w:val="General"/>
+          <w:gallery w:val="placeholder"/>
+        </w:category>
+        <w:types>
+          <w:type w:val="bbPlcHdr"/>
+        </w:types>
+        <w:behaviors>
+          <w:behavior w:val="content"/>
+        </w:behaviors>
+        <w:guid w:val="{233E35C3-C6EB-4B2A-96D9-47FE217FA8AD}"/>
+      </w:docPartPr>
+      <w:docPartBody>
+        <w:p w:rsidR="00AE2ABF" w:rsidRDefault="00AE2ABF">
+          <w:pPr>
+            <w:pStyle w:val="FE5DE82AC55743BD8B853FDA3AA17026"/>
+          </w:pPr>
+          <w:r w:rsidRPr="003D6CE0">
+            <w:rPr>
+              <w:rStyle w:val="PlaceholderText"/>
+            </w:rPr>
+            <w:t>Click here to enter text.</w:t>
+          </w:r>
+        </w:p>
+      </w:docPartBody>
+    </w:docPart>
+    <w:docPart>
+      <w:docPartPr>
+        <w:name w:val="EE5591689DDE4C1596213F175E31541C"/>
+        <w:category>
+          <w:name w:val="General"/>
+          <w:gallery w:val="placeholder"/>
+        </w:category>
+        <w:types>
+          <w:type w:val="bbPlcHdr"/>
+        </w:types>
+        <w:behaviors>
+          <w:behavior w:val="content"/>
+        </w:behaviors>
+        <w:guid w:val="{93D9EF79-0589-4A72-8E14-DE5D82D9ED7E}"/>
+      </w:docPartPr>
+      <w:docPartBody>
+        <w:p w:rsidR="00AE2ABF" w:rsidRDefault="00AE2ABF">
+          <w:pPr>
+            <w:pStyle w:val="EE5591689DDE4C1596213F175E31541C"/>
+          </w:pPr>
+          <w:r w:rsidRPr="003D6CE0">
+            <w:rPr>
+              <w:rStyle w:val="PlaceholderText"/>
+            </w:rPr>
+            <w:t>Click here to enter text.</w:t>
+          </w:r>
+        </w:p>
+      </w:docPartBody>
+    </w:docPart>
+    <w:docPart>
+      <w:docPartPr>
+        <w:name w:val="E42EDE135E56475382E7AAC354068A50"/>
+        <w:category>
+          <w:name w:val="General"/>
+          <w:gallery w:val="placeholder"/>
+        </w:category>
+        <w:types>
+          <w:type w:val="bbPlcHdr"/>
+        </w:types>
+        <w:behaviors>
+          <w:behavior w:val="content"/>
+        </w:behaviors>
+        <w:guid w:val="{28134BF8-4F6F-4DEB-A370-2EF192414008}"/>
+      </w:docPartPr>
+      <w:docPartBody>
+        <w:p w:rsidR="00AE2ABF" w:rsidRDefault="00AE2ABF">
+          <w:pPr>
+            <w:pStyle w:val="E42EDE135E56475382E7AAC354068A50"/>
+          </w:pPr>
+          <w:r w:rsidRPr="003D6CE0">
+            <w:rPr>
+              <w:rStyle w:val="PlaceholderText"/>
+            </w:rPr>
+            <w:t>Click here to enter text.</w:t>
+          </w:r>
+        </w:p>
+      </w:docPartBody>
+    </w:docPart>
+    <w:docPart>
+      <w:docPartPr>
+        <w:name w:val="23D82732C6844E6DB1540D78C84909E1"/>
+        <w:category>
+          <w:name w:val="General"/>
+          <w:gallery w:val="placeholder"/>
+        </w:category>
+        <w:types>
+          <w:type w:val="bbPlcHdr"/>
+        </w:types>
+        <w:behaviors>
+          <w:behavior w:val="content"/>
+        </w:behaviors>
+        <w:guid w:val="{01E3058C-820A-4782-9726-5D5657788D0F}"/>
+      </w:docPartPr>
+      <w:docPartBody>
+        <w:p w:rsidR="00AE2ABF" w:rsidRDefault="00AE2ABF">
+          <w:pPr>
+            <w:pStyle w:val="23D82732C6844E6DB1540D78C84909E1"/>
+          </w:pPr>
+          <w:r w:rsidRPr="003D6CE0">
+            <w:rPr>
+              <w:rStyle w:val="PlaceholderText"/>
+            </w:rPr>
+            <w:t>Click here to enter text.</w:t>
+          </w:r>
+        </w:p>
+      </w:docPartBody>
+    </w:docPart>
+    <w:docPart>
+      <w:docPartPr>
+        <w:name w:val="D07602C9D9F64234A47D729FA71C5C81"/>
+        <w:category>
+          <w:name w:val="General"/>
+          <w:gallery w:val="placeholder"/>
+        </w:category>
+        <w:types>
+          <w:type w:val="bbPlcHdr"/>
+        </w:types>
+        <w:behaviors>
+          <w:behavior w:val="content"/>
+        </w:behaviors>
+        <w:guid w:val="{67520C16-B1BB-4513-8A63-3145D660DB60}"/>
+      </w:docPartPr>
+      <w:docPartBody>
+        <w:p w:rsidR="00AE2ABF" w:rsidRDefault="00AE2ABF">
+          <w:pPr>
+            <w:pStyle w:val="D07602C9D9F64234A47D729FA71C5C81"/>
+          </w:pPr>
+          <w:r w:rsidRPr="003D6CE0">
+            <w:rPr>
+              <w:rStyle w:val="PlaceholderText"/>
+            </w:rPr>
+            <w:t>Click here to enter text.</w:t>
+          </w:r>
+        </w:p>
+      </w:docPartBody>
+    </w:docPart>
+    <w:docPart>
+      <w:docPartPr>
+        <w:name w:val="D482AA84B14543F7AA646D9B8C2F020A"/>
+        <w:category>
+          <w:name w:val="General"/>
+          <w:gallery w:val="placeholder"/>
+        </w:category>
+        <w:types>
+          <w:type w:val="bbPlcHdr"/>
+        </w:types>
+        <w:behaviors>
+          <w:behavior w:val="content"/>
+        </w:behaviors>
+        <w:guid w:val="{F16CCAF8-7729-49C7-A670-298E83D1A18E}"/>
+      </w:docPartPr>
+      <w:docPartBody>
+        <w:p w:rsidR="00AE2ABF" w:rsidRDefault="00AE2ABF">
+          <w:pPr>
+            <w:pStyle w:val="D482AA84B14543F7AA646D9B8C2F020A"/>
+          </w:pPr>
+          <w:r w:rsidRPr="00F37FE2">
+            <w:rPr>
+              <w:lang w:val="en-GB"/>
+            </w:rPr>
+            <w:t>[frame agreement number/reference]</w:t>
+          </w:r>
+        </w:p>
+      </w:docPartBody>
+    </w:docPart>
+    <w:docPart>
+      <w:docPartPr>
+        <w:name w:val="36F39BD08E09478CB47A5CDD649BCD67"/>
+        <w:category>
+          <w:name w:val="General"/>
+          <w:gallery w:val="placeholder"/>
+        </w:category>
+        <w:types>
+          <w:type w:val="bbPlcHdr"/>
+        </w:types>
+        <w:behaviors>
+          <w:behavior w:val="content"/>
+        </w:behaviors>
+        <w:guid w:val="{CB2E2A81-2019-4605-B5CE-07C2866A9205}"/>
+      </w:docPartPr>
+      <w:docPartBody>
+        <w:p w:rsidR="00AE2ABF" w:rsidRDefault="00AE2ABF">
+          <w:pPr>
+            <w:pStyle w:val="36F39BD08E09478CB47A5CDD649BCD67"/>
+          </w:pPr>
+          <w:r w:rsidRPr="003D6CE0">
+            <w:rPr>
+              <w:rStyle w:val="PlaceholderText"/>
+            </w:rPr>
+            <w:t>Click here to enter text.</w:t>
+          </w:r>
+        </w:p>
+      </w:docPartBody>
+    </w:docPart>
+    <w:docPart>
+      <w:docPartPr>
+        <w:name w:val="46A9B118FFBF4C1B8B0CF50C0A11A7FE"/>
+        <w:category>
+          <w:name w:val="General"/>
+          <w:gallery w:val="placeholder"/>
+        </w:category>
+        <w:types>
+          <w:type w:val="bbPlcHdr"/>
+        </w:types>
+        <w:behaviors>
+          <w:behavior w:val="content"/>
+        </w:behaviors>
+        <w:guid w:val="{02DA0AEC-2E65-4BD0-BEB5-9EACFAD87BB6}"/>
+      </w:docPartPr>
+      <w:docPartBody>
+        <w:p w:rsidR="00AE2ABF" w:rsidRDefault="00AE2ABF">
+          <w:pPr>
+            <w:pStyle w:val="46A9B118FFBF4C1B8B0CF50C0A11A7FE"/>
+          </w:pPr>
+          <w:r w:rsidRPr="003D6CE0">
+            <w:rPr>
+              <w:rStyle w:val="PlaceholderText"/>
+            </w:rPr>
+            <w:t>Click here to enter text.</w:t>
+          </w:r>
+        </w:p>
+      </w:docPartBody>
+    </w:docPart>
+    <w:docPart>
+      <w:docPartPr>
+        <w:name w:val="F75675957E174626B3E9B7156D68C9B1"/>
+        <w:category>
+          <w:name w:val="General"/>
+          <w:gallery w:val="placeholder"/>
+        </w:category>
+        <w:types>
+          <w:type w:val="bbPlcHdr"/>
+        </w:types>
+        <w:behaviors>
+          <w:behavior w:val="content"/>
+        </w:behaviors>
+        <w:guid w:val="{4ECC6962-AC8F-4C17-BAA5-02AC300B3087}"/>
+      </w:docPartPr>
+      <w:docPartBody>
+        <w:p w:rsidR="00AE2ABF" w:rsidRDefault="00AE2ABF">
+          <w:pPr>
+            <w:pStyle w:val="F75675957E174626B3E9B7156D68C9B1"/>
+          </w:pPr>
+          <w:r>
+            <w:rPr>
+              <w:rStyle w:val="PlaceholderText"/>
+            </w:rPr>
+            <w:t>[DNV Doc. No.]</w:t>
+          </w:r>
+        </w:p>
+      </w:docPartBody>
+    </w:docPart>
+    <w:docPart>
+      <w:docPartPr>
+        <w:name w:val="C1F74C5BA1384819A19E18F2AE1E87AE"/>
+        <w:category>
+          <w:name w:val="General"/>
+          <w:gallery w:val="placeholder"/>
+        </w:category>
+        <w:types>
+          <w:type w:val="bbPlcHdr"/>
+        </w:types>
+        <w:behaviors>
+          <w:behavior w:val="content"/>
+        </w:behaviors>
+        <w:guid w:val="{59F6686E-6B2B-4217-860A-4D0F96C1217F}"/>
+      </w:docPartPr>
+      <w:docPartBody>
+        <w:p w:rsidR="00AE2ABF" w:rsidRDefault="00AE2ABF">
+          <w:pPr>
+            <w:pStyle w:val="C1F74C5BA1384819A19E18F2AE1E87AE"/>
+          </w:pPr>
+          <w:r>
+            <w:rPr>
+              <w:rStyle w:val="PlaceholderText"/>
+            </w:rPr>
+            <w:t>[Date of last revision]</w:t>
+          </w:r>
+        </w:p>
+      </w:docPartBody>
+    </w:docPart>
+    <w:docPart>
+      <w:docPartPr>
+        <w:name w:val="34A8426F1B0A465988AB0A7FB03FFC75"/>
+        <w:category>
+          <w:name w:val="General"/>
+          <w:gallery w:val="placeholder"/>
+        </w:category>
+        <w:types>
+          <w:type w:val="bbPlcHdr"/>
+        </w:types>
+        <w:behaviors>
+          <w:behavior w:val="content"/>
+        </w:behaviors>
+        <w:guid w:val="{6D0828D6-525B-4622-9A65-55F8B97FABFE}"/>
+      </w:docPartPr>
+      <w:docPartBody>
+        <w:p w:rsidR="00AE2ABF" w:rsidRDefault="00AE2ABF">
+          <w:pPr>
+            <w:pStyle w:val="34A8426F1B0A465988AB0A7FB03FFC75"/>
+          </w:pPr>
+          <w:r>
+            <w:rPr>
+              <w:rStyle w:val="PlaceholderText"/>
+            </w:rPr>
+            <w:t>[DNV Doc. No.]</w:t>
+          </w:r>
+        </w:p>
+      </w:docPartBody>
+    </w:docPart>
+    <w:docPart>
+      <w:docPartPr>
+        <w:name w:val="EDF4ED8F16CF4990970EC9A3236BDED3"/>
+        <w:category>
+          <w:name w:val="General"/>
+          <w:gallery w:val="placeholder"/>
+        </w:category>
+        <w:types>
+          <w:type w:val="bbPlcHdr"/>
+        </w:types>
+        <w:behaviors>
+          <w:behavior w:val="content"/>
+        </w:behaviors>
+        <w:guid w:val="{B4CA475B-21B0-44A6-8C25-FB19CACFC1B4}"/>
+      </w:docPartPr>
+      <w:docPartBody>
+        <w:p w:rsidR="00AE2ABF" w:rsidRDefault="00AE2ABF">
+          <w:pPr>
+            <w:pStyle w:val="EDF4ED8F16CF4990970EC9A3236BDED3"/>
+          </w:pPr>
+          <w:r>
+            <w:rPr>
+              <w:rStyle w:val="PlaceholderText"/>
+            </w:rPr>
+            <w:t>[Date of last revision]</w:t>
+          </w:r>
+        </w:p>
+      </w:docPartBody>
+    </w:docPart>
+    <w:docPart>
+      <w:docPartPr>
+        <w:name w:val="FA7C448B9C974E6685F6BC760AD2E891"/>
+        <w:category>
+          <w:name w:val="General"/>
+          <w:gallery w:val="placeholder"/>
+        </w:category>
+        <w:types>
+          <w:type w:val="bbPlcHdr"/>
+        </w:types>
+        <w:behaviors>
+          <w:behavior w:val="content"/>
+        </w:behaviors>
+        <w:guid w:val="{3BD91B75-9A27-4DD5-8963-91A3C6A260B3}"/>
+      </w:docPartPr>
+      <w:docPartBody>
+        <w:p w:rsidR="006E5EBB" w:rsidRDefault="00AE2ABF" w:rsidP="006E5EBB">
+          <w:pPr>
+            <w:pStyle w:val="DNVGL-Hidden"/>
+          </w:pPr>
+          <w:r>
+            <w:t>This picture may be replaced by a picture relevant to this document, e.g depicting the asset addressed in the document. However, any image or picture used must be DNV property (e.g. downloaded from Brand Central) or DNV must have permission from owner to use it.</w:t>
+          </w:r>
+        </w:p>
+        <w:p w:rsidR="006E5EBB" w:rsidRDefault="00AE2ABF" w:rsidP="006E5EBB">
+          <w:pPr>
+            <w:pStyle w:val="DNVGL-Hidden"/>
+          </w:pPr>
+          <w:r>
+            <w:t xml:space="preserve">Easy way to replace picture: </w:t>
+          </w:r>
+        </w:p>
+        <w:p w:rsidR="00AE2ABF" w:rsidRDefault="00AE2ABF">
+          <w:pPr>
+            <w:pStyle w:val="FA7C448B9C974E6685F6BC760AD2E891"/>
+          </w:pPr>
+          <w:r>
+            <w:t>Double-click on the picture, right-click, select &#x201C;Change Picture&#x201D;…</w:t>
+          </w:r>
+        </w:p>
+      </w:docPartBody>
+    </w:docPart>
+    <w:docPart>
+      <w:docPartPr>
+        <w:name w:val="89F73833BC5E4FB19653B1EE3417AEAD"/>
+        <w:category>
+          <w:name w:val="General"/>
+          <w:gallery w:val="placeholder"/>
+        </w:category>
+        <w:types>
+          <w:type w:val="bbPlcHdr"/>
+        </w:types>
+        <w:behaviors>
+          <w:behavior w:val="content"/>
+        </w:behaviors>
+        <w:guid w:val="{B4406E63-7071-46E0-9497-0532C982F762}"/>
+      </w:docPartPr>
+      <w:docPartBody>
+        <w:p w:rsidR="006E5EBB" w:rsidRDefault="00AE2ABF" w:rsidP="00AE2ABF">
+          <w:pPr>
+            <w:pStyle w:val="89F73833BC5E4FB19653B1EE3417AEAD"/>
+          </w:pPr>
+          <w:r w:rsidRPr="004A3BEE">
+            <w:rPr>
+              <w:rStyle w:val="PlaceholderText"/>
+            </w:rPr>
+            <w:t>Click or tap here to enter text.</w:t>
+          </w:r>
+        </w:p>
+      </w:docPartBody>
+    </w:docPart>
+    <w:docPart>
+      <w:docPartPr>
+        <w:name w:val="3EB436E1E30B4CCCB3EBBBE42DDFDAAE"/>
+        <w:category>
+          <w:name w:val="General"/>
+          <w:gallery w:val="placeholder"/>
+        </w:category>
+        <w:types>
+          <w:type w:val="bbPlcHdr"/>
+        </w:types>
+        <w:behaviors>
+          <w:behavior w:val="content"/>
+        </w:behaviors>
+        <w:guid w:val="{3406D8EA-0149-412B-9122-443F73F69962}"/>
+      </w:docPartPr>
+      <w:docPartBody>
+        <w:p w:rsidR="006E5EBB" w:rsidRDefault="00AE2ABF" w:rsidP="00AE2ABF">
+          <w:pPr>
+            <w:pStyle w:val="3EB436E1E30B4CCCB3EBBBE42DDFDAAE"/>
+          </w:pPr>
+          <w:r w:rsidRPr="00F37FE2">
+            <w:rPr>
+              <w:rStyle w:val="PlaceholderText"/>
+            </w:rPr>
+            <w:t>[DNV doc. No.]</w:t>
+          </w:r>
+        </w:p>
+      </w:docPartBody>
+    </w:docPart>
+    <w:docPart>
+      <w:docPartPr>
+        <w:name w:val="E4DB067BEA3343728117AF63D3171B05"/>
+        <w:category>
+          <w:name w:val="General"/>
+          <w:gallery w:val="placeholder"/>
+        </w:category>
+        <w:types>
+          <w:type w:val="bbPlcHdr"/>
+        </w:types>
+        <w:behaviors>
+          <w:behavior w:val="content"/>
+        </w:behaviors>
+        <w:guid w:val="{3E0A60CE-85E9-4DCD-A37F-359891E726C9}"/>
+      </w:docPartPr>
+      <w:docPartBody>
+        <w:p w:rsidR="006E5EBB" w:rsidRDefault="00AE2ABF" w:rsidP="00AE2ABF">
+          <w:pPr>
+            <w:pStyle w:val="E4DB067BEA3343728117AF63D3171B05"/>
+          </w:pPr>
+          <w:r w:rsidRPr="00F37FE2">
+            <w:rPr>
+              <w:vanish/>
+            </w:rPr>
+            <w:t>[currency]</w:t>
+          </w:r>
+        </w:p>
+      </w:docPartBody>
+    </w:docPart>
+    <w:docPart>
+      <w:docPartPr>
+        <w:name w:val="B5E03ABA910540C9A3438CCFAF17E787"/>
+        <w:category>
+          <w:name w:val="General"/>
+          <w:gallery w:val="placeholder"/>
+        </w:category>
+        <w:types>
+          <w:type w:val="bbPlcHdr"/>
+        </w:types>
+        <w:behaviors>
+          <w:behavior w:val="content"/>
+        </w:behaviors>
+        <w:guid w:val="{ABA0811C-0201-4762-88AE-C2A28601BA39}"/>
+      </w:docPartPr>
+      <w:docPartBody>
+        <w:p w:rsidR="006E5EBB" w:rsidRDefault="00AE2ABF" w:rsidP="00AE2ABF">
+          <w:pPr>
+            <w:pStyle w:val="B5E03ABA910540C9A3438CCFAF17E787"/>
+          </w:pPr>
+          <w:r w:rsidRPr="00F37FE2">
+            <w:rPr>
+              <w:rStyle w:val="PlaceholderText"/>
+            </w:rPr>
+            <w:t>[DNV org. No.]</w:t>
+          </w:r>
+        </w:p>
+      </w:docPartBody>
+    </w:docPart>
+    <w:docPart>
+      <w:docPartPr>
+        <w:name w:val="2A87918AE5324E8386FA4D16B66D3520"/>
+        <w:category>
+          <w:name w:val="General"/>
+          <w:gallery w:val="placeholder"/>
+        </w:category>
+        <w:types>
+          <w:type w:val="bbPlcHdr"/>
+        </w:types>
+        <w:behaviors>
+          <w:behavior w:val="content"/>
+        </w:behaviors>
+        <w:guid w:val="{044837C2-1B1B-4329-9728-69CEF62DD023}"/>
+      </w:docPartPr>
+      <w:docPartBody>
+        <w:p w:rsidR="000D4DC2" w:rsidRDefault="000D4DC2">
+          <w:pPr>
+            <w:pStyle w:val="2A87918AE5324E8386FA4D16B66D3520"/>
+          </w:pPr>
+          <w:r>
+            <w:rPr>
+              <w:rStyle w:val="PlaceholderText"/>
+            </w:rPr>
+            <w:t>[DNV Doc. No.]</w:t>
+          </w:r>
+        </w:p>
+      </w:docPartBody>
+    </w:docPart>
+    <w:docPart>
+      <w:docPartPr>
+        <w:name w:val="14E83B3EAB3E4D92B7127F5A63D59AE2"/>
+        <w:category>
+          <w:name w:val="General"/>
+          <w:gallery w:val="placeholder"/>
+        </w:category>
+        <w:types>
+          <w:type w:val="bbPlcHdr"/>
+        </w:types>
+        <w:behaviors>
+          <w:behavior w:val="content"/>
+        </w:behaviors>
+        <w:guid w:val="{3126CE69-FA4C-48D6-ADB2-0A11018B8A0D}"/>
+      </w:docPartPr>
+      <w:docPartBody>
+        <w:p w:rsidR="000D4DC2" w:rsidRDefault="000D4DC2">
+          <w:pPr>
+            <w:pStyle w:val="14E83B3EAB3E4D92B7127F5A63D59AE2"/>
+          </w:pPr>
+          <w:r>
+            <w:rPr>
+              <w:rStyle w:val="PlaceholderText"/>
+            </w:rPr>
+            <w:t>[Date of last revision]</w:t>
+          </w:r>
+        </w:p>
+      </w:docPartBody>
+    </w:docPart>
+  </w:docParts>
+</w:glossaryDocument>

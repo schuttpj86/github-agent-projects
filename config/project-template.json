@@ -1,0 +1,72 @@
+{
+  "name": "Example Project",
+  "budget_range": [
+    10000,
+    15000
+  ],
+  "tasks": [
+    {
+      "section": "1.1 Project Management & Stakeholder Engagement",
+      "subtasks": [
+        {
+          "name": "Project Management & Meetings",
+          "hours": {
+            "professional": 12,
+            "senior": 5,
+            "principal": 2
+          }
+        },
+        {
+          "name": "Stakeholder Consultation & Data Gathering",
+          "hours": {
+            "professional": 8,
+            "senior": 4,
+            "principal": 0
+          }
+        }
+      ]
+    },
+    {
+      "section": "1.2 Technical Analysis",
+      "subtasks": [
+        {
+          "name": "Data Analysis & Modeling",
+          "hours": {
+            "professional": 30,
+            "senior": 15,
+            "principal": 5
+          }
+        },
+        {
+          "name": "Calculations & Simulations",
+          "hours": {
+            "professional": 20,
+            "senior": 10,
+            "principal": 3
+          }
+        }
+      ]
+    },
+    {
+      "section": "1.3 Reporting & Deliverables",
+      "subtasks": [
+        {
+          "name": "Report Writing & Review",
+          "hours": {
+            "professional": 15,
+            "senior": 8,
+            "principal": 2
+          }
+        },
+        {
+          "name": "Contingency",
+          "hours": {
+            "professional": 5,
+            "senior": 3,
+            "principal": 1
+          }
+        }
+      ]
+    }
+  ]
+}

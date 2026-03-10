@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mermaid to Excalidraw Converter</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .container {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            max-width: 1200px;
+            width: 100%;
+            padding: 40px;
+        }
+
+        h1 {
+            color: #333;
+            margin-bottom: 10px;
+            font-size: 32px;
+        }
+
+        .subtitle {
+            color: #666;
+            margin-bottom: 30px;
+            font-size: 14px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            margin-bottom: 20px;
+        }
+
+        .panel {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .panel h2 {
+            color: #444;
+            margin-bottom: 10px;
+            font-size: 18px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .panel h2 .icon {
+            font-size: 20px;
+        }
+
+        textarea {
+            width: 100%;
+            min-height: 400px;
+            padding: 15px;
+            border: 2px solid #e0e0e0;
+            border-radius: 8px;
+            font-family: 'Courier New', monospace;
+            font-size: 14px;
+            resize: vertical;
+            transition: border-color 0.3s;
+        }
+
+        textarea:focus {
+            outline: none;
+            border-color: #667eea;
+        }
+
+        .buttons {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        button {
+            padding: 12px 24px;
+            border: none;
+            border-radius: 6px;
+            font-size: 14px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .btn-primary {
+            background: #667eea;
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background: #5568d3;
+            transform: translateY(-1px);
+            box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+        }
+
+        .btn-secondary {
+            background: #f0f0f0;
+            color: #333;
+        }
+
+        .btn-secondary:hover {
+            background: #e0e0e0;
+        }
+
+        .btn-success {
+            background: #10b981;
+            color: white;
+        }
+
+        .btn-success:hover {
+            background: #059669;
+        }
+
+        .status {
+            margin-top: 20px;
+            padding: 15px;
+            border-radius: 6px;
+            display: none;
+        }
+
+        .status.success {
+            background: #d1fae5;
+            color: #065f46;
+            border: 1px solid #10b981;
+            display: block;
+        }
+
+        .status.error {
+            background: #fee2e2;
+            color: #991b1b;
+            border: 1px solid #ef4444;
+            display: block;
+        }
+
+        .examples {
+            margin-top: 20px;
+            padding: 15px;
+            background: #f9fafb;
+            border-radius: 6px;
+        }
+
+        .examples h3 {
+            color: #444;
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+
+        .examples button {
+            margin: 5px 5px 5px 0;
+            padding: 6px 12px;
+            font-size: 12px;
+        }
+
+        @media (max-width: 768px) {
+            .grid {
+                grid-template-columns: 1fr;
+            }
+
+            .container {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🎨 Mermaid → Excalidraw Converter</h1>
+        <p class="subtitle">Convert Mermaid diagrams to Excalidraw format instantly</p>
+
+        <div class="grid">
+            <div class="panel">
+                <h2><span class="icon">📝</span>Mermaid Input</h2>
+                <textarea id="mermaidInput" placeholder="graph TD&#10;    A[Start] --> B{Decision}&#10;    B -->|Yes| C[End]&#10;    B -->|No| D[Loop]&#10;    D --> A"></textarea>
+            </div>
+
+            <div class="panel">
+                <h2><span class="icon">🎨</span>Excalidraw Output (JSON)</h2>
+                <textarea id="excalidrawOutput" readonly placeholder="Excalidraw JSON will appear here..."></textarea>
+            </div>
+        </div>
+
+        <div class="buttons">
+            <button class="btn-primary" onclick="convertDiagram()">
+                ✨ Convert
+            </button>
+            <button class="btn-success" onclick="downloadExcalidraw()">
+                💾 Download .excalidraw
+            </button>
+            <button class="btn-secondary" onclick="copyToClipboard()">
+                📋 Copy JSON
+            </button>
+            <button class="btn-secondary" onclick="clearAll()">
+                🗑️ Clear
+            </button>
+        </div>
+
+        <div id="status" class="status"></div>
+
+        <div class="examples">
+            <h3>📚 Quick Examples:</h3>
+            <button class="btn-secondary" onclick="loadExample('flowchart')">Flowchart</button>
+            <button class="btn-secondary" onclick="loadExample('sequence')">Sequence Diagram</button>
+            <button class="btn-secondary" onclick="loadExample('class')">Class Diagram</button>
+            <button class="btn-secondary" onclick="loadExample('gantt')">Gantt Chart</button>
+            <button class="btn-secondary" onclick="loadExample('pie')">Pie Chart</button>
+        </div>
+    </div>
+
+    <script type="module">
+        import { parseMermaidToExcalidraw } from 'https://unpkg.com/@excalidraw/mermaid-to-excalidraw@latest/dist/index.js';
+
+        window.parseMermaidToExcalidraw = parseMermaidToExcalidraw;
+
+        // Load default example
+        loadExample('flowchart');
+    </script>
+
+    <script>
+        const examples = {
+            flowchart: `graph TD
+    A[Lead Intake] --> B{Budget Approved?}
+    B -->|Yes| C[Create Proposal]
+    B -->|No| D[Follow Up]
+    C --> E[Client Review]
+    E -->|Accepted| F[Project Kickoff]
+    E -->|Rejected| G[Revise Proposal]
+    G --> E
+    F --> H[Technical Analysis]`,
+            
+            sequence: `sequenceDiagram
+    participant Client
+    participant Sales
+    participant Engineer
+    participant QA
+    
+    Client->>Sales: Request Quote
+    Sales->>Engineer: Calculate Budget
+    Engineer-->>Sales: Budget Estimate
+    Sales->>Client: Send Proposal
+    Client->>Sales: Accept
+    Sales->>Engineer: Start Project
+    Engineer->>QA: Submit for Review
+    QA-->>Engineer: Approved`,
+            
+            class: `classDiagram
+    class Project {
+        +String id
+        +String client
+        +Date deadline
+        +calculateBudget()
+        +generateReport()
+    }
+    class Engineer {
+        +String name
+        +String[] skills
+        +assignTask()
+    }
+    Project "1" --> "*" Engineer`,
+            
+            gantt: `gantt
+    title Project Timeline
+    dateFormat  YYYY-MM-DD
+    section Planning
+    Lead Intake       :a1, 2024-01-01, 7d
+    Budget Calc       :a2, after a1, 3d
+    section Execution
+    Field Work        :2024-01-11, 14d
+    Analysis          :2024-01-25, 10d
+    section Delivery
+    Report Draft      :2024-02-04, 5d
+    PE Review         :2024-02-09, 3d`,
+            
+            pie: `pie title Project Budget Distribution
+    "Engineering" : 42.5
+    "Field Work" : 25.0
+    "QA Review" : 10.5
+    "Reporting" : 15.0
+    "Admin" : 7.0`
+        };
+
+        function loadExample(type) {
+            document.getElementById('mermaidInput').value = examples[type];
+            showStatus('Example loaded! Click "Convert" to see the result.', 'success');
+        }
+
+        async function convertDiagram() {
+            const mermaidText = document.getElementById('mermaidInput').value.trim();
+            
+            if (!mermaidText) {
+                showStatus('Please enter Mermaid diagram text.', 'error');
+                return;
+            }
+
+            try {
+                // Parse using imported function
+                const { elements, files } = await window.parseMermaidToExcalidraw(mermaidText, {
+                    fontSize: 16,
+                });
+
+                // Create Excalidraw structure
+                const excalidrawData = {
+                    type: 'excalidraw',
+                    version: 2,
+                    source: 'https://excalidraw.com',
+                    elements: elements,
+                    appState: {
+                        viewBackgroundColor: '#ffffff',
+                        gridSize: 20,
+                    },
+                    files: files || {},
+                };
+
+                // Display JSON
+                document.getElementById('excalidrawOutput').value = JSON.stringify(excalidrawData, null, 2);
+                showStatus(`✅ Successfully converted! Generated ${elements.length} elements.`, 'success');
+            } catch (error) {
+                showStatus(`❌ Error: ${error.message}`, 'error');
+                console.error(error);
+            }
+        }
+
+        function downloadExcalidraw() {
+            const output = document.getElementById('excalidrawOutput').value;
+            if (!output) {
+                showStatus('Please convert a diagram first.', 'error');
+                return;
+            }
+
+            const blob = new Blob([output], { type: 'application/json' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = 'diagram.excalidraw';
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            URL.revokeObjectURL(url);
+            
+            showStatus('📥 Downloaded diagram.excalidraw', 'success');
+        }
+
+        function copyToClipboard() {
+            const output = document.getElementById('excalidrawOutput').value;
+            if (!output) {
+                showStatus('Nothing to copy. Please convert a diagram first.', 'error');
+                return;
+            }
+
+            navigator.clipboard.writeText(output).then(() => {
+                showStatus('📋 Copied to clipboard!', 'success');
+            }).catch(err => {
+                showStatus('Failed to copy to clipboard.', 'error');
+            });
+        }
+
+        function clearAll() {
+            document.getElementById('mermaidInput').value = '';
+            document.getElementById('excalidrawOutput').value = '';
+            document.getElementById('status').style.display = 'none';
+        }
+
+        function showStatus(message, type) {
+            const statusEl = document.getElementById('status');
+            statusEl.textContent = message;
+            statusEl.className = `status ${type}`;
+        }
+
+        // Make functions globally available
+        window.loadExample = loadExample;
+        window.convertDiagram = convertDiagram;
+        window.downloadExcalidraw = downloadExcalidraw;
+        window.copyToClipboard = copyToClipboard;
+        window.clearAll = clearAll;
+    </script>
+</body>
+</html>

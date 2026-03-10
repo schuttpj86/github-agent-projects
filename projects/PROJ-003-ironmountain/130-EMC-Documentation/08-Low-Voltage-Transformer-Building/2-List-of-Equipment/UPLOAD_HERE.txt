@@ -1,0 +1,15 @@
+UPLOAD EQUIPMENT LIST HERE
+
+Required: List of NEW equipment being introduced in the LV Transformer Building under Project DP2-4
+
+Preferred format: Excel (.xlsx) or CSV
+
+Required columns:
+- Equipment Name (e.g., "LV Transformer", "Distribution Panel", "Switchgear")
+- Brand/Manufacturer
+- Model Number
+- Location/Room
+- Quantity
+
+Only include NEW equipment introduced under DP2-4.
+Do NOT include existing equipment unless being replaced/modified.

@@ -101,5 +101,24 @@
       "Peer review for projects >$50k",
       "Client feedback surveys post-delivery"
     ]
+  },
+  "branding": {
+    "style_guide": "config/dnv-brand-style-guide.md",
+    "color_palette": "config/dnv-brand-colors.json",
+    "hero_colors": {
+      "primary": "White (#ffffff)",
+      "secondary": "Dark Blue (#0f204b)"
+    },
+    "typography": {
+      "headings": "Dark Blue (#0f204b)",
+      "subheadings": "Sea Blue (#003591)",
+      "body_text": "Black (#000000)"
+    },
+    "design_principles": [
+      "Be generous with white space",
+      "White and Dark Blue are hero colors",
+      "Academic, sage-like approach",
+      "Professional and well-considered presentation"
+    ]
   }
 }

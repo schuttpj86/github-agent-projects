@@ -1,0 +1,15 @@
+UPLOAD EQUIPMENT LIST HERE
+
+Required: List of NEW equipment being introduced in Storage Facilities (New 1 and 2) under Project DP2-4
+
+Preferred format: Excel (.xlsx) or CSV
+
+Required columns:
+- Equipment Name (e.g., "Lighting Control", "HVAC System")
+- Brand/Manufacturer
+- Model Number
+- Location (specify "Opslagloods New 1" or "Opslagloods New 2")
+- Quantity
+
+Only include NEW equipment introduced under DP2-4.
+Do NOT include existing equipment unless being replaced/modified.

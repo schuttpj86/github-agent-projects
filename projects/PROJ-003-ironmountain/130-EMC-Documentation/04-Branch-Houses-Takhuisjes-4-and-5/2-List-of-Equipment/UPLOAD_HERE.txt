@@ -1,0 +1,15 @@
+UPLOAD EQUIPMENT LIST HERE
+
+Required: List of NEW equipment being introduced in Takhuisjes 4 and 5 under Project DP2-4
+
+Preferred format: Excel (.xlsx) or CSV
+
+Required columns:
+- Equipment Name (e.g., "Protection Relay", "Control Panel", "RTU")
+- Brand/Manufacturer (e.g., "ABB", "Siemens")
+- Model Number (e.g., "REF615")
+- Location (specify "Takhuis 4" or "Takhuis 5")
+- Quantity
+
+Only include NEW equipment introduced under DP2-4.
+Do NOT include existing equipment unless being replaced/modified.

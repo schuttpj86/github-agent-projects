@@ -70,6 +70,21 @@ Use `resources/complexity-factors.json` to score the project (0-100 scale):
 
 ### Run Python Calculator
 
+Before running the calculator, **ask the owner which bill rate tier to use** for this client based on the 2026 rate card:
+
+**2026 Bill Rate Tiers (EUR):**
+- **Premium Plus**: Highest tier (36% average profit margin)
+- **Premium**: Standard premium tier (30% average profit margin)
+- **Standard**: Standard bill rate (24% average profit margin)
+- **Discounted**: Discounted rate (11% average profit margin)
+
+**Grade-based rates per tier** (examples for reference):
+- Grade 5-7 (Professional): €217 (Premium Plus), €194 (Premium), €179 (Standard), €145 (Discounted)
+- Grade 8-9 (Senior): €277 (Premium Plus), €246 (Premium), €222 (Standard), €189 (Discounted)
+- Grade 10-11 (Principal): €307 (Premium Plus), €281 (Premium), €265 (Standard), €231 (Discounted)
+
+Once the owner confirms the tier and identifies which grades/roles will be used, calculate the budget accordingly.
+
 Execute: `C:/AIprojects/github-agent/.venv/Scripts/python.exe scripts/budget_calculator.py`
 
 **Example Command**:

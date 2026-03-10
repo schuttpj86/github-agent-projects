@@ -1,0 +1,15 @@
+UPLOAD EQUIPMENT LIST HERE
+
+Required: List of NEW equipment being introduced in the NSA Building under Project DP2-4
+
+Preferred format: Excel (.xlsx) or CSV
+
+Required columns:
+- Equipment Name (e.g., "Diesel Generator", "Control Panel", "UPS")
+- Brand/Manufacturer (e.g., "Caterpillar", "ABB")
+- Model Number (e.g., "3512C")
+- Location/Room
+- Quantity
+
+Only include NEW equipment introduced under DP2-4.
+Do NOT include existing equipment unless being replaced/modified.

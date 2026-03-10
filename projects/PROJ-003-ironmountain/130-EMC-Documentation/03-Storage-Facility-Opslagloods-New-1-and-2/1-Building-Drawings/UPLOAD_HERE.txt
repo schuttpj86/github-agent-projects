@@ -1,0 +1,16 @@
+UPLOAD BUILDING DRAWINGS HERE
+
+Required: Floor plans, elevations, and equipment layout drawings for Storage Facilities (Opslagloods New 1 and 2)
+
+Accepted formats:
+- CAD files (.dwg, .dxf)
+- PDF drawings
+- Image files (.png, .jpg) if necessary
+
+What to include:
+- Room layouts with dimensions (for both facilities)
+- Equipment placement locations
+- Storage area layouts
+- Elevation views
+
+Only include drawings related to Project DP2-4 modifications.

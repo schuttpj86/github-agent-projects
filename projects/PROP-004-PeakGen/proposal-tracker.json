@@ -1,0 +1,102 @@
+{
+  "meta": {
+    "project_id": "PROP-004-PeakGen",
+    "project_name": "Peak Gen NESO LT29 Stability Studies",
+    "client": "Peak Gen",
+    "created": "2026-03-19T10:00:00Z",
+    "last_updated": "2026-03-23T20:00:00Z",
+    "status": "draft_complete"
+  },
+  "revision": {
+    "revision_number": 1,
+    "trigger": "Client email with updated NESO pack (V6) and tiered quotation structure request",
+    "received_at": "2026-03-23T00:00:00Z",
+    "new_documents": [
+      "rfp/RE_ Peak Gen - NESO LT29 Stability Studies Quotation Request/email.md",
+      "rfp/RE_ Peak Gen - NESO LT29 Stability Studies Quotation Request/05.2 LT2029 Stability Feasibility Study Requirements V6.pdf",
+      "rfp/RE_ Peak Gen - NESO LT29 Stability Studies Quotation Request/2. LT2029 Stability Technical Proforma V5.xlsx",
+      "rfp/RE_ Peak Gen - NESO LT29 Stability Studies Quotation Request/05.1 LT2029 Stability Effectiveness Sheet V7.xlsx",
+      "rfp/RE_ Peak Gen - NESO LT29 Stability Studies Quotation Request/2.1 LT2029 Stability Feasibility Study Template V3.docx"
+    ],
+    "key_changes": [
+      "Tiered quotation: 5 line items (setup + 3 mutually exclusive tiers + T&M)",
+      "Scope expanded from 4 variants to up to 12 variants (6 sites x 2 options)",
+      "NESO documents upgraded: Requirements V5->V6, Proforma V4->V5",
+      "New documents: Effectiveness Sheet V7, Feasibility Study Template V3"
+    ]
+  },
+  "stages": {
+    "setup": {"status": "completed", "completed_at": "2026-03-19T10:00:00Z"},
+    "inputs": {"status": "completed", "completed_at": "2026-03-23T14:00:00Z"},
+    "extraction": {"status": "completed", "completed_at": "2026-03-23T15:00:00Z"},
+    "drafting": {"status": "completed", "completed_at": "2026-03-23T17:00:00Z"},
+    "template": {"status": "completed", "completed_at": "2026-03-23T19:00:00Z", "note": "REV1 DOCX with tracked changes"},
+    "refinement": {"status": "completed", "completed_at": "2026-03-23T19:30:00Z"},
+    "budget": {"status": "completed", "completed_at": "2026-03-23T18:00:00Z"}
+  },
+  "inputs": {
+    "template": "DNV Proposal Template.docx",
+    "tender_docs": [
+      {"file": "rfp/05 LT2029 Stability Service Technical Specification V3.pdf"},
+      {"file": "rfp/05.2 LT2029 Stability Feasibility Study Requirements V5.pdf", "note": "Superseded by V6"},
+      {"file": "rfp/2. LT2029 Stability Technical Proforma V4 outdated- see V5.xlsx", "note": "Superseded by V5"},
+      {"file": "rfp/LT2029 NGET Connection Feasibility Report V1 Final_.pdf"},
+      {"file": "rfp/Appendix A_Preliminary RS4 Datasheet.pdf"},
+      {"file": "rfp/OP1227543_PeakGen_RS4 Standard System Offering TES_000.pdf"},
+      {"file": "rfp/Tech note on 2off RS4 machines per Tx secondary (1).pdf"},
+      {"file": "rfp/Peak Gen - DNV NDA_20260311_Signed.pdf"},
+      {"file": "rfp/RE_ Peak Gen - NESO LT29 Stability Studies Quotation Request/email.md", "added": "2026-03-23"},
+      {"file": "rfp/RE_ Peak Gen - NESO LT29 Stability Studies Quotation Request/05.2 LT2029 Stability Feasibility Study Requirements V6.pdf", "added": "2026-03-23", "replaces": "V5"},
+      {"file": "rfp/RE_ Peak Gen - NESO LT29 Stability Studies Quotation Request/2. LT2029 Stability Technical Proforma V5.xlsx", "added": "2026-03-23", "replaces": "V4"},
+      {"file": "rfp/RE_ Peak Gen - NESO LT29 Stability Studies Quotation Request/05.1 LT2029 Stability Effectiveness Sheet V7.xlsx", "added": "2026-03-23"},
+      {"file": "rfp/RE_ Peak Gen - NESO LT29 Stability Studies Quotation Request/2.1 LT2029 Stability Feasibility Study Template V3.docx", "added": "2026-03-23"}
+    ],
+    "context": "initial proposal.md",
+    "approved_at": "2026-03-19T10:05:00Z"
+  },
+  "prd": {
+    "approved": true,
+    "approved_at": "2026-03-23T15:00:00Z",
+    "note": "Revised for V6 and tiered structure",
+    "clarifications": [
+      "Base scope = 4 variants, additional on T&M",
+      "Milestones defined with customer post-award",
+      "GE models expected at project start",
+      "REV1: Lines 2/3/4 are mutually exclusive tiers",
+      "REV1: Volume discount for Line 4 (12 variants)",
+      "REV1: Check V7 for additional site names"
+    ]
+  },
+  "sections": {
+    "1_introduction": {"status": "completed", "approved_at": "2026-03-23T16:00:00Z"},
+    "2_solution": {"status": "completed", "approved_at": "2026-03-23T16:10:00Z"},
+    "3_scope": {"status": "completed", "approved_at": "2026-03-23T16:20:00Z"},
+    "4_schedule": {"status": "completed", "approved_at": "2026-03-23T16:30:00Z"},
+    "5_compensation": {"status": "completed", "approved_at": "2026-03-23T18:30:00Z", "note": "Tiered pricing with budget engine values"},
+    "6_organisation": {"status": "completed", "approved_at": "2026-03-23T16:40:00Z"},
+    "7_contractual": {"status": "completed", "approved_at": "2026-03-23T16:50:00Z"},
+    "8_acceptance": {"status": "completed", "approved_at": "2026-03-19T11:00:00Z", "note": "No changes needed"}
+  },
+  "budget": {
+    "status": "completed",
+    "tasks_file": "budget/tasks.json",
+    "hours_approved": true,
+    "total_estimate": {"line1": 18596, "line2": 24737, "line3": 48062, "line4": 88314},
+    "total_hours": {"line1": 112, "line2": 151, "line3": 292, "line4": 540},
+    "breakdown_file": "budget/budget-breakdown.xlsx",
+    "note": "5 tiered line items. Lines 2/3/4 mutually exclusive. Volume discount on Line 4."
+  },
+  "output": {
+    "proposal_file": "output/DNV Proposal PeakGen REV1.docx",
+    "final_approved": false,
+    "final_approved_at": null,
+    "previous_versions": [
+      {"file": "output/DNV Proposal PeakGen FINAL.docx", "version": "V1", "date": "2026-03-19"}
+    ]
+  },
+  "log": [
+    {"timestamp": "2026-03-19T10:00:00Z", "action": "project_created", "note": "Initial setup with 8 tender documents"},
+    {"timestamp": "2026-03-23T14:00:00Z", "action": "revision_started", "note": "Client email with V6 requirements and tiered quotation structure. 4 new documents registered."},
+    {"timestamp": "2026-03-23T20:00:00Z", "action": "revision_complete", "note": "REV1 complete: tiered quotation (5 line items), V6 requirements, budget engine values, DOCX with tracked changes."}
+  ]
+}

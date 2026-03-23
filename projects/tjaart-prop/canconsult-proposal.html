@@ -1,0 +1,1019 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CanConsult — Advisory Proposal</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@700;800&display=swap');
+
+    :root {
+      --teal:      #2a7a7a;
+      --teal-dk:   #1d5c5c;
+      --teal-lt:   #e4f4f4;
+      --teal-mid:  #3a9090;
+      --ink:       #1e1e1e;
+      --ink-mid:   #555555;
+      --ink-light: #999999;
+      --rule:      #e8e8e8;
+      --page:      #ffffff;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: #d8dede;
+      font-family: 'Inter', system-ui, sans-serif;
+      color: var(--ink);
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+
+    /* ── Page shell ─────────────────────────────────────── */
+    .page {
+      max-width: 820px;
+      margin: 40px auto;
+      background: var(--page);
+      box-shadow: 0 6px 48px rgba(0,0,0,0.18);
+    }
+
+    /* ── Cover header ───────────────────────────────────── */
+    .cover {
+      background: var(--teal-dk);
+      color: #fff;
+      padding: 52px 64px 44px;
+      position: relative;
+      overflow: hidden;
+      min-height: 220px;
+    }
+
+    /* Decorative overlapping circles — matches template */
+    .cover::before,
+    .cover::after,
+    .cover .deco1,
+    .cover .deco2,
+    .cover .deco3 {
+      content: '';
+      position: absolute;
+      border-radius: 50%;
+      pointer-events: none;
+    }
+    .cover::before {
+      width: 320px; height: 320px;
+      background: rgba(255,255,255,0.06);
+      top: -80px; right: -60px;
+    }
+    .cover::after {
+      width: 220px; height: 220px;
+      background: rgba(255,255,255,0.08);
+      top: 10px; right: 80px;
+    }
+    .cover .deco1 {
+      width: 160px; height: 160px;
+      background: rgba(255,255,255,0.05);
+      top: 60px; right: 200px;
+    }
+    .cover .deco2 {
+      width: 100px; height: 100px;
+      background: rgba(255,255,255,0.07);
+      bottom: -20px; right: 140px;
+    }
+    .cover .deco3 {
+      width: 260px; height: 260px;
+      background: rgba(58,144,144,0.35);
+      top: -40px; right: 180px;
+    }
+
+    .cover-inner { position: relative; z-index: 1; }
+
+    .cover-eyebrow {
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.55);
+      margin-bottom: 10px;
+    }
+    .cover-title {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 42px;
+      font-weight: 800;
+      line-height: 1.1;
+      color: #fff;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 16px;
+    }
+    .cover-sub {
+      font-size: 13px;
+      color: rgba(255,255,255,0.6);
+      font-weight: 400;
+      max-width: 460px;
+      line-height: 1.6;
+    }
+
+    /* ── Prepared-for strip ─────────────────────────────── */
+    .prepared-strip {
+      background: var(--teal-lt);
+      border-left: 5px solid var(--teal);
+      padding: 18px 64px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .prepared-for-label {
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 1.8px;
+      text-transform: uppercase;
+      color: var(--teal);
+      margin-bottom: 3px;
+    }
+    .prepared-for-name {
+      font-size: 15px;
+      font-weight: 700;
+      color: var(--ink);
+    }
+    .prepared-meta {
+      text-align: right;
+      font-size: 11px;
+      color: var(--ink-light);
+      line-height: 1.8;
+    }
+    .prepared-meta strong {
+      color: var(--ink-mid);
+      font-weight: 600;
+    }
+
+    /* ── Body ───────────────────────────────────────────── */
+    .body { padding: 52px 64px; background: #fff; }
+
+    /* ── Section ────────────────────────────────────────── */
+    .section { margin-bottom: 44px; }
+
+    h2 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--teal-dk);
+      margin-bottom: 6px;
+      padding-bottom: 10px;
+      border-bottom: 3px solid var(--teal);
+      text-transform: uppercase;
+      letter-spacing: 0.3px;
+    }
+
+    p {
+      font-size: 13.5px;
+      line-height: 1.75;
+      color: var(--ink-mid);
+      margin-top: 12px;
+    }
+
+    /* ── Terms / bullet list ────────────────────────────── */
+    .terms {
+      list-style: none;
+      font-size: 12.5px;
+      color: var(--ink-mid);
+      margin-top: 14px;
+    }
+    .terms li {
+      padding: 8px 0;
+      border-bottom: 1px solid var(--rule);
+      display: flex;
+      gap: 14px;
+      align-items: baseline;
+    }
+    .terms li:last-child { border: none; }
+    .term-key {
+      min-width: 180px;
+      font-weight: 700;
+      color: var(--teal-dk);
+      font-size: 12px;
+    }
+
+    /* ── Phase cards ────────────────────────────────────── */
+    .phases {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+      margin-top: 16px;
+    }
+    .phase-card {
+      border: 1px solid var(--rule);
+      border-top: 4px solid var(--teal);
+      border-radius: 2px;
+      overflow: hidden;
+    }
+    .phase-header {
+      background: var(--teal-lt);
+      padding: 10px 16px;
+      font-size: 10px;
+      font-weight: 800;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: var(--teal-dk);
+    }
+    .phase-header .phase-num {
+      color: var(--teal-mid);
+      margin-right: 4px;
+    }
+    .phase-body { padding: 14px 16px; background: #fff; }
+    .phase-title {
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--ink);
+      margin-bottom: 10px;
+    }
+    .phase-items {
+      list-style: none;
+      font-size: 12px;
+      color: var(--ink-mid);
+      line-height: 2;
+    }
+    .phase-items li { display: flex; gap: 8px; }
+    .phase-items li::before {
+      content: '▸';
+      color: var(--teal);
+      font-size: 11px;
+      margin-top: 1px;
+      flex-shrink: 0;
+    }
+
+    /* ── Table ──────────────────────────────────────────── */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 12.5px;
+      margin-top: 16px;
+    }
+    thead tr { background: var(--teal-dk); color: #fff; }
+    thead th {
+      padding: 11px 14px;
+      text-align: left;
+      font-weight: 600;
+      font-size: 11px;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+    }
+    tbody tr:nth-child(even) { background: var(--teal-lt); }
+    tbody tr:nth-child(odd)  { background: #fff; }
+    tbody td {
+      padding: 10px 14px;
+      color: var(--ink-mid);
+      vertical-align: top;
+      border-bottom: 1px solid var(--rule);
+    }
+    tbody td:first-child { color: var(--ink); font-weight: 600; }
+    .rate-cell {
+      font-weight: 700;
+      color: var(--teal-dk) !important;
+      white-space: nowrap;
+    }
+
+    /* ── Signature ──────────────────────────────────────── */
+    .signature-block {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      margin-top: 32px;
+    }
+    .sig-box { border-top: 2px solid var(--teal); padding-top: 10px; }
+    .sig-label { font-size: 10px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; color: var(--teal); margin-bottom: 2px; }
+    .sig-name  { font-size: 13px; font-weight: 600; color: var(--ink); margin-top: 28px; }
+    .sig-role  { font-size: 11px; color: var(--ink-mid); }
+    .sig-date  { font-size: 11px; color: var(--ink-light); margin-top: 6px; }
+
+    /* ── Footer ─────────────────────────────────────────── */
+    .footer {
+      background: var(--teal-dk);
+      padding: 16px 64px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .footer-brand {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 14px;
+      font-weight: 700;
+      color: rgba(255,255,255,0.7);
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+    .footer-note { font-size: 10.5px; color: rgba(255,255,255,0.35); }
+
+    @media print {
+      body { background: white; }
+      .page { margin: 0; box-shadow: none; }
+    }
+  </style>
+</head>
+<body>
+
+<div class="page">
+
+  <!-- ── Cover ──────────────────────────────────────────────── -->
+  <div class="cover">
+    <div class="deco1"></div>
+    <div class="deco2"></div>
+    <div class="deco3"></div>
+    <div class="cover-inner">
+      <div class="cover-eyebrow">CanConsult · Advisory Services</div>
+      <div class="cover-title">Business<br>Proposal</div>
+      <div class="cover-sub">Senior Canmaking Expert · D&amp;I Process · Management Training · Training Department Development</div>
+    </div>
+  </div>
+
+  <!-- ── Prepared-for strip ─────────────────────────────────── -->
+  <div class="prepared-strip">
+    <div>
+      <div class="prepared-for-label">Prepared For</div>
+      <div class="prepared-for-name">US Canmaking Company</div>
+    </div>
+    <div class="prepared-meta">
+      <strong>Proposal Ref:</strong> CC-2026-001<br>
+      <strong>Date:</strong> March 23, 2026<br>
+      <strong>Status:</strong> Confidential
+    </div>
+  </div>
+
+  <!-- ── Body ───────────────────────────────────────────────── -->
+  <div class="body">
+
+    <!-- Executive Summary -->
+    <div class="section">
+      <h2>Executive Summary</h2>
+      <p>
+        CanConsult proposes a structured, phased advisory engagement to support your US canmaking facility — delivered by a retired, world-recognized senior expert with deep specialization in the Drawn and Ironed (D&amp;I) process.
+      </p>
+      <ul class="terms" style="margin-top:14px;">
+        <li>
+          <span class="term-key">Scope</span>
+          On-site technical assessment, management knowledge transfer, and long-term training department development
+        </li>
+        <li>
+          <span class="term-key">Expert Profile</span>
+          World-recognized, retired senior specialist · 10+ years D&amp;I process expertise · operational and structural insight
+        </li>
+        <li>
+          <span class="term-key">Talent Crisis</span>
+          56% of US manufacturers are struggling to retain skilled talent as the workforce ages
+        </li>
+        <li>
+          <span class="term-key">Digital Imperative</span>
+          84.7% of US manufacturers are actively prioritizing upskilling and digital transformation in 2026
+        </li>
+        <li>
+          <span class="term-key">Strategic Value</span>
+          A structured, expert-led training department is no longer optional — it is a competitive requirement
+        </li>
+      </ul>
+    </div>
+
+    <!-- Engagement Model -->
+    <div class="section">
+      <h2>Phased Engagement Model</h2>
+      <div class="phases">
+        <div class="phase-card">
+          <div class="phase-header"><span class="phase-num">PHASE I</span> Discovery &amp; Assessment — Week 1</div>
+          <div class="phase-body">
+            <div class="phase-title">Paid Discovery Phase</div>
+            <ul class="phase-items">
+              <li>On-site plant floor observation</li>
+              <li>Full D&amp;I process technical review</li>
+              <li>Management training lectures</li>
+              <li>Structural gap analysis vs. SA model</li>
+              <li>Formal written technical report</li>
+            </ul>
+          </div>
+        </div>
+        <div class="phase-card">
+          <div class="phase-header"><span class="phase-num">PHASE II</span> Strategic Development — Ongoing</div>
+          <div class="phase-body">
+            <div class="phase-title">Training Department Build-Out</div>
+            <ul class="phase-items">
+              <li>Protocol gap remediation plan</li>
+              <li>Industry 4.0 / Smart Factory alignment</li>
+              <li>Structured career track design</li>
+              <li>Formal training program development</li>
+              <li>Ongoing strategic retainer support</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Fee Schedule -->
+    <div class="section">
+      <h2>Fee Schedule — 2026 US Rates</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Engagement</th>
+            <th>Model</th>
+            <th>Rate</th>
+            <th>Notes</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Assessment Week</td>
+            <td>Daily Rate</td>
+            <td class="rate-cell">$1,660+ / day</td>
+            <td>Portal-to-portal + travel expenses</td>
+          </tr>
+          <tr>
+            <td>Management Lectures</td>
+            <td>Hourly</td>
+            <td class="rate-cell">$300–$600 / hr</td>
+            <td>Billed per session</td>
+          </tr>
+          <tr>
+            <td>Technical Plant Report</td>
+            <td>Fixed Milestone</td>
+            <td class="rate-cell">$50,000+</td>
+            <td>Scales with plant size &amp; complexity</td>
+          </tr>
+          <tr>
+            <td>Training Dept. Support</td>
+            <td>Monthly Retainer</td>
+            <td class="rate-cell">$5,000–$15,000+ / mo</td>
+            <td>Ongoing strategic advisory</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Terms -->
+    <div class="section">
+      <h2>Terms &amp; Conditions</h2>
+      <ul class="terms">
+        <li>
+          <span class="term-key">Billing Start</span>
+          Portal-to-portal — from departure at home base through return
+        </li>
+        <li>
+          <span class="term-key">Expenses</span>
+          Airfare, accommodation, and per diem billed at cost
+        </li>
+        <li>
+          <span class="term-key">Overtime</span>
+          Daily rate covers up to 12 hrs; overtime billed at $152–$412/hr
+        </li>
+        <li>
+          <span class="term-key">Payment</span>
+          Phase I invoiced upon engagement commencement; Phase II monthly in advance
+        </li>
+        <li>
+          <span class="term-key">Cancellation</span>
+          14 days written notice required; travel costs non-refundable once booked
+        </li>
+        <li>
+          <span class="term-key">Confidentiality</span>
+          All plant data, processes, and findings treated as strictly confidential
+        </li>
+        <li>
+          <span class="term-key">Validity</span>
+          This proposal is valid for 30 days from the date of issue
+        </li>
+      </ul>
+    </div>
+
+    <!-- Acceptance -->
+    <div class="section">
+      <h2>Proposal Acceptance</h2>
+      <p>By signing below, both parties agree to the scope and commercial terms outlined in this proposal. A detailed Statement of Work will be issued upon acceptance.</p>
+      <div class="signature-block">
+        <div class="sig-box">
+          <div class="sig-label">For CanConsult</div>
+          <div class="sig-name">________________________</div>
+          <div class="sig-role">Senior Advisor · CanConsult</div>
+          <div class="sig-date">Date: ___________________</div>
+        </div>
+        <div class="sig-box">
+          <div class="sig-label">For Client</div>
+          <div class="sig-name">________________________</div>
+          <div class="sig-role">Authorized Signatory</div>
+          <div class="sig-date">Date: ___________________</div>
+        </div>
+      </div>
+    </div>
+
+  </div><!-- /body -->
+
+  <!-- ── Footer ────────────────────────────────────────────── -->
+  <div class="footer">
+    <div class="footer-brand">CanConsult</div>
+    <div class="footer-note">Proposal Ref: CC-2026-001 · Confidential · Valid 30 days from March 23, 2026</div>
+  </div>
+
+</div><!-- /page -->
+
+</body>
+</html>
+
+    :root {
+      --ink:       #1a1a1a;
+      --ink-mid:   #444444;
+      --ink-light: #888888;
+      --rule:      #e0e0e0;
+      --accent:    #1a4a2e;
+      --accent-lt: #e8f2ec;
+      --gold:      #b8963e;
+      --page:      #fafaf8;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: #ececea;
+      font-family: 'Inter', system-ui, sans-serif;
+      color: var(--ink);
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+
+    /* ── Page shell ───────────────────────────────────────── */
+    .page {
+      max-width: 820px;
+      margin: 40px auto;
+      background: var(--page);
+      box-shadow: 0 4px 40px rgba(0,0,0,0.14);
+      border-radius: 2px;
+    }
+
+    /* ── Cover header ─────────────────────────────────────── */
+    .cover {
+      background: var(--accent);
+      color: #fff;
+      padding: 56px 64px 48px;
+      position: relative;
+      overflow: hidden;
+    }
+    .cover::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: repeating-linear-gradient(
+        -45deg,
+        transparent,
+        transparent 18px,
+        rgba(255,255,255,0.025) 18px,
+        rgba(255,255,255,0.025) 19px
+      );
+    }
+    .cover-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 40px;
+    }
+    .logo {
+      font-family: 'Playfair Display', serif;
+      font-size: 22px;
+      letter-spacing: 0.5px;
+      color: #fff;
+    }
+    .logo span { color: var(--gold); }
+    .doc-meta {
+      text-align: right;
+      font-size: 11px;
+      color: rgba(255,255,255,0.55);
+      line-height: 1.7;
+    }
+    .cover-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 34px;
+      line-height: 1.2;
+      color: #fff;
+      margin-bottom: 10px;
+    }
+    .cover-sub {
+      font-size: 14px;
+      color: rgba(255,255,255,0.65);
+      font-weight: 400;
+      margin-bottom: 32px;
+    }
+    .cover-chips {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+    .chip {
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.6px;
+      text-transform: uppercase;
+      padding: 5px 14px;
+      border-radius: 20px;
+      border: 1px solid rgba(255,255,255,0.25);
+      color: rgba(255,255,255,0.8);
+    }
+    .chip.gold { border-color: var(--gold); color: var(--gold); }
+
+    /* ── Body ─────────────────────────────────────────────── */
+    .body {
+      padding: 56px 64px;
+    }
+
+    /* ── Section ──────────────────────────────────────────── */
+    .section { margin-bottom: 44px; }
+
+    .section-label {
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 1.8px;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      font-size: 18px;
+      font-weight: 700;
+      color: var(--ink);
+      margin-bottom: 14px;
+      padding-bottom: 10px;
+      border-bottom: 1.5px solid var(--rule);
+    }
+
+    p {
+      font-size: 13.5px;
+      line-height: 1.75;
+      color: var(--ink-mid);
+      margin-bottom: 10px;
+    }
+
+    /* ── Phase blocks ─────────────────────────────────────── */
+    .phases {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+      margin-top: 4px;
+    }
+    .phase-card {
+      border: 1px solid var(--rule);
+      border-radius: 4px;
+      overflow: hidden;
+    }
+    .phase-header {
+      background: var(--accent);
+      color: #fff;
+      padding: 12px 16px;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.6px;
+      text-transform: uppercase;
+    }
+    .phase-header .phase-num {
+      color: var(--gold);
+      margin-right: 6px;
+    }
+    .phase-body {
+      padding: 14px 16px;
+      background: #fff;
+    }
+    .phase-title {
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--ink);
+      margin-bottom: 8px;
+    }
+    .phase-items {
+      list-style: none;
+      font-size: 12px;
+      color: var(--ink-mid);
+      line-height: 1.8;
+    }
+    .phase-items li::before {
+      content: '→ ';
+      color: var(--accent);
+      font-weight: 600;
+    }
+
+    /* ── Deliverables table ───────────────────────────────── */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 12.5px;
+      margin-top: 4px;
+    }
+    thead tr {
+      background: var(--accent);
+      color: #fff;
+    }
+    thead th {
+      padding: 10px 14px;
+      text-align: left;
+      font-weight: 600;
+      font-size: 11px;
+      letter-spacing: 0.4px;
+    }
+    tbody tr:nth-child(even) { background: var(--accent-lt); }
+    tbody tr:nth-child(odd)  { background: #fff; }
+    tbody td {
+      padding: 10px 14px;
+      color: var(--ink-mid);
+      vertical-align: top;
+      border-bottom: 1px solid var(--rule);
+    }
+    tbody td:first-child { color: var(--ink); font-weight: 600; }
+    .rate-cell {
+      font-weight: 700;
+      color: var(--accent) !important;
+      white-space: nowrap;
+    }
+
+    /* ── Highlight box ────────────────────────────────────── */
+    .callout {
+      background: var(--accent-lt);
+      border-left: 3px solid var(--accent);
+      border-radius: 0 4px 4px 0;
+      padding: 14px 18px;
+      margin: 16px 0;
+    }
+    .callout p {
+      margin: 0;
+      font-size: 13px;
+      color: var(--ink);
+    }
+    .callout strong { color: var(--accent); }
+
+    /* ── Terms list ───────────────────────────────────────── */
+    .terms {
+      list-style: none;
+      font-size: 12.5px;
+      color: var(--ink-mid);
+      line-height: 1.9;
+    }
+    .terms li {
+      padding: 4px 0;
+      border-bottom: 1px solid var(--rule);
+      display: flex;
+      gap: 12px;
+    }
+    .terms li:last-child { border: none; }
+    .term-key {
+      min-width: 180px;
+      font-weight: 600;
+      color: var(--ink);
+    }
+
+    /* ── Signature ────────────────────────────────────────── */
+    .signature-block {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 32px;
+      margin-top: 8px;
+    }
+    .sig-box {
+      border-top: 1.5px solid var(--ink);
+      padding-top: 10px;
+    }
+    .sig-label {
+      font-size: 11px;
+      color: var(--ink-light);
+      margin-bottom: 2px;
+    }
+    .sig-name {
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--ink);
+    }
+    .sig-role {
+      font-size: 11px;
+      color: var(--ink-mid);
+    }
+    .sig-date {
+      font-size: 11px;
+      color: var(--ink-light);
+      margin-top: 6px;
+    }
+
+    /* ── Footer ───────────────────────────────────────────── */
+    .footer {
+      background: var(--accent);
+      padding: 16px 64px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .footer-brand {
+      font-family: 'Playfair Display', serif;
+      font-size: 13px;
+      color: rgba(255,255,255,0.6);
+    }
+    .footer-brand span { color: var(--gold); }
+    .footer-note {
+      font-size: 10.5px;
+      color: rgba(255,255,255,0.4);
+    }
+
+    @media print {
+      body { background: white; }
+      .page { margin: 0; box-shadow: none; }
+    }
+  </style>
+</head>
+<body>
+
+<div class="page">
+
+  <!-- ── Cover ─────────────────────────────────────────────── -->
+  <div class="cover">
+    <div class="cover-top">
+      <div class="logo">Can<span>Consult</span></div>
+      <div class="doc-meta">
+        Proposal Ref: CC-2026-001<br>
+        Date: March 23, 2026<br>
+        Confidential
+      </div>
+    </div>
+    <div class="cover-title">Advisory Engagement Proposal</div>
+    <div class="cover-sub">Senior Canmaking Expert · D&amp;I Process · Management Training · Training Department Development</div>
+    <div class="cover-chips">
+      <div class="chip gold">World-Recognized Expert</div>
+      <div class="chip">Drawn &amp; Ironed Specialist</div>
+      <div class="chip">US Manufacturing · 2026</div>
+    </div>
+  </div>
+
+  <!-- ── Body ──────────────────────────────────────────────── -->
+  <div class="body">
+
+    <!-- Executive Summary -->
+    <div class="section">
+      <div class="section-label">Overview</div>
+      <h2>Executive Summary</h2>
+      <p>
+        CanConsult proposes a structured, phased advisory engagement to support your US canmaking facility — delivered by a retired, world-recognized senior expert with deep specialization in the Drawn and Ironed (D&amp;I) process.
+      </p>
+      <ul class="terms" style="margin-top:14px;">
+        <li>
+          <span class="term-key">Scope</span>
+          On-site technical assessment, management knowledge transfer, and long-term training department development
+        </li>
+        <li>
+          <span class="term-key">Expert Profile</span>
+          World-recognized, retired senior specialist · 10+ years D&amp;I process expertise · operational and structural insight
+        </li>
+        <li>
+          <span class="term-key">Talent Crisis</span>
+          56% of US manufacturers are struggling to retain skilled talent as the workforce ages
+        </li>
+        <li>
+          <span class="term-key">Digital Imperative</span>
+          84.7% of US manufacturers are actively prioritizing upskilling and digital transformation in 2026
+        </li>
+        <li>
+          <span class="term-key">Strategic Value</span>
+          A structured, expert-led training department is no longer optional — it is a competitive requirement
+        </li>
+      </ul>
+    </div>
+
+    <!-- Engagement Model -->
+    <div class="section">
+      <div class="section-label">Approach</div>
+      <h2>Phased Engagement Model</h2>
+      <div class="phases">
+        <div class="phase-card">
+          <div class="phase-header"><span class="phase-num">I</span> Discovery &amp; Assessment — Week 1</div>
+          <div class="phase-body">
+            <div class="phase-title">Paid Discovery Phase</div>
+            <ul class="phase-items">
+              <li>On-site plant floor observation</li>
+              <li>Full D&amp;I process technical review</li>
+              <li>Management training lectures</li>
+              <li>Structural gap analysis vs. SA model</li>
+              <li>Formal written technical report</li>
+            </ul>
+          </div>
+        </div>
+        <div class="phase-card">
+          <div class="phase-header"><span class="phase-num">II</span> Strategic Development — Ongoing</div>
+          <div class="phase-body">
+            <div class="phase-title">Training Department Build-Out</div>
+            <ul class="phase-items">
+              <li>Protocol gap remediation plan</li>
+              <li>Industry 4.0 / Smart Factory alignment</li>
+              <li>Structured career track design</li>
+              <li>Formal training program development</li>
+              <li>Ongoing strategic retainer support</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Fee Schedule -->
+    <div class="section">
+      <div class="section-label">Commercial Terms</div>
+      <h2>Fee Schedule — 2026 US Rates</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Engagement</th>
+            <th>Model</th>
+            <th>Rate</th>
+            <th>Notes</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Assessment Week</td>
+            <td>Daily Rate</td>
+            <td class="rate-cell">$1,660+ / day</td>
+            <td>Portal-to-portal + travel expenses</td>
+          </tr>
+          <tr>
+            <td>Management Lectures</td>
+            <td>Hourly</td>
+            <td class="rate-cell">$300–$600 / hr</td>
+            <td>Billed per session</td>
+          </tr>
+          <tr>
+            <td>Technical Plant Report</td>
+            <td>Fixed Milestone</td>
+            <td class="rate-cell">$50,000+</td>
+            <td>Scales with plant size &amp; complexity</td>
+          </tr>
+          <tr>
+            <td>Training Dept. Support</td>
+            <td>Monthly Retainer</td>
+            <td class="rate-cell">$5,000–$15,000+ / mo</td>
+            <td>Ongoing strategic advisory</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Terms -->
+    <div class="section">
+      <div class="section-label">Conditions</div>
+      <h2>Terms &amp; Conditions</h2>
+      <ul class="terms">
+        <li>
+          <span class="term-key">Billing Start</span>
+          Portal-to-portal — from departure at home base through return
+        </li>
+        <li>
+          <span class="term-key">Expenses</span>
+          Airfare, accommodation, and per diem billed at cost
+        </li>
+        <li>
+          <span class="term-key">Overtime</span>
+          Daily rate covers up to 12 hrs; overtime billed at $152–$412/hr
+        </li>
+        <li>
+          <span class="term-key">Payment</span>
+          Phase I invoiced upon engagement commencement; Phase II monthly in advance
+        </li>
+        <li>
+          <span class="term-key">Cancellation</span>
+          14 days written notice required; travel costs non-refundable once booked
+        </li>
+        <li>
+          <span class="term-key">Confidentiality</span>
+          All plant data, processes, and findings treated as strictly confidential
+        </li>
+        <li>
+          <span class="term-key">Validity</span>
+          This proposal is valid for 30 days from the date of issue
+        </li>
+      </ul>
+    </div>
+
+    <!-- Acceptance -->
+    <div class="section">
+      <div class="section-label">Acceptance</div>
+      <h2>Proposal Acceptance</h2>
+      <p>By signing below, both parties agree to the scope and commercial terms outlined in this proposal. A detailed Statement of Work will be issued upon acceptance.</p>
+      <div class="signature-block" style="margin-top:32px;">
+        <div class="sig-box">
+          <div class="sig-label">For CanConsult</div>
+          <div class="sig-name" style="margin-top:32px;">________________________</div>
+          <div class="sig-role">Senior Advisor · CanConsult</div>
+          <div class="sig-date">Date: ___________________</div>
+        </div>
+        <div class="sig-box">
+          <div class="sig-label">For Client</div>
+          <div class="sig-name" style="margin-top:32px;">________________________</div>
+          <div class="sig-role">Authorized Signatory</div>
+          <div class="sig-date">Date: ___________________</div>
+        </div>
+      </div>
+    </div>
+
+  </div><!-- /body -->
+
+  <!-- ── Footer ─────────────────────────────────────────────── -->
+  <div class="footer">
+    <div class="footer-brand">Can<span>Consult</span></div>
+    <div class="footer-note">Proposal Ref: CC-2026-001 · Confidential · Valid 30 days from March 23, 2026</div>
+  </div>
+
+</div><!-- /page -->
+
+</body>
+</html>

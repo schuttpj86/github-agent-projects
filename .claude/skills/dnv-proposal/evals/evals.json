@@ -1,0 +1,28 @@
+{
+  "skill_name": "dnv-proposal",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "I need to create the DNV proposal for the Peak Gen project. The tender docs are in projects/PROP-004-PeakGen and we have the template there too. Can you start working on this?",
+      "expected_output": "Should check for existing tracker, identify tender documents in rfp/, present inputs for user confirmation, then proceed through staged workflow with user checkpoints",
+      "files": [
+        "projects/PROP-004-PeakGen/DNV Proposal Template.docx",
+        "projects/PROP-004-PeakGen/initial proposal.md"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "continue working on the peakgen proposal from where we left off",
+      "expected_output": "Should load proposal-tracker.json, report current status showing completed stages and sections, ask user if they want to continue from the current point",
+      "files": [
+        "projects/PROP-004-PeakGen/proposal-tracker.json"
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "we got a new RFQ from a client for grid connection studies. they want us to do load flow and short circuit analysis for a 132kV substation connection. the docs are in my downloads folder - there's a pdf spec and an excel with the site data. can you help me put together a proposal?",
+      "expected_output": "Should create new project folder structure (PROP-XXX-ClientName), ask user to move/copy tender docs to rfp/ folder, initialize tracker, then begin staged workflow starting with input validation",
+      "files": []
+    }
+  ]
+}

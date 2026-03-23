@@ -1,0 +1,223 @@
+{
+  "name": "Peak Gen NESO LT29 Stability Studies (Tiered Quotation)",
+  "project_id": "PROP-004-PeakGen",
+  "revision": 1,
+  "pricing_model": "tiered",
+  "notes": "Lines 2/3/4 are mutually exclusive. Client selects Line 1 + one of Lines 2/3/4 + optionally Line 5. Line 4 includes volume discount. 21 sims per variant (NESO V6, unchanged from V5).",
+  "budget_range": [40000, 110000],
+  "rates": {
+    "professional": 145,
+    "senior": 189,
+    "principal": 231
+  },
+  "tasks": [
+    {
+      "section": "Line Item 1: Study Setup (One-Time)",
+      "subtasks": [
+        {
+          "name": "Kick-off meeting and coordination",
+          "hours": {"professional": 4, "senior": 2, "principal": 1}
+        },
+        {
+          "name": "Review NGET Connection Feasibility Reports",
+          "hours": {"professional": 8, "senior": 4, "principal": 0}
+        },
+        {
+          "name": "Validate NESO grid data (Effectiveness Sheet V7)",
+          "hours": {"professional": 4, "senior": 2, "principal": 1}
+        },
+        {
+          "name": "Assess GE RS4 PowerFactory models",
+          "hours": {"professional": 8, "senior": 4, "principal": 2}
+        },
+        {
+          "name": "Develop Python automation script (PowerFactory API)",
+          "hours": {"professional": 16, "senior": 8, "principal": 2}
+        },
+        {
+          "name": "Develop reporting framework (data extraction, plots, proforma population)",
+          "hours": {"professional": 12, "senior": 6, "principal": 1}
+        },
+        {
+          "name": "Integrate GE RS4 models and AVR systems (one-time setup)",
+          "hours": {"professional": 12, "senior": 6, "principal": 2}
+        },
+        {
+          "name": "Contingency (5%)",
+          "hours": {"professional": 4, "senior": 2, "principal": 1}
+        }
+      ]
+    },
+    {
+      "section": "Line Item 2: 2 Sites x 1 Option (2 Variants, 42 Simulations)",
+      "subtasks": [
+        {
+          "name": "Build network models (2 sites)",
+          "hours": {"professional": 20, "senior": 8, "principal": 2}
+        },
+        {
+          "name": "Steady-state load flow validation (2 sites)",
+          "hours": {"professional": 4, "senior": 2, "principal": 0}
+        },
+        {
+          "name": "Execute simulations: Test 1 (4 steps x 2 variants)",
+          "hours": {"professional": 4, "senior": 2, "principal": 0}
+        },
+        {
+          "name": "Execute simulations: Test 2 (9 steps x 2 variants)",
+          "hours": {"professional": 6, "senior": 3, "principal": 0}
+        },
+        {
+          "name": "Execute simulations: Test 3 (8 steps x 2 variants)",
+          "hours": {"professional": 6, "senior": 3, "principal": 0}
+        },
+        {
+          "name": "Debug and re-run failed simulations",
+          "hours": {"professional": 4, "senior": 2, "principal": 0}
+        },
+        {
+          "name": "Data extraction and metric calculation (2 variants)",
+          "hours": {"professional": 12, "senior": 6, "principal": 1}
+        },
+        {
+          "name": "Populate Section B proforma Q44-Q149 (2 variants)",
+          "hours": {"professional": 8, "senior": 4, "principal": 1}
+        },
+        {
+          "name": "Author Feasibility Study Reports per NESO Template V3 (2 reports)",
+          "hours": {"professional": 14, "senior": 6, "principal": 2}
+        },
+        {
+          "name": "Generate time-series plots (42 tests)",
+          "hours": {"professional": 6, "senior": 2, "principal": 0}
+        },
+        {
+          "name": "Senior technical peer review (2 variants)",
+          "hours": {"professional": 2, "senior": 4, "principal": 2}
+        },
+        {
+          "name": "Address review comments and finalise",
+          "hours": {"professional": 4, "senior": 2, "principal": 0}
+        },
+        {
+          "name": "Contingency (5%)",
+          "hours": {"professional": 5, "senior": 3, "principal": 1}
+        }
+      ]
+    },
+    {
+      "section": "Line Item 3: 4 Sites x 1 Option (4 Variants, 84 Simulations)",
+      "subtasks": [
+        {
+          "name": "Build network models (4 sites)",
+          "hours": {"professional": 40, "senior": 16, "principal": 4}
+        },
+        {
+          "name": "Steady-state load flow validation (4 sites)",
+          "hours": {"professional": 8, "senior": 4, "principal": 1}
+        },
+        {
+          "name": "Execute simulations: Test 1 (4 steps x 4 variants)",
+          "hours": {"professional": 8, "senior": 4, "principal": 1}
+        },
+        {
+          "name": "Execute simulations: Test 2 (9 steps x 4 variants)",
+          "hours": {"professional": 12, "senior": 6, "principal": 1}
+        },
+        {
+          "name": "Execute simulations: Test 3 (8 steps x 4 variants)",
+          "hours": {"professional": 12, "senior": 6, "principal": 1}
+        },
+        {
+          "name": "Debug and re-run failed simulations",
+          "hours": {"professional": 8, "senior": 4, "principal": 0}
+        },
+        {
+          "name": "Data extraction and metric calculation (4 variants)",
+          "hours": {"professional": 20, "senior": 8, "principal": 1}
+        },
+        {
+          "name": "Populate Section B proforma Q44-Q149 (4 variants)",
+          "hours": {"professional": 16, "senior": 8, "principal": 2}
+        },
+        {
+          "name": "Author Feasibility Study Reports per NESO Template V3 (4 reports)",
+          "hours": {"professional": 24, "senior": 12, "principal": 4}
+        },
+        {
+          "name": "Generate time-series plots (84 tests)",
+          "hours": {"professional": 12, "senior": 4, "principal": 0}
+        },
+        {
+          "name": "Senior technical peer review (4 variants)",
+          "hours": {"professional": 4, "senior": 8, "principal": 4}
+        },
+        {
+          "name": "Address review comments and finalise",
+          "hours": {"professional": 8, "senior": 4, "principal": 1}
+        },
+        {
+          "name": "Contingency (5%)",
+          "hours": {"professional": 10, "senior": 5, "principal": 1}
+        }
+      ]
+    },
+    {
+      "section": "Line Item 4: 6 Sites x 2 Options (12 Variants, 252 Simulations) -- Volume Discount Applied",
+      "subtasks": [
+        {
+          "name": "Build network models (6 sites, 2 config variants each)",
+          "hours": {"professional": 56, "senior": 24, "principal": 4}
+        },
+        {
+          "name": "Steady-state load flow validation (12 variants)",
+          "hours": {"professional": 16, "senior": 6, "principal": 1}
+        },
+        {
+          "name": "Execute simulations: Test 1 (4 steps x 12 variants)",
+          "hours": {"professional": 16, "senior": 8, "principal": 1}
+        },
+        {
+          "name": "Execute simulations: Test 2 (9 steps x 12 variants)",
+          "hours": {"professional": 24, "senior": 12, "principal": 1}
+        },
+        {
+          "name": "Execute simulations: Test 3 (8 steps x 12 variants)",
+          "hours": {"professional": 24, "senior": 12, "principal": 1}
+        },
+        {
+          "name": "Debug and re-run failed simulations",
+          "hours": {"professional": 16, "senior": 8, "principal": 0}
+        },
+        {
+          "name": "Data extraction and metric calculation (12 variants)",
+          "hours": {"professional": 40, "senior": 16, "principal": 2}
+        },
+        {
+          "name": "Populate Section B proforma Q44-Q149 (12 variants)",
+          "hours": {"professional": 36, "senior": 16, "principal": 3}
+        },
+        {
+          "name": "Author Feasibility Study Reports per NESO Template V3 (12 reports)",
+          "hours": {"professional": 48, "senior": 24, "principal": 6}
+        },
+        {
+          "name": "Generate time-series plots (252 tests)",
+          "hours": {"professional": 24, "senior": 8, "principal": 0}
+        },
+        {
+          "name": "Senior technical peer review (12 variants)",
+          "hours": {"professional": 8, "senior": 16, "principal": 8}
+        },
+        {
+          "name": "Address review comments and finalise",
+          "hours": {"professional": 16, "senior": 8, "principal": 2}
+        },
+        {
+          "name": "Contingency (5%)",
+          "hours": {"professional": 18, "senior": 9, "principal": 2}
+        }
+      ]
+    }
+  ]
+}
